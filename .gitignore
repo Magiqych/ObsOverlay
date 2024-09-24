@@ -9,3 +9,6 @@ venvBatch/
 
 #VS Code設定
 .vscode/
+
+#Pythonのキャッシュファイル
+__pycache__/
