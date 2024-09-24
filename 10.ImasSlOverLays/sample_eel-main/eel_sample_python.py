@@ -9,6 +9,7 @@ import eel
 import threading  # threadingモジュールをインポート
 from database import search_song_by_name  # search_song_by_nameメソッドをインポート
 
+
 # Use latest version of Eel from parent directory
 sys.path.insert(1, '../../')
 
@@ -37,9 +38,12 @@ def pick_file(folder):
     else:
         return '{} is not a valid folder'.format(folder)
 
+@eel.expose
+def receive_message(messagebody):
+    print("Received message:", messagebody)
 
 def start_eel(develop):
-    if develop:
+    if True:
         directory = 'src'
         app = None
         page = {'port': 3000}
@@ -47,8 +51,9 @@ def start_eel(develop):
         directory = 'build'
         app = 'chrome-app'
         page = 'index.html'
+    #eel.init(directory, ['.tsx', '.ts', '.jsx', '.js', '.html'])
+    eel.init(directory, allowed_extensions=['.tsx', '.ts', '.jsx', '.js', '.html', '.css', '.json', '.png', '.jpg', '.jpeg', '.gif', '.svg', '.woff', '.woff2', '.ttf', '.eot'])
 
-    eel.init(directory, ['.tsx', '.ts', '.jsx', '.js', '.html'])
     eel_kwargs = dict(
         host='localhost',
         port=8080,
@@ -60,16 +65,6 @@ def start_eel(develop):
     except EnvironmentError:
         raise
 
-    # Specter関数を別スレッドで実行
-    specter_thread = threading.Thread(target=Specter)
-    specter_thread.daemon = True
-    specter_thread.start()
-
-    while True:
-        time.sleep(10)
-
-# 監視メソッド
-def Specter():
     while True:
         try:
             message = search_song_by_name("とどけ！アイドル")
