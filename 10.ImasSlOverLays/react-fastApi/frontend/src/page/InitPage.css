@@ -1,0 +1,81 @@
+.double-border {
+    border: 8px solid gold;
+    /* 金色の縁取り */
+    box-shadow: 0 0 0 3px black;
+    /* 黒色の縁取り */
+    border-radius: 5px;
+    /* 角丸を追加 */
+    width: 160px;
+    height: 160px;
+}
+
+.reflection {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.reflection:after {
+    content: "";
+    height: 100%;
+    width: 30px;
+    position: absolute;
+    top: -180px;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transform: rotate(45deg); /* Safari */
+    -ms-transform: rotate(45deg); /* IE 9 */
+    transform: rotate(45deg); /* Standard syntax */
+    -webkit-animation: reflection 2s ease-in-out infinite; /* Safari */
+    animation: reflection 2s ease-in-out infinite; /* Standard syntax */
+}
+
+@keyframes reflection {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}
+.box {
+    margin : 30px auto;
+    width : 150px;
+    height : 50px;
+    border-radius:5px;
+    background-color: #edde93;
+    display: block;
+    position: relative;
+  }
+  
+  .box::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: kiran 3s ease-in-out infinite;
+  }
+  @keyframes kiran {
+    0% { transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { transform: scale(50) rotate(45deg); opacity: 0; }
+  }

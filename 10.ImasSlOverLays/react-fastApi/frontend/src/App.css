@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+/* スクロールバーを非表示にする */
+body {
+  overflow: hidden;
+}
+
+/* swiperが容姿したクラスに対して */
+.swiper-slide {
+  height: auto;
+}
+
+/* 子要素に対して */
+.cardMedia {
+  height: 100%;
+} 

@@ -1,42 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import { Container, Typography, Button } from '@mui/material';
-import axios from 'axios';
+import React from "react";
+import { Container, createTheme, ThemeProvider } from "@mui/material";
+import { CardHighlight } from "../mui-treasury/card-highlight/CardHighlight.tsx";
+import "./InitPage.css"; // CSSファイルをインポート
 
 function InitPage() {
-  const [songDetail, setSongDetail] = useState(null);
-
-  useEffect(() => {
-    const fetchSongDetail = async () => {
-      try {
-        const response = await axios.get('/Assets/song_detail.json');
-        setSongDetail(response.data);
-      } catch (error) {
-        console.error('Error fetching song detail:', error);
-      }
-    };
-    fetchSongDetail();
-  }, []);
-
   return (
-    <Container>
-      <Typography variant="h1" component="h2" gutterBottom>
-        Init Page
-      </Typography>
-      <img src="/Assets/Song.png" alt="Song" />
-      {songDetail && (
-        <>
-          <Typography variant="h5" component="h3" gutterBottom>
-            {songDetail.Name}
-          </Typography>
-          <Typography variant="body1" gutterBottom>
-            {songDetail.Description}
-          </Typography>
-        </>
-      )}
-      <Button variant="contained" color="primary">
-        Click Me
-      </Button>
-    </Container>
+    <div style={{width:'1920px',height:'1080px'}}>
+      <div style={{ position: "absolute", left: 0,bottom:0,height:'200px',width:'600px',backgroundColor:'red' }}>
+      
+      </div>
+      <div style={{ position: "absolute", left: 0, bottom: 0 }}>
+        <CardHighlight />
+      </div>
+    </div>
   );
 }
 

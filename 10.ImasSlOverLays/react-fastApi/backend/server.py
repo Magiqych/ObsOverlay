@@ -55,7 +55,7 @@ async def manage_loop():
         search_song_by_name("とどけ！アイドル")
         for websocket in websockets:
             try:
-                redirect_to_react()
+                websocket.send_text("redirect")
             except:
                 websockets.remove(websocket)
         await asyncio.sleep(2000000000000000) 
