@@ -37,20 +37,21 @@ const ExpandMore = styled((props) => {
 export default function AboutMe() {
   return (
     <Card>
-      <Stack direction="row" spacing={2}>
+      <Stack direction='row' spacing={2}>
         <CardHeader
           avatar={
-            <Avatar alt="Remy Sharp" src="Assets/Magiqych/Magiqych.jpg" />
+            <Avatar alt="Youtube" src="assets/Magiqych/Magiqych.jpg" />
           }
-          title="About Me"
+          title="Youtube"
           subheader="youtube.com/@magiqy_ch"
         />
-        <div>
-          <image src="Assets/Magiqych/Magiqych.jpg" alt="Remy Sharp" />
-          <Typography variant="h5" component="h2">
-            transient
-          </Typography>
-        </div>
+        <CardHeader
+          avatar={
+            <Avatar alt="Github" src="assets/static/GameLogo.webp" />
+          }
+          title="The Idolmaster Cinderella Girls"
+          subheader="GameID:827459216"
+        />
       </Stack>
 
       <CardContent>

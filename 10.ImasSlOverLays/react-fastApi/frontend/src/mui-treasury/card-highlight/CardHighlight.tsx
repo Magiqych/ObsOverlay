@@ -157,9 +157,9 @@ export function CardHighlight() {
           color="#fc7944"
           brand={"©Bandai Namco Entertainment Inc."}
           cover={
-            "/Assets/img_visual.jpg"
+            "/assets/static/img_visual.jpg"
           }
-          logo={"/Assets/GameLogo.webp"}
+          logo={"/assets/static/GameLogo.webp"}
           title={
             <>
               The Idolmaster

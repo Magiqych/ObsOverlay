@@ -8,6 +8,7 @@ import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
+import Stack from "@mui/material/Stack";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -36,20 +37,31 @@ const ExpandMore = styled((props) => {
 export default function AboutMeJa() {
   return (
     <Card>
-      <CardHeader
-        avatar={
-            <Avatar alt="Remy Sharp" src="Assets/Magiqych/Magiqych.jpg" />
-        }
-        title="このチャンネルについて"
-        subheader="@magiqy_ch"
-      />
+      <Stack direction="hori" spacing={2}>
+        <CardHeader
+          avatar={
+            <Avatar alt="Youtube" src="assets/Magiqych/Magiqych.jpg" />
+          }
+          title="Youtube"
+          subheader="youtube.com/@magiqy_ch"
+        />
+        <CardHeader
+          avatar={
+            <Avatar alt="Github" src="assets/static/GameLogo.webp" />
+          }
+          title="デレステ"
+          subheader="GameID:827459216"
+        />
+      </Stack>
       <CardContent>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-ここでは、ゲーム、漫画、アニメから釣りやその他のサブカルチャーまで、私の趣味や生活をシェアしています。
-特定のターゲット視聴者はいませんが、YouTubeを通じて世界中の人々とつながりたいと思っています。
-私の動画は無編集でありのままの姿を見せるもので、世界に「俺はここにいるんだ」と伝えるためのものです。
-このチャンネルには特定の目標はありません。目標がないことが目標です。人生は予測不可能で、このチャンネルも同様です。
-祇園精舎の鐘の声、諸行無常の響きあり。それが私の人生のテーマです。
+      <Typography
+          variant="h6"
+          component="h2"
+          sx={{ color: "text.secondary" }}
+        >
+ゲーム、漫画、アニメから釣り私の趣味や生活をシェアしています。<br />
+YouTubeを通じて世界中の人々とつながりたいと思っています。<br />
+このチャンネルには特定の目標はありません。目標がないことが目標です。人生は予測不可能で、このチャンネルも同様です。祇園精舎の鐘の声、諸行無常の響きあり。それが私の人生のテーマです。
         </Typography>
       </CardContent>
     </Card>
