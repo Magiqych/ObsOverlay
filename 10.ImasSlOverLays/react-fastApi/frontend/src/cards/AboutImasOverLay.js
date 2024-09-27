@@ -103,6 +103,14 @@ export default function AboutImasOverLay() {
                 sx={{ width: "400px", height: "180px", objectFit: "contain" }}
               />
             </SwiperSlide>
+            <SwiperSlide>
+              <Box
+                component="img"
+                alt="playwrite"
+                src={"/assets/static/playwrite.png"}
+                sx={{ width: "400px", height: "180px", objectFit: "contain" }}
+              />
+            </SwiperSlide>
           </Swiper>
         </Stack>
       </CardContent>

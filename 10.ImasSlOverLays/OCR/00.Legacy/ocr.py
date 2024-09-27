@@ -53,7 +53,7 @@ def determine_difficulty(image, difficulties, filename):
     return 'Unknown'
 
 def extract_song_name(cropped_image):
-    return pytesseract.image_to_string(cropped_image, lang='eng')
+    return pytesseract.image_to_string(cropped_image, lang='ja')
 
 def main():
     sample_data_dir = 'SampleData'
