@@ -15,8 +15,10 @@ mask = cv2.imread(mask_path, cv2.IMREAD_GRAYSCALE)
 mask = cv2.resize(mask, (img_size, img_size))
 mask = mask / 255.0  # 正規化
 
-# HDMIキャプチャソースの設定
-capture = cv2.VideoCapture(2)  # 0はデフォルトのカメラデバイスIDです。必要に応じて変更してください。
+# キャプチャデバイスの設定
+device_str="4-700"
+index, backend = map(int, device_str.split('-'))
+capture = cv2.VideoCapture(index, backend)
 
 # 解像度の設定
 capture.set(cv2.CAP_PROP_FRAME_WIDTH, img_size)
