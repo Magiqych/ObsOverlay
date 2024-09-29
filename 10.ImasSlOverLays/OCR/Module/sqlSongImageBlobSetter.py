@@ -1,33 +1,30 @@
-import sqlite3
 import os
-import json
-import uuid
-from PIL import Image
 import io
+import uuid
+import json
+import sqlite3
+from PIL import Image
+import imagehash
 
 # スクリプト自身のディレクトリを取得
 script_dir = os.path.dirname(os.path.abspath(__file__))
-
 # データベースファイルのパス
 db_path = os.path.join(script_dir,"..","..","..", '00.DataStorage', 'cinderella.idolmaster.sl-stage.sqlite')
-
 # 画像を保存するディレクトリ
 image_dir = os.path.join(script_dir, "..", 'ImageAssets', 'SongImage')
 os.makedirs(image_dir, exist_ok=True)
-
 # JSONファイルのパス
 json_path = os.path.join(image_dir, 'song_images.json')
-
 # SQLiteデータベースに接続
 conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
 
-# SongDetailテーブルからImageとNameカラムを取得
-cursor.execute("SELECT Image, Name FROM SongDetail")
-rows = cursor.fetchall()
-
 # UIDとNameのマッピングを保存する辞書
 uid_name_mapping = {}
+
+# データベースから画像データを取得
+cursor.execute("SELECT Image, Name FROM SongDetail")
+rows = cursor.fetchall()
 
 for row in rows:
     image_blob, name = row
@@ -40,10 +37,16 @@ for row in rows:
         image = Image.open(io.BytesIO(image_blob))
         image.save(image_path)
 
-        # UIDとNameのマッピングを保存
-        uid_name_mapping[uid] = name
+        # 画像のハッシュ値を計算
+        image_hash = str(imagehash.phash(image))
 
-# JSONファイルにUIDとNameのマッピングを保存
+        # UID、Name、ハッシュ値のマッピングを保存
+        uid_name_mapping[uid] = {
+            "name": name,
+            "hash": image_hash
+        }
+
+# JSONファイルにUID、Name、ハッシュ値のマッピングを保存
 with open(json_path, 'w', encoding='utf-8') as json_file:
     json.dump(uid_name_mapping, json_file, ensure_ascii=False, indent=4)
 

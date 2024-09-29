@@ -1,15 +1,26 @@
 from fastapi import FastAPI, HTTPException, WebSocket
 from fastapi.responses import JSONResponse, FileResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 import uvicorn
 import threading
 import time
 import asyncio
 import os
-from database import search_song_by_name, injectResult
+from models import *
+
+# スクリプト自身のディレクトリを取得
+script_dir = os.path.dirname(os.path.abspath(__file__))
+db_path = os.path.join(script_dir, '..','..','..',"00.DataStorage","cinderella.idolmaster.sl-stage.sqlite")
+songDetail = None
+songLevelDetail = None
+songMetaData = None
 
 app = FastAPI()
-
+class SongSelection(BaseModel):
+    SongName: str
+    Level: str
+    
 # CORS設定を追加
 app.add_middleware(
     CORSMiddleware,
@@ -34,37 +45,15 @@ async def websocket_endpoint(websocket: WebSocket):
     except:
         websockets.remove(websocket)
 
-# ルートエンドポイントを追加
-@app.get("/")
-async def read_root():
-    return RedirectResponse(url="http://localhost:3000/init")
-
-# リダイレクトエンドポイントを追加
-@app.get("/redirect")
-async def redirect_to_react():
-    return RedirectResponse(url="http://localhost:3000/init")
-
-def start_uvicorn():
-    uvicorn.run(app, host="localhost", port=8000)
-
-async def manage_loop():
-    while True:
-        # イベントを監視するロジックをここに追加
-        # イベントが発生したらリダイレクト
-        print("イベントが発生しました。リダイレクトします。")
-        search_song_by_name("とどけ！アイドル")
-        for websocket in websockets:
-            try:
-                websocket.send_text("redirect")
-            except:
-                websockets.remove(websocket)
-        await asyncio.sleep(2000000000000000) 
+# 曲選択が行われた
+@app.post("/select_song")
+async def select_song(selection: SongSelection):
+    print(f"Received song selection: {selection.SongName}, Level: {selection.Level}")
+    songDetail = get_song_meta_data_from_db(db_path,selection.SongName)
+    # WebSocket接続にメッセージを送信
+    for websocket in websockets:
+        await websocket.send_text(f"Song selected: {selection.SongName}, Level: {selection.Level}")
+    return {"status": "Song selection received"}
 
 if __name__ == "__main__":
-    # uvicornサーバーを別スレッドで起動
-    uvicorn_thread = threading.Thread(target=start_uvicorn)
-    uvicorn_thread.start()
-
-    # 非同期関数を実行するためのイベントループを作成
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(manage_loop())
+    uvicorn.run(app, host="localhost", port=8000)

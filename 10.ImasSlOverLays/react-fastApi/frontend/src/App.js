@@ -21,6 +21,7 @@ function App() {
       if (event.data === "redirect") {
         // window.location.href = '/init';
       }
+      console.log(event.data);
     };
     return () => {
       ws.close();
