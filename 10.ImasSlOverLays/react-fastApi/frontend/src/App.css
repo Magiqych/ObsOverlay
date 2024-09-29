@@ -81,3 +81,17 @@ body {
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+
+/* フェードアウトアニメーションの定義 */
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}

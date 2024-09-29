@@ -5,7 +5,8 @@ dist/
 Testdata/*
 SongImage/*
 # すべてのvenvディレクトリを無視
-venv/
+.venv/*
+*/venv/*
 venvBatch/
 
 #VS Code設定
@@ -16,3 +17,10 @@ __pycache__/
 */TestData/*
 */SongImage/*
 *.mp4
+/10.ImasSlOverLays/OCR/venv
+/10.ImasSlOverLays/OCR/ImageAssets/TestData
+/10.ImasSlOverLays/PaddleOCR/data
+/10.ImasSlOverLays/PaddleOCR/venv
+/10.ImasSlOverLays/react-fastApi/backend/Assets/TestData
+/10.ImasSlOverLays/SceneDetecter/Assets/TestData
+/10.ImasSlOverLays/SceneDetecter/venv

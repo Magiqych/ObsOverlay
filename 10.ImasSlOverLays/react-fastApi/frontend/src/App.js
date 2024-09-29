@@ -16,12 +16,41 @@ SwiperCore.use([Autoplay]);
 
 function App() {
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:8000/ws");
+    // 状態を定義
+    const STATE_NORMAL = 'normal';
+    const STATE_SELECT_SONG = 'select_song';
+    const STATE_SHOW_SCORE = 'show_score';
+    let currentState = STATE_NORMAL;
+    // document.querySelector('.NormalSwiper').classList.add('fade-out');
+    // WebSocketメッセージ受信時の処理
+    const ws = new WebSocket('ws://localhost:8000/ws');
     ws.onmessage = (event) => {
-      if (event.data === "redirect") {
-        // window.location.href = '/init';
+      const data = event.data;
+      // fastapiから送信される状態に基づいてcurrentStateを更新
+      if (data === 'normal') {
+        currentState = STATE_NORMAL;
+      } else if (data === 'select_song') {
+        currentState = STATE_SELECT_SONG;
+      } else if (data === 'show_score') {
+        currentState = STATE_SHOW_SCORE;
       }
-      console.log(event.data);
+      // 状態に応じた処理
+      switch (currentState) {
+        case STATE_NORMAL:
+          console.log('通常時の処理を実行');
+          // 通常時の処理をここに追加
+          break;
+        case STATE_SELECT_SONG:
+          console.log('曲選択時の処理を実行');
+          // 曲選択時の処理をここに追加
+          break;
+        case STATE_SHOW_SCORE:
+          console.log('スコア表示時の処理を実行');
+          // スコア表示時の処理をここに追加
+          break;
+        default:
+          console.log('未知の状態');
+      }
     };
     return () => {
       ws.close();
@@ -35,6 +64,10 @@ function App() {
   };
   return (
     <div style={{ width: "1920px", height: "1080px" }}>
+      {/* アイドルマスターシンデレラガールズ　カード */}
+      <div style={{ position: "absolute", left: 0, bottom: 0 }}>
+        <CardHighlight />
+      </div>
       <div
         style={{
           position: "absolute",
@@ -44,7 +77,9 @@ function App() {
           width: "1140px",
         }}
       >
+        {/* 楽曲未選択時スワイプ */}
         <Swiper
+          class="NormalSwiper"
           modules={[Autoplay]}
           autoplay={{ delay: 60000 }}
           onAutoplayTimeLeft={onAutoplayTimeLeft}
@@ -61,17 +96,14 @@ function App() {
           <SwiperSlide>
             <AboutImasOverLay />
           </SwiperSlide>
-          <div className="autoplay-progress" slot="container-end" 
-            style={{position: 'absolute', right:'0px', bottom: '200px',zIndex:'20'}}>
+          <div className="autoplay-progress" slot="container-end"
+            style={{ position: 'absolute', right: '0px', bottom: '200px', zIndex: '20' }}>
             <svg viewBox="0 0 48 48" ref={progressCircle}>
               <circle cx="24" cy="24" r="20"></circle>
             </svg>
             <span ref={progressContent}></span>
           </div>
         </Swiper>
-      </div>
-      <div style={{ position: "absolute", left: 0, bottom: 0 }}>
-        <CardHighlight />
       </div>
     </div>
   );
