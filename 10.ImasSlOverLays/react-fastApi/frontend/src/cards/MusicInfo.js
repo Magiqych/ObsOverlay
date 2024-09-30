@@ -1,40 +1,47 @@
 import * as React from "react";
-import { Card, CardContent, CardMedia, Stack, Typography, Box } from '@mui/material';
+import { Card, CardContent, CardMedia, Stack, Typography, Box, CardHeader } from '@mui/material';
+import Avatar from '@mui/material/Avatar';
+import Grid from '@mui/material/Grid2';
+import { ThemeProvider, createTheme } from '@mui/material/styles'
 // Swiperコンポーネントをインポート
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import { Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import { ThemeProvider, createTheme } from '@mui/material/styles'
-import * as Icon from '@mui/icons-material';
 import './MusicInfo.css';
 
 SwiperCore.use([Autoplay]);
 
-export default function MusicInfo({ songName = "とどけ！アイドル",
-  artistName = "作詞：marhy\n作曲・編曲：BNSI（内田哲也）",
-  songImage = "/assets/ForTest/Song.png",
-  level = "MASTER+",
-  levelnum = 25,
-  cost = 18,
-  notes = 46,
-  tapicon = 10,
-  longicon = 4,
-  flickicon = 4,
-  slideicon = 4,
-  damageicon = 4,
-  dencity = 820,
-}) {
+export default function MusicInfo({ data }) {
   const theme = createTheme({
     palette: {
       mode: 'light',
     }
   })
+  // JSONデータから曲情報を取得
+  const songName = data.Name;
+  const artistName = data.Credits;
+  const songImage = data.SongImage;
+  const selectedLevel = data.SelectedLevel;
+  const type = data.Type;
+  const length = data.Length;
+  const bpm = data.BPM;
+  const releaseDate = data.ReleaseDate;
+  const levelnum = data.Level;
+  const cost = data.Cost;
+  const notes = data.Notes;
+  const tapicon = data.TapIcon;
+  const longicon = data.LongIcon ;
+  const flickicon = data.FlickIcon;
+  const slideicon = data.SlideIcon;
+  const damegeicon = data.DamageIcon ;
+  const dencity = data.Dencity;
+
   // artistNameを改行で分割
   const artistNameLines = artistName.split('\n');
   // levelに基づいてカードの背景色を設定
-  const getCardBackgroundColor = (level) => {
-    switch (level) {
+  const getCardBackgroundColor = (selectedLevel) => {
+    switch (selectedLevel) {
       case 'DEBUT':
         return 'linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%);';
       case 'REGULAR':
@@ -49,71 +56,186 @@ export default function MusicInfo({ songName = "とどけ！アイドル",
         return theme.palette.background.paper;
     }
   };
+  // Typeに基づいてカードのアイコンを選択
+  const getTypeIcon = (type) => {
+    switch (type) {
+      case '全タイプ':
+        return './assets/icon/all.webp';
+      case 'クール':
+        return '/assets/icon/cool.webp';
+      case 'キュート':
+        return '/assets/icons/cuto.webp';
+      case 'パッション':
+        return '/assets/icon/passion.webp';
+      default:
+        return './assets/icon/all.webp';
+    }
+  };
 
   return (
     <ThemeProvider theme={theme}>
-    <Card>
-      <Box
-        sx={{
-          position: 'fixed',
-          top: 15,
-          left: 15,
-          background: getCardBackgroundColor(level),
-          color: 'white',
-          borderRadius: 2,
-          padding: 1,
-          boxShadow: 3,
-        }}
-      >
-        <Typography variant="body2">
-          {level}
-        </Typography>
-      </Box>
       <Card sx={{ display: 'flex' }}>
+        {/* レベル表示 */}
+        <Box
+          sx={{
+            position: 'fixed',
+            top: 15,
+            left: 15,
+            background: getCardBackgroundColor(selectedLevel),
+            color: 'white',
+            borderRadius: 2,
+            padding: 1,
+            boxShadow: 3,
+          }}
+        >
+          <Typography variant="body2">
+            {selectedLevel}
+          </Typography>
+        </Box>
+        {/*楽曲画像表示*/}
         <CardMedia
           component="img"
           sx={{ width: 240, height: 240, objectFit: 'contain' }}
           src={songImage}
           alt="songImage"
         />
-        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-          <CardContent sx={{ flex: '1 0 auto' }}>
-            <Typography component="div" variant="h5">
-              {songName}
-            </Typography>
-            {artistNameLines.map((line, index) => (
-              <Typography
-                key={index}
-                variant="subtitle1"
-                sx={{ color: 'text.secondary' }}
-                component="p"
-              >
-                {line}
-              </Typography>
-            ))}
-          </CardContent>
-        </Box>
-        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <Grid container spacing={1} sx={{ width: '100%', margin: 1, flexDirection: 'column' }}>
+        <card>
+          <CardHeader
+                avatar={
+                  <Avatar src={getTypeIcon(type)} aria-label="avater"/>
+                }
+                title={<Typography variant="h5" component="div" sx={{ width: '100%', 'margin-left': 1 }}>
+                {songName}
+              </Typography>}
+              />
+          </card>
+          <Grid sx={{ width: '100%', display: 'flex' }}>
+            <card >
+              <CardHeader
+                avatar={
+                  <Avatar src='/assets/icon/composing.png' aria-label="avater"/>
+                }
+                title="Credit"
+                subheader={artistNameLines.map((line, index) => (
+                  <Typography key={index} variant="body2">
+                    {line}
+                  </Typography>
+                ))}
+              />
+            </card>
+            <card >
+              <CardHeader
+                avatar={
+                  <Avatar src='/assets/icon/new-release.png' aria-label="avater"/>
+                }
+                title="Release"
+                subheader={releaseDate}
+              />
+            </card>
+            <card >
+              <CardHeader
+                avatar={
+                  <Avatar src='/assets/icon/LengthIcon.png' aria-label="avater"/>
+                }
+                title="Length"
+                subheader={length}
+              />
+            </card>
+            <card >
+              <CardHeader
+                avatar={
+                  <Avatar src='/assets/icon/metronome.png' aria-label="avater"/>
+                }
+                title="BPM"
+                subheader={bpm}
+              />
+            </card>
+            <card >
+              <CardHeader
+                avatar={
+                  <Avatar src='/assets/icon/rank-badge.png' aria-label="avater"/>
+                }
+                title="Level"
+                subheader={levelnum}
+              />
+            </card>
+            <card >
+              <CardHeader
+                avatar={
+                  <Avatar src='/assets/icon/sun-energy.png' aria-label="avater"/>
+                }
+                title="Stamina"
+                subheader={cost}
+              />
+            </card>
+            </Grid>
+            <Grid sx={{ width: '100%', display: 'flex' }}>
+            <card >
+              <CardHeader
+                avatar={
+                  <Avatar src='/assets/icon/musical-note.png' aria-label="avater"/>
+                }
+                title="Notes"
+                subheader={notes}
+              />
+            </card>
+            <card >
+              <CardHeader
+                avatar={
+                  <Avatar src='/assets/icon/touch.png' aria-label="avater"/>
+                }
+                title="TapNots"
+                subheader={tapicon}
+              />
+            </card>
+            <card >
+              <CardHeader
+                avatar={
+                  <Avatar src='/assets/icon/hold.png' aria-label="avater"/>
+                }
+                title="LongNote"
+                subheader={longicon}
+              />
+            </card>
+            <card >
+              <CardHeader
+                avatar={
+                  <Avatar src='/assets/icon/flick.png' aria-label="avater"/>
+                }
+                title="FlickNote"
+                subheader={flickicon}
+              />
+            </card>
+            <card >
+              <CardHeader
+                avatar={
+                  <Avatar src='/assets/icon/scrolling.png' aria-label="avater"/>
+                }
+                title="SlideNote"
+                subheader={slideicon}
+              />
+            </card>
+          </Grid>
+        </Grid>
+        {/* 著作権表示 */}
+        <Box
+          sx={{
+            position: 'fixed',
+            bottom: 15,
+            right: 15,
+            backgroundColor: '#455a64',
+            color: 'white',
+            borderRadius: 2,
+            padding: 1,
+            boxShadow: 3,
+          }}
+        >
+          <Typography variant="body2">
+            THE IDOLM@STER™& ©Bandai Namco Entertainment Inc.
+          </Typography>
         </Box>
       </Card>
-      
-      <Box
-        sx={{
-          position: 'fixed',
-          bottom: 15,
-          right: 15,
-          backgroundColor: '#455a64',
-          color: 'white',
-          borderRadius: 2,
-          padding: 1,
-          boxShadow: 3,
-        }}
-      >
-        <Typography variant="body2">
-          THE IDOLM@STER™& ©Bandai Namco Entertainment Inc.
-        </Typography>
-      </Box>
-    </Card>
     </ThemeProvider>
   );
 }

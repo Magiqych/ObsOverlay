@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./App.css";
 import { AboutMe, AboutMeJa, AboutImas, AboutImasOverLay } from "./cards";
+
 SwiperCore.use([Autoplay]);
 
 function App() {

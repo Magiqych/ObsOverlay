@@ -1,0 +1,32 @@
+[
+    {
+      "id": "javascript",
+      "label": "javascript",
+      "value": 134,
+      "color": "hsl(338, 70%, 50%)"
+    },
+    {
+      "id": "rust",
+      "label": "rust",
+      "value": 206,
+      "color": "hsl(154, 70%, 50%)"
+    },
+    {
+      "id": "php",
+      "label": "php",
+      "value": 496,
+      "color": "hsl(203, 70%, 50%)"
+    },
+    {
+      "id": "lisp",
+      "label": "lisp",
+      "value": 509,
+      "color": "hsl(67, 70%, 50%)"
+    },
+    {
+      "id": "java",
+      "label": "java",
+      "value": 553,
+      "color": "hsl(56, 70%, 50%)"
+    }
+  ]
