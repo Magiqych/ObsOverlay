@@ -110,7 +110,7 @@ export default function MusicInfo({ data }) {
               </Typography>}
               />
           </card>
-          <Grid sx={{ width: '100%', display: 'flex' }}>
+          <Grid sx={{ flexGrow: 1, display: 'flex' }}>
             <card >
               <CardHeader
                 avatar={
@@ -124,6 +124,8 @@ export default function MusicInfo({ data }) {
                 ))}
               />
             </card>
+            <Grid sx={{flexGrow: 1, display: 'flex', flexDirection: 'column'  }}>
+              <Grid sx={{ flexGrow: 1, display: 'flex' }}>
             <card >
               <CardHeader
                 avatar={
@@ -170,7 +172,7 @@ export default function MusicInfo({ data }) {
               />
             </card>
             </Grid>
-            <Grid sx={{ width: '100%', display: 'flex' }}>
+            <Grid sx={{ flexGrow: 1, display: 'flex' }}>
             <card >
               <CardHeader
                 avatar={
@@ -185,7 +187,7 @@ export default function MusicInfo({ data }) {
                 avatar={
                   <Avatar src='/assets/icon/touch.png' aria-label="avater"/>
                 }
-                title="TapNots"
+                title="Tap"
                 subheader={tapicon}
               />
             </card>
@@ -194,7 +196,7 @@ export default function MusicInfo({ data }) {
                 avatar={
                   <Avatar src='/assets/icon/hold.png' aria-label="avater"/>
                 }
-                title="LongNote"
+                title="Long"
                 subheader={longicon}
               />
             </card>
@@ -203,7 +205,7 @@ export default function MusicInfo({ data }) {
                 avatar={
                   <Avatar src='/assets/icon/flick.png' aria-label="avater"/>
                 }
-                title="FlickNote"
+                title="Flick"
                 subheader={flickicon}
               />
             </card>
@@ -212,11 +214,13 @@ export default function MusicInfo({ data }) {
                 avatar={
                   <Avatar src='/assets/icon/scrolling.png' aria-label="avater"/>
                 }
-                title="SlideNote"
+                title="Slide"
                 subheader={slideicon}
               />
             </card>
           </Grid>
+          </Grid>
+        </Grid>
         </Grid>
         {/* 著作権表示 */}
         <Box
