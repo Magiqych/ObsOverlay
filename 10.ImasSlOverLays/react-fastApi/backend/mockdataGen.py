@@ -2,7 +2,7 @@
 テストデータを生成するためのスクリプト
 """
 import base64
-from datetime import date
+from datetime import date, datetime, timedelta
 import json
 import os
 import random
@@ -40,11 +40,17 @@ def MakeSongData_json(name:str,level:str):
         json.dump(merged_data, f, ensure_ascii=False, indent=4)
     print("SongDtailのモックJSONファイルが作成されました")
 
+#  ランダムな日時を生成
+def generate_random_time(current_date: date) -> datetime:
+    hour = random.randint(0, 23)
+    minute = random.randint(0, 59)
+    second = random.randint(0, 59)
+    return datetime.combine(current_date, datetime.min.time()) + timedelta(hours=hour, minutes=minute, seconds=second)
+
 #  テストデータを生成
 def generate_test_data(start_date: date, end_date: date, num_samples: int) -> List[Record]:
     delta = (end_date - start_date) // num_samples
     records = []
-    
     for i in range(num_samples):
         current_date = start_date + i * delta
         record = Record(
@@ -60,11 +66,10 @@ def generate_test_data(start_date: date, end_date: date, num_samples: int) -> Li
             HighScore=275714 + random.randint(-500, 500),
             Prp=str(831 + random.randint(-10, 10)),
             UPrp=str(59 + random.randint(-5, 5)),
-            Date=current_date.isoformat()
+            Date=generate_random_time(current_date).isoformat()
         )
         records.append(record)
-    
-    return records
+    return sorted(records, key=lambda x: datetime.fromisoformat(x.__dict__["Date"]))
 
 #  RecordオブジェクトのリストをJSONファイルとして保存
 def save_records_to_json(records: List[Record], filename: str):
