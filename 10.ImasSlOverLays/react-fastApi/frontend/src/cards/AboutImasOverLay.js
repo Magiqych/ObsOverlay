@@ -125,7 +125,7 @@ export default function AboutImasOverLay() {
           borderRadius: 2,
           padding: 1,
           boxShadow: 3,
-          zIndex: 1000,
+          zIndex: 1
         }}
       >
         <Typography variant="body2">

@@ -66,7 +66,7 @@ function App() {
   return (
     <div style={{ width: "1920px", height: "1080px" }}>
       {/* アイドルマスターシンデレラガールズ　カード */}
-      <div style={{ position: "absolute", left: 0, bottom: 0 }}>
+      <div style={{ position: "absolute", left: 0, bottom: 0 ,zIndex:100}}>
         <CardHighlight />
       </div>
       <div
@@ -82,8 +82,11 @@ function App() {
         <Swiper
           class="NormalSwiper"
           modules={[Autoplay]}
-          autoplay={{ delay: 60000 }}
+          autoplay={{ delay: 6000 }}
           onAutoplayTimeLeft={onAutoplayTimeLeft}
+          loop={true}
+          slidesPerView={1}
+          spaceBetween={500}
         >
           <SwiperSlide>
             <AboutMe />
@@ -94,11 +97,11 @@ function App() {
           <SwiperSlide>
             <AboutImas />
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <AboutImasOverLay />
-          </SwiperSlide>
+          </SwiperSlide> */}
           <div className="autoplay-progress" slot="container-end"
-            style={{ position: 'absolute', right: '0px', bottom: '200px', zIndex: '20' }}>
+            style={{ position: 'absolute', right: '0px', bottom: '180px'}}>
             <svg viewBox="0 0 48 48" ref={progressCircle}>
               <circle cx="24" cy="24" r="20"></circle>
             </svg>

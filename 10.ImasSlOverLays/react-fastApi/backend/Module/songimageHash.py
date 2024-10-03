@@ -1,3 +1,4 @@
+# 画像のハッシュ値を計算し、JSONファイルに保存するスクリプト
 import os
 import io
 import uuid
