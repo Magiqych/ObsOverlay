@@ -3,7 +3,7 @@ const allowdownsrc = '/assets/icon/arrowDown.png';
 const alowflatsrc = '/assets/icon/arrowFlat.png';
 
 class ScoreInfo {
-  constructor(ScoreData, latestRecord) {
+  constructor(ScoreData, latestRecord=[]) {
     this.allnotes = ScoreData.PERFECT + ScoreData.GREAT + ScoreData.NICE + ScoreData.BAD + ScoreData.MISS;
     this.ScoreData = ScoreData;
     this.latestRecord = latestRecord;

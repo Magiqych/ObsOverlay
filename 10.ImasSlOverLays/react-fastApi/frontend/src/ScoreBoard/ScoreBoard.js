@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { Card, Typography, CardMedia,CircularProgress } from '@mui/material';
+import { Card, Typography, CardMedia, CircularProgress } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 // 独自クラスのインポート
 import ScoreInfo from './ScoreInfo'; // ScoreInfoクラスをインポート
@@ -13,8 +13,6 @@ import MyResponsiveParallelCoordinates from './MyResponsiveParallelCoordinates';
 // データ生成関数のインポート
 import generateScoreData from './generateScoreData'; // ライングラフデータ生成関数をインポート
 import generateRadialBarData from './generateRadialBarData';// ラジカルバーデータ生成関数をインポート
-import generateBoxPlotData from './generateBoxPlotData'; // ボックスプロットデータ生成関数をインポート
-import generateParallelCoordinatesData from './generateParallelCoordinatesData';
 
 const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
   // Muiマテリアル関連
@@ -60,6 +58,10 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
       const scoreInfoInstance = new ScoreInfo(ScoreData, latestRecord);
       setScoreInfo(scoreInfoInstance.info);
     }
+    else {
+      const scoreInfoInstance = new ScoreInfo(ScoreData);
+      setScoreInfo(scoreInfoInstance.info);
+    }
   }, [latestRecord, ScoreData, RecordsData]);
 
   // レコード情報の更新
@@ -68,10 +70,10 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
     setRecordInfo(recordInfoInstance);
   }, [RecordsData]);
 
-  if (!songInfo || !scoreInfo || !recordInfo) {
+  if (!songInfo || !scoreInfo) {
     return (
       <ThemeProvider theme={theme}>
-        <Grid container spacing={2} sx={{ width: pagewidth, height: pageheight ,backgroundColor: 'rgb(250, 250, 251)', padding: 1, 'font-family': 'Open Sans, sans-serif', color: '#111', 'font-weight': '200' , justifyContent: 'center', alignItems: 'center' }}>
+        <Grid container spacing={2} sx={{ width: pagewidth, height: pageheight, backgroundColor: 'rgb(250, 250, 251)', padding: 1, 'font-family': 'Open Sans, sans-serif', color: '#111', 'font-weight': '200', justifyContent: 'center', alignItems: 'center' }}>
           <CircularProgress size={500} />
         </Grid>
       </ThemeProvider>
@@ -108,7 +110,17 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
             {scoreInfo && ['PERFECT', 'GREAT', 'NICE', 'BAD', 'MISS'].map((line, index) => {
               const scoredivisionname = line;
               const scoredivisionvalue = scoreInfo[scoredivisionname];
-              const graphData = generateScoreData(recordInfo, scoredivisionname, 20);
+              let graphData = [];
+              try {
+                if (!recordInfo || Object.keys(recordInfo).length === 0) {
+                  throw new Error("recordInfo is empty or not set");
+                }
+                graphData = generateScoreData(recordInfo, scoredivisionname, 20);
+              } catch (error) {
+                console.error("Error generating graph data:", error.message);
+                // 必要に応じて、デフォルト値を設定するか、他のエラーハンドリングを行います
+                graphData = []; // 例として空の配列を設定
+              }
               // カードの背景色を線形グラデーションに設定
               let cardBackground;
               switch (line) {
@@ -136,20 +148,23 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
                     <Typography variant="subtitle1" gutterBottom>
                       {scoredivisionname}
                     </Typography>
-                    <Grid sx={{ display: 'flex' }}>
-                      <Grid>
+                    <Grid sx={{ display: 'flex', alignItems: 'center' }}>
+                      <Grid item>
+                        <img src={scoredivisionvalue.icon} alt="icon" style={{ width: '20px', height: '20px', marginRight: '8px' }} />
+                      </Grid>
+                      <Grid item>
                         <Typography variant="h6" gutterBottom>
                           {scoredivisionvalue.value}
                         </Typography>
                       </Grid>
-                      <Grid textAlign={"end"} sx={{ width: '100%' }}>
+                      <Grid item textAlign={"end"} sx={{ width: '100%' }}>
                         <Typography variant="h6">
                           {scoredivisionvalue.rate}%
                         </Typography>
                       </Grid>
                     </Grid>
                     <Grid height={50}>
-                      <MyresponsiveLine data={graphData} />
+                      {graphData.length > 0 && <MyresponsiveLine data={graphData} />}
                     </Grid>
                   </Grid>
                 </Card>
@@ -166,22 +181,22 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
                   Score: {scoreInfo.SCORE.value}
                 </Typography>
                 <Grid sx={{ height: 300, maxWidth: 400, color: 'white' }}>
-                  <MyResponsiveRadialBar data={generateRadialBarData(scoreInfo, recordInfo, 0)} />
+                  <MyResponsiveRadialBar data={generateRadialBarData(scoreInfo)} />
                 </Grid>
               </Card>
 
               {/* ボックスプロット表示 */}
               <Card sx={{ background: 'linear-gradient(to top, #4481eb 0%, #04befe 100%)' }}>
                 <Grid sx={{ height: 370 }}>
-                  <MyResponsiveBoxPlot data={generateBoxPlotData(recordInfo, ['GREAT', 'NICE', 'BAD', 'MISS'])} />
+                  <MyResponsiveBoxPlot recordInfo={recordInfo} members={['GREAT', 'NICE', 'BAD', 'MISS']} />
                 </Grid>
               </Card>
             </Grid>
 
             {/* スコア情報表示 履歴 */}
             <Grid container spacing={2} sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
-              <Card sx={{height:740, background: 'linear-gradient(to top, #209cff 0%, #68e0cf 100%)' }}>
-                <MyResponsiveParallelCoordinates scoreInfo={scoreInfo} recordInfo={recordInfo} members={['SCORE','COMBO','UPRP','PERFECT','GREAT','NICE','BAD','MISS']} limit={2}/>
+              <Card sx={{ height: 740, background: 'linear-gradient(to top, #209cff 0%, #68e0cf 100%)' }}>
+                <MyResponsiveParallelCoordinates scoreInfo={scoreInfo} recordInfo={recordInfo} members={['SCORE', 'COMBO', 'UPRP', 'PERFECT', 'GREAT', 'NICE', 'BAD', 'MISS']} limit={4} />
               </Card>
             </Grid>
           </Grid>
