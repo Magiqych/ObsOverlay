@@ -21,7 +21,6 @@ const generateScoreData = (recordInfo, field, dataCount) => {
     }
   ];
 
-  console.log('Generated Data:', data); // デバッグ用
   return data;
 };
 

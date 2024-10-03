@@ -2,10 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Card, Typography, CardMedia } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import MyresponsiveLine from './MyResponsiveLine';
+// 独自クラスのインポート
 import ScoreInfo from './ScoreInfo'; // ScoreInfoクラスをインポート
 import RecordInfo from './RecordInfo'; // RecordInfoクラスをインポート
-import generateScoreData from './generateScoreData'; // データ生成関数をインポート
+//nivoコンポーネントのインポート
+import MyresponsiveLine from './MyResponsiveLine';
+import MyResponsiveRadialBar from './MyResponsiveRadialBar';
+import MyResponsiveBoxPlot from './MyResponsiveBoxPlot';
+// データ生成関数のインポート
+import generateScoreData from './generateScoreData'; // ライングラフデータ生成関数をインポート
+import generateRadialBarData from './generateRadialBarData';// ラジカルバーデータ生成関数をインポート
+import generateBoxPlotData from './generateBoxPlotData'; // ボックスプロットデータ生成関数をインポート
 
 const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
   // Muiマテリアル関連
@@ -70,7 +77,7 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
   //   }
   // }, [recordInfo]);
 
-  if (!songInfo && !scoreInfo) {
+  if (!songInfo || !scoreInfo || !recordInfo) {
     return (
       <div>データがありません</div>
     );
@@ -78,9 +85,11 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
     return (
       <ThemeProvider theme={theme}>
         <Grid container spacing={2} sx={{ width: pagewidth, height: pageheight, display: 'flex', flexDirection: 'column', backgroundColor: 'rgb(250, 250, 251)', padding: 1, 'font-family': 'Open Sans, sans-serif', color: '#111', 'font-weight': '200' }}>
+
+          {/* ヘッダー表示領域 */}
           <Grid container spacing={2} sx={{ width: pagewidth, height: 70, display: 'flex' }}>
             {/*楽曲画像表示*/}
-            <Card sx={{ display: 'flex' }}>
+            <Card>
               <CardMedia
                 component="img"
                 sx={{ width: 70, height: 70, objectFit: 'contain' }}
@@ -99,8 +108,8 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
             </Grid>
           </Grid>
 
-          {/* スコア情報表示 */}
-          <Grid container spacing={2} sx={{ width: '100%', height: 100, display: 'flex' }}>
+          {/* スコア情報表示 PERFECT, GREAT, NICE, BAD, MISS */}
+          <Grid container spacing={2} sx={{ width: '100%', height: 140, display: 'flex' }}>
             {scoreInfo && ['PERFECT', 'GREAT', 'NICE', 'BAD', 'MISS'].map((line, index) => {
               const scoredivisionname = line;
               const scoredivisionvalue = scoreInfo[scoredivisionname];
@@ -127,7 +136,7 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
                   cardBackground = 'linear-gradient(90deg, rgba(187, 255, 239, 1), rgba(236, 237, 203, 1) 34%, rgba(248, 227, 183, 1) 72%, rgba(255, 155, 252, 1) 97%)';
               }
               return (
-                <Card key={index} sx={{ padding: 1, flexGrow: 1 , background: cardBackground ,color:'white'}}>
+                <Card key={index} sx={{ padding: 1, flexGrow: 1, background: cardBackground, color: 'white' }}>
                   <Grid sx={{ display: 'flex', flexDirection: 'column' }}>
                     <Typography variant="subtitle1" gutterBottom>
                       {scoredivisionname}
@@ -152,6 +161,36 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
               );
             })}
           </Grid>
+          
+          {/* スコア情報表示 COMBO,SCORE,履歴 */}
+          <Grid container spacing={2} sx={{ width: '100%',flexGrow:1, height:'auto', display: 'flex' }}>
+            {/*  */}
+            <Grid container spacing={2} sx={{display: 'flex',flexDirection:'column',width:420}}>
+              {/*　ハイスコア、スコア表示 */}
+              <Card sx={{ padding: 1, background: 'radial-gradient(circle 248px at center, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)', color: 'white' ,flexDirection:'column'}}>
+                <Typography variant="h6" gutterBottom>
+                  Score: {scoreInfo.SCORE.value}
+                </Typography>
+                <Grid sx={{height:300 ,maxWidth:400,color:'white'}}>
+                  <MyResponsiveRadialBar data={generateRadialBarData(scoreInfo, recordInfo, 0)}/>
+                </Grid>
+              </Card>
+              {/* ボックスプロット表示 */}
+              <Card sx={{background: 'linear-gradient(to top, #4481eb 0%, #04befe 100%)'}}>
+                <Grid sx={{height:360}}>
+                  <MyResponsiveBoxPlot data={generateBoxPlotData(recordInfo,['GREAT', 'NICE', 'BAD', 'MISS'])}/>
+                </Grid>
+              </Card>
+            </Grid>
+
+            {/* スコア情報表示 履歴 */}
+            <Grid container spacing={2} sx={{display: 'flex',flexDirection:'column',flexGrow:3 ,width:800,height:500}}>
+              <Grid sx={{display: 'flex',flexDirection:'column'}}>
+
+              </Grid>
+            </Grid>
+          </Grid>
+
         </Grid>
       </ThemeProvider>
     )
