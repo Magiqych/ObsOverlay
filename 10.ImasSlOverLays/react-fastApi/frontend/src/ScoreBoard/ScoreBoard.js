@@ -180,7 +180,7 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
 
             {/* スコア情報表示 履歴 */}
             <Grid container spacing={2} sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
-              <Card sx={{height:500, background: 'linear-gradient(to top, #209cff 0%, #68e0cf 100%)' }}>
+              <Card sx={{height:740, background: 'linear-gradient(to top, #209cff 0%, #68e0cf 100%)' }}>
                 <MyResponsiveParallelCoordinates scoreInfo={scoreInfo} recordInfo={recordInfo} members={['SCORE','COMBO','UPRP','PERFECT','GREAT','NICE','BAD','MISS']} limit={2}/>
               </Card>
             </Grid>
