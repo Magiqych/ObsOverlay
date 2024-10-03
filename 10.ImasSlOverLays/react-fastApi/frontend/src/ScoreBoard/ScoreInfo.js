@@ -28,8 +28,8 @@ class ScoreInfo {
       COMBO: this.createScoreDetail(this.ScoreData.COMBO, 0, alowflatsrc, false),
       SCORE: this.createScoreDetail(this.ScoreData.SCORE, 0, alowflatsrc, false),
       HIGHSCORE: this.createScoreDetail(this.ScoreData.HIGHSCORE, 0, alowflatsrc, false),
-      URPM: this.createScoreDetail(this.ScoreData.URPM, 0, alowflatsrc, false),
-      RPM: this.createScoreDetail(this.ScoreData.RPM, 0, alowflatsrc, false),
+      UPRP: this.createScoreDetail(this.ScoreData.UPRP, 0, alowflatsrc, false),
+      PRP: this.createScoreDetail(this.ScoreData.PRP, 0, alowflatsrc, false),
       allnotes: this.allnotes
     };
   }
@@ -43,8 +43,8 @@ class ScoreInfo {
     const difcombo = this.ScoreData.COMBO - this.latestRecord.Combo;
     const difscore = this.ScoreData.SCORE - this.latestRecord.Score;
     const difhighscore = this.ScoreData.HIGHSCORE - this.latestRecord.HighScore;
-    const difurpm = this.ScoreData.URPM - this.latestRecord.URPM;
-    const difrpm = this.ScoreData.RPM - this.latestRecord.RPM;
+    const difuprp = this.ScoreData.UPRP - this.latestRecord.UPRP;
+    const difprp = this.ScoreData.PRP - this.latestRecord.PRP;
 
     return {
       PERFECT: this.createScoreDetail(this.ScoreData.PERFECT, difperfect, this.getIcon(difperfect)),
@@ -55,8 +55,8 @@ class ScoreInfo {
       COMBO: this.createScoreDetail(this.ScoreData.COMBO, difcombo, this.getIcon(difcombo, false)),
       SCORE: this.createScoreDetail(this.ScoreData.SCORE, difscore, this.getIcon(difscore, false)),
       HIGHSCORE: this.createScoreDetail(this.ScoreData.HIGHSCORE, difhighscore, this.getIcon(difhighscore, false)),
-      URPM: this.createScoreDetail(this.ScoreData.URPM, difurpm, this.getIcon(difurpm, false)),
-      RPM: this.createScoreDetail(this.ScoreData.RPM, difrpm, this.getIcon(difrpm, false)),
+      UPRP: this.createScoreDetail(this.ScoreData.UPRP, difuprp, this.getIcon(difuprp, false)),
+      PRP: this.createScoreDetail(this.ScoreData.PRP, difprp, this.getIcon(difprp, false)),
       allnotes: this.allnotes
     };
   }

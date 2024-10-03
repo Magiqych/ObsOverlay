@@ -40,8 +40,6 @@ const generateBoxPlotData = (recordInfo, members) => {
             value: value
         }));
     });
-
-    console.log('BoxPlotData:', data); // デバッグ用
     return data;
 };
 
