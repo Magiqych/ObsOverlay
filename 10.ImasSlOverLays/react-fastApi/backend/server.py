@@ -15,9 +15,11 @@ from models import *
 # スクリプト自身のディレクトリを取得
 script_dir = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join(script_dir, '..','..','..',"00.DataStorage","cinderella.idolmaster.sl-stage.sqlite")
+# 曲情報を格納する変数
 songDetail = None
 songLevelDetail = None
 songMetaData = None
+songRecords = None
 # 曲選択情報を格納するクラス
 class SongSelection(BaseModel):
     SongName: str
@@ -33,7 +35,8 @@ app.add_middleware(
     allow_methods=["*"],  # すべてのHTTPメソッドを許可
     allow_headers=["*"],  # すべてのヘッダーを許可
 )
-app.mount("/", StaticFiles(directory=os.path.join(script_dir, 'public')), name="public")
+# 静的ファイルのルーティング
+app.mount("/public", StaticFiles(directory=os.path.join(script_dir, 'public')), name="public")
 
 # WebSocket接続を管理するためのリスト
 websockets = []
@@ -59,16 +62,30 @@ async def GetSongData_json(name:str,level:str):
     songLevelDetail_dict = {key: value for key, value in songLevelDetail_dict.items() if not isinstance(value, bytes)}
     merged_data = {**songDetail_dict, **songLevelDetail_dict}
     # 新しいキーと値を追加
+    if level == "MASTER_plus":
+        level = "MASTER+"
     merged_data["SelectedLevel"] = level
     # マージしたデータをJSONファイルとして保存
-    await save_merged_data(merged_data,os.path.join(script_dir, 'public','data','song_detail.json'))
+    await save_merged_data(merged_data,os.path.join(script_dir, 'public','data','songInfo.json'))
+
+async def GetSongRecord_json(name:str,level:str):
+    level = level.upper()
+    # データベースから曲の詳細情報を取得
+    songRecords = get_records_from_db(db_path,name,level)
+    # レコード情報を辞書に変換
+    songRecords_dict = [record.__dict__ for record in songRecords]
+    # マージしたデータをJSONファイルとして保存
+    await save_merged_data(songRecords_dict,os.path.join(script_dir, 'public','data','recordInfo.json'))
+
 
 # 非同期にファイルを書き込む
 async def save_merged_data(data,path):
+    # ディレクトリが存在しない場合は作成
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     # 非同期にファイルを書き込む
     async with aiofiles.open(path, 'w', encoding='utf-8') as f:
         await f.write(json.dumps(data, ensure_ascii=False, indent=4))
-        print("SongDetailのJSONファイルが作成されました")
+        print(f"作成されました：{path}")
 
 # WebSocketエンドポイントを追加
 @app.websocket("/ws")
@@ -85,16 +102,20 @@ async def websocket_endpoint(websocket: WebSocket):
 # 曲選択が行われた
 @app.post("/select_song")
 async def select_song(selection:SongSelection):
-    '''
-    曲選択が行われた際にSongDetailテーブルから曲の詳細情報を取得し、
-    JSONファイルとして保存するメソッド。
-    '''
     await GetSongData_json(selection.SongName,selection.Level)
     # WebSocket接続にメッセージを送信
     for websocket in websockets:
-        await websocket.send_text("Songselected")
+        await websocket.send_text("select_song")
+    await GetSongRecord_json(selection.SongName,selection.Level)
 
-
+@app.post("/test_select_song")
+async def test_select_song():
+    selection = SongSelection(SongName="Take me☆Take you",Level="master+")
+    await GetSongData_json(selection.SongName,selection.Level)
+    # WebSocket接続にメッセージを送信
+    for websocket in websockets:
+        await websocket.send_text("select_song")
+    await GetSongRecord_json(selection.SongName,selection.Level)
 
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=8000)
