@@ -155,14 +155,14 @@ export function CardHighlight() {
       <Grid item>
         <CustomCard
           color="#fc7944"
-          brand={"©Bandai Namco Entertainment Inc."}
+          brand={<>THE IDOLM@STER™& <br/>©Bandai Namco Entertainment Inc.</>}
           cover={
             "/assets/static/img_visual.jpg"
           }
           logo={"/assets/static/GameLogo.webp"}
           title={
             <>
-              The Idolmaster
+              THE IDOLM@STER
               <br />Cinderella Girls
             </>
           }

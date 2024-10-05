@@ -26,7 +26,7 @@ const NormalContent = () => {
         <div
             style={{
                 position: "absolute",
-                left: "335px",
+                left: "350px",
                 bottom: 0,
                 height: "230px",
                 width: "1140px",
@@ -36,7 +36,7 @@ const NormalContent = () => {
             <Swiper
                 className="NormalSwiper"
                 modules={[Autoplay]}
-                autoplay={{ delay: 6000 }}
+                autoplay={{ delay: 60000 }}
                 onAutoplayTimeLeft={onAutoplayTimeLeft}
                 loop={true}
                 slidesPerView={1}
