@@ -220,26 +220,21 @@ def process_frame(frame):
             CropImage = MaskedImage[y1:y2,x1:x2]
             gray = cv2.cvtColor(CropImage, cv2.COLOR_BGR2GRAY)
             # 二値化
-            _, binary = cv2.threshold(gray, 70, 255, cv2.THRESH_BINARY)
+            _, binary = cv2.threshold(gray, 128, 255, cv2.THRESH_BINARY)
             #アンチエイリアスを使用して拡大
             scale_factor = 5
             resized_binary = cv2.resize(binary, None, fx=scale_factor, fy=scale_factor, interpolation=cv2.INTER_LINEAR)
             # OCRを実行（英語と数字のみ）
             custom_config = r'--oem 3 --psm 6 -c tessedit_char_whitelist=0123456789'
-            text = pytesseract.image_to_string(resized_binary, config=custom_config)
+            text = pytesseract.image_to_string(resized_binary, lang='eng',config=custom_config)
             if i == len(regions_sorted) - 1:
                 RawScoreText += re.sub(r'\D', '', text)
             else:
                 RawScoreText += re.sub(r'\D', '', text) + ","
         # スコアチェック
         score_list = RawScoreText.split(",")
-        bad_index = 3
+        bad_index = 0
         for i in range(len(score_list)):
-            if score_list[i].startswith("0") and score_list[i] != "0":
-                score_list[i] = "8" + score_list[i][1:]
-            if score_list[i] == "":
-                score_list[i] = "0"
-                bad_index -= 1
             if bad_index == 0:
                 return
         # 変更されたリストを再度カンマで結合
@@ -388,6 +383,6 @@ if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
     template_source = os.path.join(script_dir, "Assets", "Mask")
     templates = load_templates(template_source)
-    #input_source = os.path.join(script_dir, "Assets", "TestData2", "ScoreBasicRight.png")
-    input_source = "4-700"
+    input_source = os.path.join(script_dir, "Assets", "TestData2", "ScoreBasicRight.png")
+    # input_source = "4-700"
     main(input_source)
