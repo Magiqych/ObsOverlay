@@ -3,8 +3,21 @@ const allowdownsrc = '/assets/icon/arrowDown.png';
 const alowflatsrc = '/assets/icon/arrowFlat.png';
 
 class ScoreInfo {
-  constructor(ScoreData, latestRecord=[]) {
-    this.allnotes = ScoreData.PERFECT + ScoreData.GREAT + ScoreData.NICE + ScoreData.BAD + ScoreData.MISS;
+  constructor(ScoreData, latestRecord = []) {
+    try {
+      const perfect = parseInt(ScoreData.PERFECT, 10);
+      const great = parseInt(ScoreData.GREAT, 10);
+      const nice = parseInt(ScoreData.NICE, 10);
+      const bad = parseInt(ScoreData.BAD, 10);
+      const miss = parseInt(ScoreData.MISS, 10);
+      if (isNaN(perfect) || isNaN(great) || isNaN(nice) || isNaN(bad) || isNaN(miss)) {
+        throw new Error('ScoreDataの値が数値ではありません');
+      }
+      this.allnotes = perfect + great + nice + bad + miss;
+    } catch (error) {
+      console.error('エラーが発生しました:', error.message);
+      this.allnotes = 1; // デフォルト値を設定
+    }
     this.ScoreData = ScoreData;
     this.latestRecord = latestRecord;
     this.info = this.calculateScoreInfo();

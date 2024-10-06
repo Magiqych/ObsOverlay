@@ -103,8 +103,8 @@ async def SetSongData_json(name:str,level:str):
     level = level.upper()
     # データベースから曲の詳細情報を取得
     songDetail = get_song_details_from_db(db_path,name)
-    # if level == "MASTER+":
-    #     level = "MASTER_plus"
+    if level == "MASTER+":
+        level = "MASTER_plus"
     songLevelDetail = get_song_level_details_from_db(db_path,songDetail.__dict__[level])
     # songDetailとsongLevelDetailを辞書に変換してマージ
     songDetail_dict = songDetail.__dict__
