@@ -75,7 +75,7 @@ def update_frame():
     ret, frame = capture.read()
     if ret:
         # 解像度を1/4にリサイズして表示
-        display_frame = cv2.resize(frame, (frame.shape[1] // 4, frame.shape[0] // 4))
+        display_frame = cv2.resize(frame, (frame.shape[1] // 2, frame.shape[0] // 2))
         cv2_image = cv2.cvtColor(display_frame, cv2.COLOR_BGR2RGB)
         pil_image = Image.fromarray(cv2_image)
         imgtk = ImageTk.PhotoImage(image=pil_image)
