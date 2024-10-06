@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 import datetime
 import json
+import subprocess
 import webbrowser
 import aiofiles
 from fastapi import FastAPI, HTTPException, WebSocket
@@ -311,23 +312,25 @@ async def test_set_score():
     await set_score(scoreData)
 #endregion
 
+async def run_ocr_cli():
+    '''
+    OCR CLIを非同期で実行する関数
+    '''
+    # 別のPythonインスタンスでOcrCli.pyを実行
+    process = await asyncio.create_subprocess_exec(
+        os.path.join(script_dir, '..','..','..','.venv','Scripts','python.exe'),
+        '-Xfrozen_modules=off', 
+        os.path.join(script_dir, 'OcrCli.py'),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE
+    )
+
+async def main():
+    await run_ocr_cli()
+    # uvicornを非同期で実行
+    config = uvicorn.Config("server:app", host="localhost", port=8000, log_level="info")
+    server = uvicorn.Server(config)
+    await server.serve()
 # main
 if __name__ == "__main__":
-    '''
-    メイン関数
-    '''
-    # async def main():
-    #     data = {"key": "value"}
-    #     path = os.path.join(script_dir, 'public', 'data', 'test_data.json')
-    #     await SaveJsonFileAsync(data, path)
-    #     hoge = await GetSongImage("Take me☆Take you")
-    #     hoge = 0
-    # asyncio.run(main())
-    # サーバーを非同期で起動し、ブラウザで/docsを開く
-    # import threading
-
-    # def open_docs():
-    #     webbrowser.open("http://127.0.0.1:8000/docs")
-
-    # threading.Timer(1.0, open_docs).start()
-    uvicorn.run(app, host="localhost", port=8000)
+    asyncio.run(main())

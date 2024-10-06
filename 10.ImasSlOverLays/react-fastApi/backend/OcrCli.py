@@ -1,3 +1,4 @@
+import datetime
 import json
 import re
 import time
@@ -135,6 +136,31 @@ def extract_black_regions(masked_image):
         y2 = y1 + h
         regions.append([x1, y1, x2, y2])
     return regions
+
+def send_request_with_retries(url, message=None, retries=3, interval=5):
+    '''
+    指定された回数だけリクエストを送信し、成功するかタイムアウトするまでリトライする関数
+    :param url: URL
+    :param message: メッセージ
+    :param retries: リトライ回数
+    :param interval: リトライ間隔（秒）
+    :return: レスポンス
+    '''
+    for attempt in range(retries):
+        try:
+            if message is None:
+                response = requests.get(url)
+            else:
+                response = requests.post(url, json=message)
+            response.raise_for_status()  # HTTPエラーが発生した場合に例外を発生させる
+            return response
+        except requests.RequestException as e:
+            print(f"Failed to send request (attempt {attempt + 1}/{retries}): {e}")
+            if attempt < retries - 1:
+                time.sleep(interval)
+            else:
+                print("All retry attempts failed.")
+                return None
 #endregion
 
 #region イベントハンドラ
@@ -143,14 +169,27 @@ def on_selected_item_property_change(property_name, value):
         print(f'{selected_item.song_name} - {selected_item.difficulty}')
         url = "http://localhost:8000/select_song"
         message = {"SongName": selected_item.song_name, "Level": selected_item.difficulty}
-        requests.post(url, json=message)
+        response = send_request_with_retries(url, message)
+        if response:
+            print("Request succeeded:", response.json())
+        else:
+            print("Request failed after all retries.")
 
 def on_score_property_change(property_name, value):
+    global last_update_time
+    current_time = datetime.datetime.now()
+    if last_update_time and (current_time - last_update_time).total_seconds() < 60:
+        return
+    # last_update_timeを現在の時間に更新
+    last_update_time = current_time
     if(score.rawResult is not None and score.rawResult != ""):
         url = "http://localhost:8000/set_score"
         message = {"RawScore": score.rawResult}
-        requests.post(url, json=message)
-        print(score.rawResult)
+        response = send_request_with_retries(url, message)
+        if response:
+            print("Request succeeded:", response.json())
+        else:
+            print("Request failed after all retries.")
 #endregion
 
 #region 変数定義
@@ -164,6 +203,7 @@ FrameSkipper = 0
 templates = []
 selected_item = SelectedItem()
 selected_item.add_listener(on_selected_item_property_change)
+last_update_time = None
 score = Score()
 score.add_listener(on_score_property_change)
 pytesseract.pytesseract.tesseract_cmd = r'D:\00.Software\Tesseract\tesseract.exe'
@@ -235,12 +275,12 @@ def process_frame(frame):
         score_list = RawScoreText.split(",")
         bad_index = 0
         for i in range(len(score_list)):
-            if bad_index == 0:
+            if score_list[i] == "" and bad_index == 0:
                 return
         # 変更されたリストを再度カンマで結合
         RawScoreText = ",".join(score_list)
         score.rawResult = RawScoreText
-        return
+        return RawScoreText
     #スタミナ消費画面が出たらフレームスキップ
     Stamina = np.sum(np.array(cv2.subtract(frameCopy, templates['Stamina.png'])), axis=None)
     threshold = 1200000
@@ -376,13 +416,10 @@ def main(input_source):
             cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    # if len(sys.argv) != 2:
-    #     print("Usage: python OcrCli.py <input_source>")
-    #     sys.exit(1)
-    # input_source = sys.argv[1]
     script_dir = os.path.dirname(os.path.abspath(__file__))
     template_source = os.path.join(script_dir, "Assets", "Mask")
     templates = load_templates(template_source)
-    input_source = os.path.join(script_dir, "Assets", "TestData2", "ScoreBasicRight.png")
-    # input_source = "4-700"
+    
+    # input_source = os.path.join(script_dir, "Assets", "TestData2", "ScoreBasicRight.png")
+    input_source = "4-700"
     main(input_source)
