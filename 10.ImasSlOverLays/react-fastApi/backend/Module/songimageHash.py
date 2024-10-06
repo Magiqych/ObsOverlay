@@ -37,10 +37,16 @@ for row in rows:
         # 使用可能なすべてのハッシュアルゴリズム
         phash_256 = imagehash.phash(image, hash_size=16)
         dhash_256 = imagehash.dhash(image, hash_size=32)
+        ahash = imagehash.average_hash(image)
+        chash = imagehash.colorhash(image)
+        # crhash = imagehash.crop_resistant_hash(image)
         # UID、Name、ハッシュ値のマッピングを保存
         SongHash[name] = {
             'phash': str(phash_256),
-            'dhash': str(dhash_256)
+            'dhash': str(dhash_256),
+            'ahash': str(ahash),
+            'chash': str(chash),
+            # 'crhash': str(crhash)
         }
 
 # JSONファイルにUID、Name、ハッシュ値のマッピングを保存

@@ -104,13 +104,16 @@ def load_templates(template_dir):
 
 # ハッシュ値と最も近い画像を検索する関数
 def find_closest_image(combined_hash, song_images):
-    phash_256, dhash_256 = combined_hash
+    phash_256, dhash_256, ahash, chash = combined_hash
     min_distance = float('inf')
     closest_image = None
     for uid, data in song_images.items():
         image_phash = imagehash.hex_to_hash(data['phash'])
         image_dhash = imagehash.hex_to_hash(data['dhash'])
-        distance = (phash_256 - image_phash) + (dhash_256 - image_dhash)
+        image_ahash = imagehash.hex_to_hash(data['ahash'])
+        image_chash = imagehash.hex_to_hash(data['chash'])
+        distance = (phash_256 - image_phash) + (dhash_256 - image_dhash) + \
+            (ahash - image_ahash) + (chash - image_chash)
         if distance < min_distance:
             min_distance = distance
             closest_image = uid
@@ -340,7 +343,9 @@ def process_frame(frame):
     pil_image = Image.fromarray(rgb_image)
     phash_256 = imagehash.phash(pil_image, hash_size=16)
     dhash_256 = imagehash.dhash(pil_image, hash_size=32)
-    combined_hash = (phash_256, dhash_256)
+    ahash = imagehash.average_hash(pil_image)
+    chash = imagehash.colorhash(pil_image)
+    combined_hash = (phash_256, dhash_256, ahash, chash)
     selected_item.song_name = find_closest_image(combined_hash, song_images)
     return
 
