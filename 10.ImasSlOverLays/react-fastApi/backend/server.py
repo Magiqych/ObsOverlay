@@ -103,8 +103,8 @@ async def SetSongData_json(name:str,level:str):
     level = level.upper()
     # データベースから曲の詳細情報を取得
     songDetail = get_song_details_from_db(db_path,name)
-    if level == "MASTER+":
-        level = "MASTER_plus"
+    # if level == "MASTER+":
+    #     level = "MASTER_plus"
     songLevelDetail = get_song_level_details_from_db(db_path,songDetail.__dict__[level])
     # songDetailとsongLevelDetailを辞書に変換してマージ
     songDetail_dict = songDetail.__dict__
@@ -257,7 +257,7 @@ async def set_score(rawscore:ScoreOCRData):
         Date=now.strftime('%Y-%m-%d %H:%M:%S')
     )
     # スコア情報を保存
-    # insert_record_into_db(db_path,record)
+    insert_record_into_db(db_path,record)
     # スコアOCRの生データを分割してScoreDataオブジェクトに変換
     score = ScoreData(
         Perfect=fieldsValue[0],

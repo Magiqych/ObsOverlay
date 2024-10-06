@@ -10,7 +10,7 @@ import imagehash
 # スクリプト自身のディレクトリを取得
 script_dir = os.path.dirname(os.path.abspath(__file__))
 # データベースファイルのパス
-db_path = os.path.join(script_dir,"..","..","..", '00.DataStorage', 'cinderella.idolmaster.sl-stage.sqlite')
+db_path = os.path.join(script_dir,"..","..","..","..", '00.DataStorage', 'cinderella.idolmaster.sl-stage.sqlite')
 # JSONファイルのパス
 json_path = os.path.join(script_dir,"..","Assets",'SongImageHash.json')
 # SQLiteデータベースに接続
@@ -32,13 +32,15 @@ for row in rows:
 
         # 画像を保存
         image = Image.open(io.BytesIO(image_blob))
-
-        # 画像のハッシュ値を計算
-        image_hash = str(imagehash.phash(image))
-
+        #(145, 195)にリサイズ
+        image = image.resize((145, 195))
+        # 使用可能なすべてのハッシュアルゴリズム
+        phash_256 = imagehash.phash(image, hash_size=16)
+        dhash_256 = imagehash.dhash(image, hash_size=32)
         # UID、Name、ハッシュ値のマッピングを保存
         SongHash[name] = {
-            "hash": image_hash
+            'phash': str(phash_256),
+            'dhash': str(dhash_256)
         }
 
 # JSONファイルにUID、Name、ハッシュ値のマッピングを保存

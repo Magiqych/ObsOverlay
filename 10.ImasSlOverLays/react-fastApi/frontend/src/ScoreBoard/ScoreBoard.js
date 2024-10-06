@@ -143,7 +143,7 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
                   cardBackground = 'linear-gradient(90deg, rgba(187, 255, 239, 1), rgba(236, 237, 203, 1) 34%, rgba(248, 227, 183, 1) 72%, rgba(255, 155, 252, 1) 97%)';
               }
               return (
-                <Card key={index} sx={{ padding: 1, flexGrow: 1, background: cardBackground, color: 'white' }}>
+                <Card key={index} sx={{ padding: 1, width:226, background: cardBackground, color: 'white' }}>
                   <Grid sx={{ display: 'flex', flexDirection: 'column' }}>
                     <Typography variant="subtitle1" gutterBottom>
                       {scoredivisionname}

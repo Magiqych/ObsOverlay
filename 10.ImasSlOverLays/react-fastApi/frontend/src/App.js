@@ -85,6 +85,7 @@ function App() {
         display: 'flex',
         'justify-content': 'center',
         'align-items': 'center',
+        width: '100vw',
         height: '100vh'
       }}>
         <ScoreBoard ScoreData={scoreInfo} RecordsData={recordInfo} SongData={songInfo} />
