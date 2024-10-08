@@ -48,34 +48,34 @@ class SongDetail(BaseModel):
 class SongLevelDetail(BaseModel):
     '''
     曲のレベル詳細情報のデータ構造を定義するクラス
-    Level: int : レベル
-    Cost: int : コスト
-    Notes: int : ノーツ数
-    TapIcon: int : タップアイコン
-    LongIcon: int : ロングアイコン
-    FlickIcon: int : フリックアイコン
-    SlideIcon: int : スライドアイコン
-    DamageIcon: int : ダメージアイコン
-    Density: float : ノーツ密度
-    TapIconRatio: float : タップアイコン比率
-    LongIconRatio: float : ロングアイコン比率
-    FlickIconRatio: float : フリックアイコン比率
-    SlideIconRatio: float : スライドアイコン比率
+    Level: Optional[str] : レベル
+    Cost: Optional[str] : コスト
+    Notes: Optional[str] : ノーツ
+    TapIcon: Optional[str] : タップアイコン
+    LongIcon: Optional[str] : ロングアイコン
+    FlickIcon: Optional[str] : フリックアイコン
+    SlideIcon: Optional[str] : スライドアイコン
+    DamageIcon: Optional[str] : ダメージアイコン
+    Density: Optional[str] : デンシティ
+    TapIconRatio: Optional[str] : タップアイコン比率
+    LongIconRatio: Optional[str] : ロングアイコン比率
+    FlickIconRatio: Optional[str] : フリックアイコン比率
+    SlideIconRatio: Optional[str] : スライドアイコン比率
     LevelUri: Optional[str] : レベルURI
     '''
-    Level: int
-    Cost: int
-    Notes: int
-    TapIcon: int
-    LongIcon: int
-    FlickIcon: int
-    SlideIcon: int
-    DamageIcon: int
-    Density: float
-    TapIconRatio: float
-    LongIconRatio: float
-    FlickIconRatio: float
-    SlideIconRatio: float
+    Level: Optional[str] = None
+    Cost: Optional[str] = None
+    Notes: Optional[str] = None
+    TapIcon: Optional[str] = None
+    LongIcon: Optional[str] = None
+    FlickIcon: Optional[str] = None
+    SlideIcon: Optional[str] = None
+    DamageIcon: Optional[str] = None
+    Density: Optional[str] = None
+    TapIconRatio: Optional[str] = None
+    LongIconRatio: Optional[str] = None
+    FlickIconRatio: Optional[str] = None
+    SlideIconRatio: Optional[str] = None
     LevelUri: Optional[str] = None
 
 # 曲のメタデータのデータ構造
@@ -108,30 +108,30 @@ class SongMetaData(BaseModel):
 class Record(BaseModel):
     '''
     レコードのデータ構造を定義するクラス
-    name: str : 曲名
-    level: str : レベル
-    perfect: float : Perfectの数
-    great: float : Greatの数
-    nice: float : Niceの数
-    bad: float : Badの数
-    miss: float : Missの数
-    combo: float : コンボ数
-    score: float : スコア
-    highScore: float : ハイスコア
-    uPrp: Optional[str] : UPRP
-    prp: Optional[str] : PRP
-    date: Optional[str] : 日付
+    Name: str : 曲名
+    Level: str : レベル
+    Perfect: Optional[str] : Perfect
+    Great: Optional[str] : Great
+    Nice: Optional[str] : Nice
+    Bad: Optional[str] : Bad
+    Miss: Optional[str] : Miss
+    Combo: Optional[str] : Combo
+    Score: Optional[str] : スコア
+    HighScore: Optional[str] : ハイスコア
+    UPrp: Optional[str] : UPrp
+    Prp: Optional[str] : Prp
+    Date: Optional[str] : 日付
     '''
-    Name: str
-    Level: str
-    Perfect: str
-    Great: str
-    Nice: str
-    Bad: str
-    Miss: str
-    Combo: str
-    Score: str
-    HighScore: str
+    Name: Optional[str] = None
+    Level: Optional[str] = None
+    Perfect: Optional[str] = None
+    Great: Optional[str] = None
+    Nice: Optional[str] = None
+    Bad: Optional[str] = None
+    Miss: Optional[str] = None
+    Combo: Optional[str] = None
+    Score: Optional[str] = None
+    HighScore: Optional[str] = None
     UPrp: Optional[str] = None
     Prp: Optional[str] = None
     Date: Optional[str] = None

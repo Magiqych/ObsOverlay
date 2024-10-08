@@ -64,7 +64,7 @@ export default function MusicInfo({ data }) {
       case 'クール':
         return '/assets/icon/cool.webp';
       case 'キュート':
-        return '/assets/icons/cute.webp';
+        return '/assets/icon/cute.webp';
       case 'パッション':
         return '/assets/icon/passion.webp';
       default:
