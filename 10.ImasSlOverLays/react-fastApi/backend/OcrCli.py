@@ -14,6 +14,10 @@ import requests
 import threading
 from skimage.metrics import structural_similarity as ssim
 import matplotlib.pyplot as plt
+import torch
+import torch.nn as nn
+from torchvision import transforms
+import torchvision.models as models
 
 #region クラス定義
 class SelectedItem:
@@ -85,7 +89,53 @@ class Score:
         self._listeners.append(listener)
     def remove_listener(self, listener):
         self._listeners.remove(listener)
+        
+class SimpleCNN(nn.Module):
+    '''
+    シンプルなCNNモデルの定義
+    nn.Moduleを継承して定義
+    :param conv1: 畳み込み層1
+    :param conv2: 畳み込み層2
+    :param pool: プーリング層
+    :param fc1: 全結合層1
+    :param fc2: 全結合層2
+    :param relu: ReLU関数
+    :param softmax: ソフトマックス関数
+    forward: 順伝播
+    '''
+    def __init__(self):
+        super(SimpleCNN, self).__init__()
+        self.conv1 = nn.Conv2d(1, 32, kernel_size=3, padding=1)
+        self.conv2 = nn.Conv2d(32, 64, kernel_size=3, padding=1)
+        self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+        self.fc1 = nn.Linear(64 * 7 * 7, 128)
+        self.fc2 = nn.Linear(128, 10)
+        self.relu = nn.ReLU()
+        self.softmax = nn.LogSoftmax(dim=1)
 
+    def forward(self, x):
+        x = self.pool(self.relu(self.conv1(x)))
+        x = self.pool(self.relu(self.conv2(x)))
+        x = x.view(-1, 64 * 7 * 7)
+        x = self.relu(self.fc1(x))
+        x = self.fc2(x)
+        return self.softmax(x)
+
+class ResNet18Model(nn.Module):
+    '''
+    ResNet18モデルの定義
+    nn.Moduleを継承して定義
+    :param model: ResNet18モデル
+    :param num_ftrs: 特徴量の数
+    forward: 順伝播
+    '''
+    def __init__(self, num_classes):
+        super(ResNet18Model, self).__init__()
+        self.model = models.resnet18(pretrained=True)
+        num_ftrs = self.model.fc.in_features
+        self.model.fc = nn.Linear(num_ftrs, num_classes)
+    def forward(self, x):
+        return self.model(x)
 #endregion
 
 #region 関数定義
@@ -194,37 +244,150 @@ def compare_images(targetimage, imagemask, compareimage, IsReturnValue = False, 
             return True
         else:
             return False
-        
-def make_train_data(image):
+
+def load_ResNet18Model(model_path):
     '''
-    学習用データを作成する関数
-    :param image: 画像
+    ResNet18モデルを読み込む関数
+    :param model_path: モデルのパス
+    :param num_classes: クラス数
+    :return: モデル
     '''
-    # dirlist = [os.path.join(script_dir,'train_data','0'),\
-    #             os.path.join(script_dir,'train_data','1'),\
-    #             os.path.join(script_dir,'train_data','2'),\
-    #             os.path.join(script_dir,'train_data','3'),\
-    #             os.path.join(script_dir,'train_data','4'),\
-    #             os.path.join(script_dir,'train_data','5'),\
-    #             os.path.join(script_dir,'train_data','6'),\
-    #             os.path.join(script_dir,'train_data','7'),\
-    #             os.path.join(script_dir,'train_data','8'),\
-    #             os.path.join(script_dir,'train_data','9'),\
-    #             os.path.join(script_dir,'train_data','n')]
-    # for directory in dirlist:
-    #     if not os.path.exists(directory):
-    #         os.makedirs(directory)
-    image2 = cv2.bitwise_not(image)
-    contours, hierarchy = cv2.findContours(image2, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    for c in contours:
+    checkpoint = torch.load(model_path)
+    num_classes = checkpoint['num_classes']
+    class_to_idx = checkpoint['class_to_idx']
+    idx_to_class = {v: k for k, v in class_to_idx.items()}
+    model = ResNet18Model(num_classes)
+    # state_dict のキーにプレフィックスを追加
+    state_dict = {f'model.{k}': v for k, v in checkpoint['model_state_dict'].items()}
+    model.load_state_dict(state_dict)
+    # model.load_state_dict(checkpoint['model_state_dict'])
+    model.eval()
+    return model, idx_to_class
+
+def apply_mask(frame, mask_path):
+    '''
+    マスク画像を適用する関数
+    :param frame: フレーム
+    :param mask_path: マスク画像のパス
+    :return: マスク画像を適用したフレーム
+    '''
+    mask = cv2.imread(mask_path, cv2.IMREAD_GRAYSCALE)
+    if mask is None:
+        raise Exception(f"Failed to load mask image: {mask_path}")
+    # マスクを反転
+    mask = cv2.bitwise_not(mask)
+    # マスクを二値化
+    _, binary_mask = cv2.threshold(mask, 1, 255, cv2.THRESH_BINARY)
+    # アルファチャンネルを追加
+    b, g, r = cv2.split(frame)
+    alpha = binary_mask
+    # frame = cv2.merge([b, g, r, alpha])
+    frame = cv2.merge([r,g,b, alpha])
+    # バウンディングボックスを取得
+    x, y, w, h = cv2.boundingRect(binary_mask)
+    return frame[y:y+h, x:x+w]  # トリミング
+
+def SceneDetect(frameCopy, model, idx_to_class, mask_path):
+    '''
+    シーンを検出する関数
+    :param frameCopy: フレームのコピー
+    :param model: モデル
+    :param idx_to_class: インデックスからクラス名への辞書
+    :param mask_path: マスク画像のパス
+    :return: None
+    '''
+    masked_frame = apply_mask(frameCopy, mask_path)
+    input_tensor = cv2.resize(masked_frame, (224, 224))
+    input_tensor = Image.fromarray(masked_frame).convert('RGB')
+    input_tensor = transformScene(input_tensor)
+    input_tensor = input_tensor.unsqueeze(0)
+    
+    with torch.no_grad():
+        outputs = model(input_tensor)
+        _, predicted = torch.max(outputs, 1)
+    return idx_to_class[predicted.item()]
+
+def recognize_digits(th1):
+    '''
+    画像から数字を認識する関数
+    :param th1: 二値化画像
+    :return: 認識された数字
+    '''
+    rev = cv2.bitwise_not(th1)
+    height, width = rev.shape[:2]
+    contours, hierarchy = cv2.findContours(rev, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    # 基準となる輪郭の大きさを取得
+    if len(contours) > 0:
+        rev_area = cv2.contourArea(contours[0])
+    else:
+        rev_area = 0
+    
+    # 相対的な大きさの閾値（例: 基準の10%未満の大きさを除外）
+    threshold_ratio = 0.2
+    # 輪郭をフィルタリングしてソート
+    filtered_contours = [c for c in contours if cv2.contourArea(c) >= rev_area * threshold_ratio]
+    filtered_contours = sorted(filtered_contours, key=lambda c: cv2.boundingRect(c)[0])
+    #有効なContourの平均幅を求める
+    average_width = 0
+    contours_num = 0
+    for c in filtered_contours:
         x, y, w, h = cv2.boundingRect(c)
-        cv2.imwrite(os.path.join(script_dir,'train_data',str(uuid.uuid4()) + '.png'),image[:, x:x+w])
+        croped_rev_th = rev[:, x:x+w]
+        ChkC, hierarchy = cv2.findContours(croped_rev_th, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        average_width += w
+        contours_num += 1
+    # 有効なContourがない場合は空文字を返す
+    if contours_num == 0:
+        return ""
+    # 平均幅を求める
+    average_width = average_width / contours_num
+    recognized_digits = []
+    for c in filtered_contours:
+        x, y, w, h = cv2.boundingRect(c)
+        croped_rev_th = rev[:, x:x+w]
+        ChkC, hierarchy = cv2.findContours(croped_rev_th, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        # #複数のContourがある場合
+        # if(len(ChkC) > 1):
+        #     #学習用データを追加する
+        #     # cv2.imwrite(os.path.join(script_dir,'train_data','Digits',\
+        #     #             'Other',str(uuid.uuid4()) + '.png'),croped_rev_th)
+        #     continue
+        # つながっている数字を分割
+        digit_roi = []
+        # if w > average_width * 30:  # つながっていると判断する閾値
+        if False:
+            # つながっている数字を分割
+            num_splits = int(round(w / average_width))
+            split_width = w // num_splits
+            for i in range(num_splits):
+                roi = th1[:, x + i*split_width:x + (i+1)*split_width]
+                digit_roi.append(roi)
+        else:
+            digit_roi.append(th1[:, x:x+w])
+        # digit_roi分割された数字を認識
+        for roi in digit_roi:
+            reconizer_th = cv2.resize(roi, (28, 28))
+            reconizer_th = transformDigit(reconizer_th).unsqueeze(0)  # 変換とバッチ次元の追加
+            output = DigitModel(reconizer_th)
+            _, predicted = torch.max(output.data, 1)
+            recognized_digits.append(predicted[0].item())
+            #学習用データを追加する
+            # cv2.imwrite(os.path.join(script_dir,'train_data','Digits',\
+            #             str(predicted[0].item()),str(uuid.uuid4()) + '.png'),roi)
+    # 認識された数字を出力
+    recognized_digits_str = ''.join(map(str, recognized_digits)).replace("Other", "")
+    return recognized_digits_str
 #endregion
 
 #region イベントハンドラ
 # デバウンス用のタイマー
 debounce_timer = None
 def on_selected_item_property_change(property_name, value):
+    '''
+    selected_itemのプロパティが変更されたときに呼び出される関数
+    :param property_name: プロパティ名
+    :param value: 値
+    '''
     global debounce_timer
     # デバウンスのインターバル（ミリ秒）
     debounce_interval = 500
@@ -248,6 +411,11 @@ def on_selected_item_property_change(property_name, value):
     debounce_timer.start()
 
 def on_score_property_change(property_name, value):
+    '''
+    scoreのプロパティが変更されたときに呼び出される関数
+    :param property_name: プロパティ名
+    :param value: 値
+    '''
     if IsDebug:
         print(f'{score.rawResult}')
         return
@@ -282,7 +450,40 @@ last_update_time = None
 score = Score()
 score.add_listener(on_score_property_change)
 IsScoreProcessing = False
-pytesseract.pytesseract.tesseract_cmd = r'D:\00.Software\Tesseract\tesseract.exe'
+# 数字認識モデルの読み込み
+digit_classifier_path = os.path.join(script_dir, 'Models', 'digit_classifier.pth')
+DigitModel = SimpleCNN()
+DigitModel.load_state_dict(torch.load(digit_classifier_path))
+DigitModel.eval()
+# データ拡張と前処理の設定
+transformDigit = transforms.Compose([
+    transforms.ToPILImage(),
+    transforms.ToTensor(),
+    transforms.Normalize((0.5,), (0.5,))
+])
+#シーン検出用のモデルの読み込み
+Tire1Model_path = os.path.join(script_dir, 'Models', 'model_Tire1.pth')
+Tire2Model_path = os.path.join(script_dir, 'Models', 'model_Tire2.pth')
+Tire3Model_path = os.path.join(script_dir, 'Models', 'model_Tire3.pth')
+ScoreModel_path = os.path.join(script_dir, 'Models', 'model_Score.pth')
+# モデルの読み込み
+Tire1Model,Tire1_idx_to_class = load_ResNet18Model(Tire1Model_path)
+Tire2Model,Tire2_idx_to_class = load_ResNet18Model(Tire2Model_path)
+Tire3Model,Tire3_idx_to_class = load_ResNet18Model(Tire3Model_path)
+ScoreModel,Score_idx_to_class = load_ResNet18Model(ScoreModel_path)
+# データ拡張と前処理の設定
+transformScene = transforms.Compose([
+    transforms.Resize((224, 224)),
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+])
+# マスク画像のパス
+mask_paths = {
+    'Tire1': os.path.join(script_dir,  'Assets', 'Tire1Mask.png'),
+    'Tire2': os.path.join(script_dir,  'Assets', 'Tire2Mask.png'),
+    'Tire3': os.path.join(script_dir,  'Assets', 'Tire3Mask.png'),
+    'Score': os.path.join(script_dir,  'Assets', 'ScoreMask.png')
+}
 #endregion
 
 #region フレーム処理
@@ -317,6 +518,9 @@ def process_frame(frame):
     # print("frame.png saved")
     # sys.exit("スクリプトを終了します")
     
+    # スコア解析中は何もしない
+    if IsScoreProcessing:
+        return
     # フレームスキップ
     if FrameSkipper != 0:
         FrameSkipper -= 1
@@ -324,9 +528,10 @@ def process_frame(frame):
     #　フレームをコピー
     frameCopy = frame
     
-    
-    # スコア画面検出
+    # シーン検出
+    # スコア画面
     if compare_images(frameCopy, assets['ScoreMask.png'], assets['ScoreCom.png'],False):
+    # if (SceneDetect(frameCopy, ScoreModel, Score_idx_to_class, mask_paths['Score']) == "Score"):
         #スコア画面が出たらOCR解析
         # スコア解析中フラグを立てる
         IsScoreProcessing = True
@@ -350,11 +555,11 @@ def process_frame(frame):
             gray = cv2.cvtColor(resized_CropImage, cv2.COLOR_BGR2GRAY)
             # 二値化
             ret,th1 = cv2.threshold(gray,127,255,cv2.THRESH_BINARY)
-            make_train_data(th1)
-            # OCRを実行（英語と数字のみ）
-            custom_config = r'--oem 3 --psm 6 -c tessedit_char_whitelist=0123456789'
-            # text = pytesseract.image_to_string(binary, lang='eng',config=custom_config)
-            text = pytesseract.image_to_string(th1, lang='eng',config=custom_config)
+            text = recognize_digits(th1)
+            #デバッグ用テストデータ保存
+            os.makedirs(os.path.join(script_dir,'log',re.sub(r'\D', '', text)), exist_ok=True)
+            cv2.imwrite(os.path.join(script_dir,'log',re.sub(r'\D', '', text),str(uuid.uuid4()) + '.png'),th1)
+            # make_train_data(th1) #学習データ作成
             if i == len(regions_sorted) - 1:
                 RawScoreText += re.sub(r'\D', '', text)
             else:
@@ -372,55 +577,42 @@ def process_frame(frame):
         # スコア解析中フラグを解除
         IsScoreProcessing = False
         return
-    # basic,master+,witch,grandの判定を行う
-    LevelTopMask = assets['LevelTopMask.png']
-    threadhold = 0.5
-    Basic = compare_images(frameCopy, LevelTopMask, assets['LevelTopBasicCom.png'],True)
-    Master_plus = compare_images(frameCopy, LevelTopMask, assets['LevelTopMaster+Com.png'],True)
-    Witch = compare_images(frameCopy, LevelTopMask, assets['LevelTopWitchCom.png'],True)
-    Grand = compare_images(frameCopy, LevelTopMask, assets['LevelTopGrandCom.png'],True)
-    Witch = compare_images(frameCopy, LevelTopMask, assets['LevelTopWitchCom.png'],True)
-    if Basic > threadhold:
-        #Basicの場合はDebut,Regular,Pro,Masterの判定を行う
-        Debut = compare_images(frameCopy, assets['DebutMask.png'], assets['DebutCom.png'],True)
-        Regular = compare_images(frameCopy, assets['RegularMask.png'], assets['RegularCom.png'],True)
-        Pro = compare_images(frameCopy, assets['ProMask.png'], assets['ProCom.png'],True)
-        Master = compare_images(frameCopy, assets['MasterMask.png'], assets['MasterCom.png'],True)
-        min_distance = min(Debut, Regular, Pro, Master)
-        if min_distance == Debut:
-            selected_item.difficulty = "DEBUT"
-        elif min_distance == Regular:
-            selected_item.difficulty = "REGULAR"
-        elif min_distance == Pro:
-            selected_item.difficulty = "PRO"
-        elif min_distance == Master:
-            selected_item.difficulty = "MASTER"
-        # if compare_images(frameCopy,assets['DebutMask.png'],assets['DebutCom.png'],False):
-        #     selected_item.difficulty = "DEBUT"  
-        # elif compare_images(frameCopy,assets['RegularMask.png'],assets['RegularCom.png'],False):
-        #     selected_item.difficulty = "REGULAR"
-        # elif compare_images(frameCopy,assets['ProMask.png'],assets['ProCom.png'],False):
-        #     selected_item.difficulty = "PRO"
-        # elif compare_images(frameCopy,assets['MasterMask.png'],assets['MasterCom.png'],False):
-        #     selected_item.difficulty = "MASTER"
-        # elif compare_images(frameCopy,assets['MvMask.png'],assets['MvCom.png'],False):
-        #     selected_item.difficulty = "MV"
-        # else:
-        #     selected_item.difficulty = None
-    elif Master_plus > threadhold:
-        selected_item.difficulty = "MASTER+"
-    elif Witch > threadhold:
-        selected_item.difficulty = "WITCH"
-    elif Grand > threadhold:
-        if compare_images(frameCopy, assets['PianoMask.png'], assets['PianoCom.png'],False):
-            selected_item.difficulty = "Piano"
-        elif compare_images(frameCopy, assets['ForteMask.png'], assets['ForteCom.png'],False):
-            selected_item.difficulty = "Forte"
-        elif compare_images(frameCopy, assets['GrandMvMask.png'], assets['GrandMvCom.png'],False):
-            selected_item.difficulty = "MV"
+    # Tire1　{0: 'ComfirmModal', 1: 'Live', 2: 'Other'}
+    if (SceneDetect(frameCopy, Tire1Model, Tire1_idx_to_class, mask_paths['Tire1']) == "Live"):
+        #　ライブ中であればTire2のシーンを検出
+        # Tire2 {0: 'Basic', 1: 'ComfirmModal', 2: 'Grand', 3: 'Master+', 4: 'Other', 5: 'Witch'}
+        Tire2Scene = SceneDetect(frameCopy, Tire2Model, Tire2_idx_to_class, mask_paths['Tire2'])
+        #もしもTire2のシーンがBasicであれば
+        if Tire2Scene == "Basic":
+            # Tire3のシーンを検出
+            # Tire3 {0: 'ComfirmModal', 1: 'Debut', 2: 'Forte', 3: 'GrandMv', 4: 'Master', 5: 'Mv', 6: 'Other', 7: 'Piano', 8: 'Pro', 9: 'Regular'}
+            Tire3Scene = SceneDetect(frameCopy, Tire3Model, Tire3_idx_to_class, mask_paths['Tire3'])
+            #もしもTire3のシーンがSelectであれば
+            if Tire3Scene == "Debut":
+                selected_item.difficulty = "DEBUT"
+            elif Tire3Scene == "Regular":
+                selected_item.difficulty = "REGULAR"
+            elif Tire3Scene == "Pro":
+                selected_item.difficulty = "PRO"
+            elif Tire3Scene == "Master":
+                selected_item.difficulty = "MASTER"
+            elif Tire3Scene == "Mv":
+                selected_item.difficulty = "MV"
+            elif Tire3Scene == "Piano":
+                selected_item.difficulty = "PIANO"
+            elif Tire3Scene == "Forte":
+                selected_item.difficulty = "FORTE"
+            elif Tire3Scene == "GrandMv":
+                selected_item.difficulty = "MV"
+        elif Tire2Scene == "Master+":
+            selected_item.difficulty = "MASTER+"
+        elif Tire2Scene == "Witch":
+            selected_item.difficulty = "WITCH"
+        else:
+            return
     else:
         return
-    #曲を判定する
+    # #曲を判定する
     CropImage = frameCopy[120:315,395:540]
     rgb_image = cv2.cvtColor(CropImage, cv2.COLOR_BGR2RGB)
     pil_image = Image.fromarray(rgb_image)
@@ -465,6 +657,8 @@ def process_image(image_path):
     if image is None:
         raise Exception(f"Failed to open image file {image_path}")
     process_frame(image)
+    # OCRTestPath = os.path.join(script_dir, "log")
+    
 
 def main(input_source):
     """
@@ -509,10 +703,10 @@ if __name__ == "__main__":
     assets = load_assets(assets_source)
 
     # デバッグモード
-    #IsDebug = True
     IsDebug = False
+    #IsDebug = True
     # デバッグ用
-    #input_source = os.path.join(script_dir, "log", "20241008_103326.png")
+    # input_source = os.path.join(script_dir, "log", "20241008_095446.png")
     # 本番用
     input_source = "4-700"
     main(input_source)
