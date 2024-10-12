@@ -99,15 +99,6 @@ class Score:
         self._listeners.append(listener)
     def remove_listener(self, listener):
         self._listeners.remove(listener)
-        self.softmax = nn.LogSoftmax(dim=1)
-
-    def forward(self, x):
-        x = self.pool(self.relu(self.conv1(x)))
-        x = self.pool(self.relu(self.conv2(x)))
-        x = x.view(-1, 64 * 7 * 7)
-        x = self.relu(self.fc1(x))
-        x = self.fc2(x)
-        return self.softmax(x)
 
 class ResNet18Model(nn.Module):
     '''
@@ -295,19 +286,11 @@ def SceneDetect(frameCopy, model, idx_to_class, mask_path):
         _, predicted = torch.max(outputs, 1)
     return idx_to_class[predicted.item()]
 
-def recognize_digits(th1):
-    '''
-    画像から数字を認識する関数
-    :param th1: 二値化画像
-    :return: 認識された数字
-    '''
+def recognize_digits(th1,SplitterNum = 4):
+    # 認識された数字を格納するリスト
+    recognized_digits = []
     rev = cv2.bitwise_not(th1)
     height, width = rev.shape[:2]
-    contours, hierarchy = cv2.findContours(rev, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    # 基準となる輪郭の大きさを取得
-    if len(contours) > 0:
-        rev_area = cv2.contourArea(contours[0])
-    else:
     # 数字表記は固定長のため、横方向に分割して認識する
     slices = []
     # 横に n 等分
