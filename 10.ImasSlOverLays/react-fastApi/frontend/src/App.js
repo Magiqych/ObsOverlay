@@ -7,6 +7,7 @@ import NormalContent from './components/NormalContent';
 import ImasCard from './components/ImasCard';
 import { MusicInfo } from "./cards";
 import { ScoreBoard } from "./ScoreBoard";
+import zIndex from "@mui/material/styles/zIndex";
 
 
 const STATE_NORMAL = 'normal';
@@ -60,7 +61,7 @@ function App() {
           setCurrentState(STATE_SHOW_SCORE);
         }
         setInProp(true); // フェードイン開始
-      }, 500); // フェードアウトの時間と一致させる
+      }, 200); // フェードアウトの時間と一致させる
     };
     return () => {
       ws.close();
@@ -70,13 +71,11 @@ function App() {
   const contentMap = {
     [STATE_NORMAL]: (
       <div>
-        <ImasCard />
         <NormalContent />
       </div>
     ),
     [STATE_SELECT_SONG]: (
       <div>
-        <ImasCard />
         <MusicInfo data={songInfo} />
       </div>
     ),
@@ -86,7 +85,8 @@ function App() {
         'justify-content': 'center',
         'align-items': 'center',
         width: '100vw',
-        height: '100vh'
+        height: '100vh',
+        marginLeft:50,
       }}>
         <ScoreBoard ScoreData={scoreInfo} RecordsData={recordInfo} SongData={songInfo} />
       </div>
@@ -94,11 +94,12 @@ function App() {
   };
 
   return (
-    <CSSTransition in={inProp} timeout={500} classNames="fade">
-      <div style={{ width: "1920px", height: "1080px" }}>
+    <div style={{ width: "1920px", height: "1080px" }}>
+      <ImasCard />
+      <CSSTransition in={inProp} timeout={200} classNames="fade">
         {contentMap[currentState] || null}
-      </div>
-    </CSSTransition>
+      </CSSTransition>
+    </div>
   );
 }
 export default App;

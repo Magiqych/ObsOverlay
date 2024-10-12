@@ -25,3 +25,5 @@ __pycache__/
 /10.ImasSlOverLays/SceneDetecter/Assets/TestData
 /10.ImasSlOverLays/SceneDetecter/venv
 /10.ImasSlOverLays/react-fastApi/backend/public/songimage
+/10.ImasSlOverLays/react-fastApi/backend/train_data
+/10.ImasSlOverLays/react-fastApi/backend/log

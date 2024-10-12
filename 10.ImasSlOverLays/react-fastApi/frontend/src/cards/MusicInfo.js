@@ -18,7 +18,6 @@ export default function MusicInfo({ data }) {
       mode: 'light',
     }
   })
-  console.log(data);
   // JSONデータから曲情報を取得
   const songName = data.Name;
   const artistName = data.Credits;
@@ -65,7 +64,7 @@ export default function MusicInfo({ data }) {
       case 'クール':
         return '/assets/icon/cool.webp';
       case 'キュート':
-        return '/assets/icons/cuto.webp';
+        return '/assets/icon/cute.webp';
       case 'パッション':
         return '/assets/icon/passion.webp';
       default:

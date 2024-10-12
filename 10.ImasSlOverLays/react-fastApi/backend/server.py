@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 import datetime
+import importlib
 import json
+import subprocess
 import webbrowser
 import aiofiles
 from fastapi import FastAPI, HTTPException, WebSocket
@@ -32,6 +34,7 @@ class State:
     NORMAL: str = 'normal'
     SELECT_SONG: str = 'select_song'
     SHOW_SCORE: str = 'show_score'
+    OCR_PROCESSING :str = 'ocr_processing'
 #endregion
 
 #region クラス定義
@@ -103,19 +106,24 @@ async def SetSongData_json(name:str,level:str):
     level = level.upper()
     # データベースから曲の詳細情報を取得
     songDetail = get_song_details_from_db(db_path,name)
-    # if level == "MASTER+":
-    #     level = "MASTER_plus"
-    songLevelDetail = get_song_level_details_from_db(db_path,songDetail.__dict__[level])
-    # songDetailとsongLevelDetailを辞書に変換してマージ
-    songDetail_dict = songDetail.__dict__
-    songLevelDetail_dict = songLevelDetail.__dict__
-    # バイト型のデータを削除
-    songDetail_dict = {key: value for key, value in songDetail_dict.items() if not isinstance(value, bytes)}
-    songLevelDetail_dict = {key: value for key, value in songLevelDetail_dict.items() if not isinstance(value, bytes)}
-    merged_data = {**songDetail_dict, **songLevelDetail_dict}
-    # 新しいキーと値を追加
-    if level == "MASTER_plus":
-        level = "MASTER+"
+    if not level == "MV":
+        if level == "MASTER+":
+            level = "MASTER_plus"
+        songLevelDetail = get_song_level_details_from_db(db_path,songDetail.__dict__[level])
+        if songLevelDetail is None:
+            return
+        # songDetailとsongLevelDetailを辞書に変換してマージ
+        songDetail_dict = songDetail.__dict__
+        songLevelDetail_dict = songLevelDetail.__dict__
+        # バイト型のデータを削除
+        songDetail_dict = {key: value for key, value in songDetail_dict.items() if not isinstance(value, bytes)}
+        songLevelDetail_dict = {key: value for key, value in songLevelDetail_dict.items() if not isinstance(value, bytes)}
+        merged_data = {**songDetail_dict, **songLevelDetail_dict}
+        # 新しいキーと値を追加
+        if level == "MASTER_plus":
+            level = "MASTER+"
+    else:
+        merged_data = {**songDetail.__dict__}
     merged_data["SelectedLevel"] = level
     merged_data["SongImage"] = await GetSongImage(name)
     # マージしたデータをJSONファイルとして保存
@@ -278,6 +286,16 @@ async def set_score(rawscore:ScoreOCRData):
     # WebSocket接続にメッセージを送信
     for websocket in websockets:
         await websocket.send_text(State.SHOW_SCORE)
+
+@app.post("/ocr_processing")
+async def ocr_processing(rawscore:ScoreOCRData):
+    '''
+    OCR処理を行うAPIエンドポイント
+    '''
+    # WebSocket接続にメッセージを送信
+    for websocket in websockets:
+        await websocket.send_text(State.OCR_PROCESSING)
+    
 #endregion
 
 #region テスト用APIエンドポイント
@@ -311,23 +329,39 @@ async def test_set_score():
     await set_score(scoreData)
 #endregion
 
+#region メイン処理
+# キャッシュ削除関数
+def clear_cache():
+    # importlibを使用してモジュールキャッシュをクリア
+    importlib.invalidate_caches()
+    
+    # SQLiteのキャッシュをクリア
+    conn = sqlite3.connect(':memory:')
+    conn.execute('PRAGMA cache_size = 0')
+    conn.close()
+    
+async def run_subprocess():
+    '''
+    OCR_CLIを実行する関数
+    '''
+    env = os.environ.copy()
+    env['PROCESS_NAME'] = 'OCR_CLI_Process'
+    # OcrCli.pyを実行
+    await asyncio.create_subprocess_exec(
+        os.path.join(script_dir, '..','..','..','.venv','Scripts','python.exe'),
+        '-Xfrozen_modules=off', 
+        os.path.join(script_dir, 'OcrCli.py'),
+        '--Caller', 'Server.py',
+        env=env
+    )
+async def main():
+    await run_subprocess()
+    # uvicornを非同期で実行
+    config = uvicorn.Config("server:app", host="localhost", port=8000, log_level="info")
+    server = uvicorn.Server(config)
+    await server.serve()
 # main
 if __name__ == "__main__":
-    '''
-    メイン関数
-    '''
-    # async def main():
-    #     data = {"key": "value"}
-    #     path = os.path.join(script_dir, 'public', 'data', 'test_data.json')
-    #     await SaveJsonFileAsync(data, path)
-    #     hoge = await GetSongImage("Take me☆Take you")
-    #     hoge = 0
-    # asyncio.run(main())
-    # サーバーを非同期で起動し、ブラウザで/docsを開く
-    # import threading
-
-    # def open_docs():
-    #     webbrowser.open("http://127.0.0.1:8000/docs")
-
-    # threading.Timer(1.0, open_docs).start()
-    uvicorn.run(app, host="localhost", port=8000)
+    clear_cache()
+    asyncio.run(main())
+#endregion

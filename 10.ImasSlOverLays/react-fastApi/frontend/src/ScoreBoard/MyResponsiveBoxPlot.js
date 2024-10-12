@@ -15,7 +15,7 @@ const MyResponsiveBoxPlot = ({ recordInfo, members }) => {
         // 必要に応じて、デフォルト値を設定するか、他のエラーハンドリングを行います
         boxPlotData = []; // 例として空の配列を設定
     }
-    if (boxPlotData.length < 10) {
+    if (boxPlotData.length < 1) {
         return (
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
                 <p style={{ color: 'white', margin: 0 }}>
