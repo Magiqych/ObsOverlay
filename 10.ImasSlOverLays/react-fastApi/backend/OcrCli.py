@@ -1,3 +1,4 @@
+import argparse
 import datetime
 import json
 import re
@@ -8,18 +9,27 @@ import sys
 import os
 import numpy as np
 import imagehash
-from PIL import Image, ImageTk
-import pytesseract
+from PIL import Image
 import requests
 import threading
-from skimage.metrics import structural_similarity as ssim
 import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 from torchvision import transforms
 import torchvision.models as models
+#モデルロードはカプセル化されているため、直接インポートする
+from Models.MobileNetV2_Digits import MobileNetV2_Digits
 
 #region クラス定義
+class OcrCli:
+    '''
+    OcrCliクラス
+    :param digit_classifier: 数字認識モデル
+    predict_digit: 数字を予測する
+    '''
+    def __init__(self):
+        self.MobileNetV2_Digits = MobileNetV2_Digits()
+        
 class SelectedItem:
     '''
     選択された難易度と曲名を保持するクラス
@@ -89,28 +99,6 @@ class Score:
         self._listeners.append(listener)
     def remove_listener(self, listener):
         self._listeners.remove(listener)
-        
-class SimpleCNN(nn.Module):
-    '''
-    シンプルなCNNモデルの定義
-    nn.Moduleを継承して定義
-    :param conv1: 畳み込み層1
-    :param conv2: 畳み込み層2
-    :param pool: プーリング層
-    :param fc1: 全結合層1
-    :param fc2: 全結合層2
-    :param relu: ReLU関数
-    :param softmax: ソフトマックス関数
-    forward: 順伝播
-    '''
-    def __init__(self):
-        super(SimpleCNN, self).__init__()
-        self.conv1 = nn.Conv2d(1, 32, kernel_size=3, padding=1)
-        self.conv2 = nn.Conv2d(32, 64, kernel_size=3, padding=1)
-        self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
-        self.fc1 = nn.Linear(64 * 7 * 7, 128)
-        self.fc2 = nn.Linear(128, 10)
-        self.relu = nn.ReLU()
         self.softmax = nn.LogSoftmax(dim=1)
 
     def forward(self, x):
@@ -263,7 +251,7 @@ def load_ResNet18Model(model_path):
     # model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()
     return model, idx_to_class
-
+    
 def apply_mask(frame, mask_path):
     '''
     マスク画像を適用する関数
@@ -320,63 +308,22 @@ def recognize_digits(th1):
     if len(contours) > 0:
         rev_area = cv2.contourArea(contours[0])
     else:
-        rev_area = 0
-    
-    # 相対的な大きさの閾値（例: 基準の10%未満の大きさを除外）
-    threshold_ratio = 0.2
-    # 輪郭をフィルタリングしてソート
-    filtered_contours = [c for c in contours if cv2.contourArea(c) >= rev_area * threshold_ratio]
-    filtered_contours = sorted(filtered_contours, key=lambda c: cv2.boundingRect(c)[0])
-    #有効なContourの平均幅を求める
-    average_width = 0
-    contours_num = 0
-    for c in filtered_contours:
-        x, y, w, h = cv2.boundingRect(c)
-        croped_rev_th = rev[:, x:x+w]
-        ChkC, hierarchy = cv2.findContours(croped_rev_th, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        average_width += w
-        contours_num += 1
-    # 有効なContourがない場合は空文字を返す
-    if contours_num == 0:
-        return ""
-    # 平均幅を求める
-    average_width = average_width / contours_num
-    recognized_digits = []
-    for c in filtered_contours:
-        x, y, w, h = cv2.boundingRect(c)
-        croped_rev_th = rev[:, x:x+w]
-        ChkC, hierarchy = cv2.findContours(croped_rev_th, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        # #複数のContourがある場合
-        # if(len(ChkC) > 1):
-        #     #学習用データを追加する
-        #     # cv2.imwrite(os.path.join(script_dir,'train_data','Digits',\
-        #     #             'Other',str(uuid.uuid4()) + '.png'),croped_rev_th)
-        #     continue
-        # つながっている数字を分割
-        digit_roi = []
-        # if w > average_width * 30:  # つながっていると判断する閾値
-        if False:
-            # つながっている数字を分割
-            num_splits = int(round(w / average_width))
-            split_width = w // num_splits
-            for i in range(num_splits):
-                roi = th1[:, x + i*split_width:x + (i+1)*split_width]
-                digit_roi.append(roi)
-        else:
-            digit_roi.append(th1[:, x:x+w])
-        # digit_roi分割された数字を認識
-        for roi in digit_roi:
-            reconizer_th = cv2.resize(roi, (28, 28))
-            reconizer_th = transformDigit(reconizer_th).unsqueeze(0)  # 変換とバッチ次元の追加
-            output = DigitModel(reconizer_th)
-            _, predicted = torch.max(output.data, 1)
-            recognized_digits.append(predicted[0].item())
-            #学習用データを追加する
-            # cv2.imwrite(os.path.join(script_dir,'train_data','Digits',\
-            #             str(predicted[0].item()),str(uuid.uuid4()) + '.png'),roi)
+    # 数字表記は固定長のため、横方向に分割して認識する
+    slices = []
+    # 横に n 等分
+    slice_width = width // SplitterNum
+    for i in range(SplitterNum):
+        start_x = i * slice_width
+        end_x = (i + 1) * slice_width if i < SplitterNum - 1 else width
+        slice_img = rev[:, start_x:end_x]
+        slices.append(slice_img)
+    for slice_img in slices:
+        roi = cv2.bitwise_not(slice_img)
+        prediction = ocr_cli.MobileNetV2_Digits.predict(roi)
+        recognized_digits.append(prediction)
     # 認識された数字を出力
-    recognized_digits_str = ''.join(map(str, recognized_digits)).replace("Other", "")
-    return recognized_digits_str
+    recognized_digits_str = ''.join(map(str, recognized_digits))
+    return recognized_digits_str.replace(" ","")
 #endregion
 
 #region イベントハンドラ
@@ -390,7 +337,7 @@ def on_selected_item_property_change(property_name, value):
     '''
     global debounce_timer
     # デバウンスのインターバル（ミリ秒）
-    debounce_interval = 500
+    debounce_interval = 700
     if IsDebug:
         print(f'{selected_item.song_name} - {selected_item.difficulty}')
         return
@@ -435,7 +382,7 @@ def on_score_property_change(property_name, value):
             print("Request failed after all retries.")
 #endregion
 
-#region 変数定義
+#region グローバル変数定義
 # スクリプト自身のディレクトリを取得
 script_dir = os.path.dirname(os.path.abspath(__file__))
 # JSONファイルのパス
@@ -450,17 +397,7 @@ last_update_time = None
 score = Score()
 score.add_listener(on_score_property_change)
 IsScoreProcessing = False
-# 数字認識モデルの読み込み
-digit_classifier_path = os.path.join(script_dir, 'Models', 'digit_classifier.pth')
-DigitModel = SimpleCNN()
-DigitModel.load_state_dict(torch.load(digit_classifier_path))
-DigitModel.eval()
-# データ拡張と前処理の設定
-transformDigit = transforms.Compose([
-    transforms.ToPILImage(),
-    transforms.ToTensor(),
-    transforms.Normalize((0.5,), (0.5,))
-])
+ocr_cli = OcrCli()
 #シーン検出用のモデルの読み込み
 Tire1Model_path = os.path.join(script_dir, 'Models', 'model_Tire1.pth')
 Tire2Model_path = os.path.join(script_dir, 'Models', 'model_Tire2.pth')
@@ -484,6 +421,36 @@ mask_paths = {
     'Tire3': os.path.join(script_dir,  'Assets', 'Tire3Mask.png'),
     'Score': os.path.join(script_dir,  'Assets', 'ScoreMask.png')
 }
+
+'''
+固定長の数字の長さ
+0: 'Perfect'
+1: 'Great'
+2: 'Nice'
+3: 'Bad'
+4: 'Miss'
+5: 'Combo'
+6: 'Score'
+7: 'HighScore'
+8: 'UPRP'
+9: 'PRP'
+'''
+digit_length: dict[int, int] = {
+    0: 4,  # 'Perfect': パーフェクトの長さ
+    1: 4,  # 'Great': グレートの長さ
+    2: 4,  # 'Nice': ナイスの長さ
+    3: 4,  # 'Bad': バッドの長さ
+    4: 4,  # 'Miss': ミスの長さ
+    5: 4,  # 'Combo': コンボの長さ
+    6: 7,  # 'Score': スコアの長さ
+    7: 7,  # 'HighScore': ハイスコアの長さ
+    8: 2,  # 'UPRP': UPRPの長さ
+    9: 4   # 'PRP': PRPの長さ
+}
+#マスク・テンプレート画像読み込み
+script_dir = os.path.dirname(os.path.abspath(__file__))
+assets_source = os.path.join(script_dir, "Assets")
+assets = load_assets(assets_source)
 #endregion
 
 #region フレーム処理
@@ -555,10 +522,10 @@ def process_frame(frame):
             gray = cv2.cvtColor(resized_CropImage, cv2.COLOR_BGR2GRAY)
             # 二値化
             ret,th1 = cv2.threshold(gray,127,255,cv2.THRESH_BINARY)
-            text = recognize_digits(th1)
+            text = recognize_digits(th1,digit_length[i])
             #デバッグ用テストデータ保存
-            os.makedirs(os.path.join(script_dir,'log',re.sub(r'\D', '', text)), exist_ok=True)
-            cv2.imwrite(os.path.join(script_dir,'log',re.sub(r'\D', '', text),str(uuid.uuid4()) + '.png'),th1)
+            # os.makedirs(os.path.join(script_dir,'log',re.sub(r'\D', '', text)), exist_ok=True)
+            # cv2.imwrite(os.path.join(script_dir,'log',re.sub(r'\D', '', text),str(uuid.uuid4()) + '.png'),th1)
             # make_train_data(th1) #学習データ作成
             if i == len(regions_sorted) - 1:
                 RawScoreText += re.sub(r'\D', '', text)
@@ -697,17 +664,19 @@ def main(input_source):
 
 #region メイン処理
 if __name__ == "__main__":
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    #マスク・テンプレート画像読み込み
-    assets_source = os.path.join(script_dir, "Assets")
-    assets = load_assets(assets_source)
-
+    # コマンドライン引数の解析
+    parser = argparse.ArgumentParser(description="OCR CLI ツール")
+    parser.add_argument('--Caller', type=str, required=False, help='呼び出し元')
+    args = parser.parse_args()
     # デバッグモード
     IsDebug = False
-    #IsDebug = True
-    # デバッグ用
-    # input_source = os.path.join(script_dir, "log", "20241008_095446.png")
-    # 本番用
-    input_source = "4-700"
+    # 呼び出し元を表示
+    if args.Caller:
+        IsDebug = False
+        input_source = "4-700"
+    else:
+        IsDebug = True
+        input_source = os.path.join(script_dir, "log", "20241008_095446.png")
+        #input_source = "4-700"
     main(input_source)
 #endregion

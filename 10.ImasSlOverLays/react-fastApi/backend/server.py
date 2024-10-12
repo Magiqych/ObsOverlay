@@ -344,11 +344,15 @@ async def run_subprocess():
     '''
     OCR_CLIを実行する関数
     '''
+    env = os.environ.copy()
+    env['PROCESS_NAME'] = 'OCR_CLI_Process'
     # OcrCli.pyを実行
     await asyncio.create_subprocess_exec(
         os.path.join(script_dir, '..','..','..','.venv','Scripts','python.exe'),
         '-Xfrozen_modules=off', 
         os.path.join(script_dir, 'OcrCli.py'),
+        '--Caller', 'Server.py',
+        env=env
     )
 async def main():
     await run_subprocess()

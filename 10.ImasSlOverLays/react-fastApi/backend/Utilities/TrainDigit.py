@@ -17,7 +17,7 @@ class DigitDataset(Dataset):
         self.load_data()
 
     def load_data(self):
-        for label in range(10):  # 0から9までのラベル
+        for label in os.listdir(self.data_dir):
             label_dir = os.path.join(self.data_dir, str(label))
             if not os.path.exists(label_dir):
                 continue
@@ -27,7 +27,10 @@ class DigitDataset(Dataset):
                     img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
                     img = cv2.resize(img, (28, 28))
                     self.images.append(img)
-                    self.labels.append(label)
+                    if label == 'Other':  # Otherの場合
+                        self.labels.append(10)  # 空白文字を表すラベルを10に設定
+                    else:
+                        self.labels.append(int(label))
 
     def __len__(self):
         return len(self.images)
@@ -37,7 +40,7 @@ class DigitDataset(Dataset):
         label = self.labels[idx]
         if self.transform:
             image = self.transform(image)
-        return image, label
+        return image, torch.tensor(label)  # ラベルをテンソルに変換
 
 # データ拡張と前処理の設定
 transform = transforms.Compose([
@@ -49,7 +52,7 @@ transform = transforms.Compose([
 ])
 
 # データセットの作成と分割
-data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'train_data')
+data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'train_data','Digits')
 dataset = DigitDataset(data_dir, transform=transform)
 train_size = int(0.8 * len(dataset))
 val_size = len(dataset) - train_size
@@ -66,7 +69,7 @@ class SimpleCNN(nn.Module):
         self.conv2 = nn.Conv2d(32, 64, kernel_size=3, padding=1)
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
         self.fc1 = nn.Linear(64 * 7 * 7, 128)
-        self.fc2 = nn.Linear(128, 10)
+        self.fc2 = nn.Linear(128, 11)  # クラス数を11に変更
         self.relu = nn.ReLU()
         self.softmax = nn.LogSoftmax(dim=1)
 
@@ -85,8 +88,13 @@ model = SimpleCNN()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
+# 早期停止の設定
+early_stopping_patience = 25
+best_val_loss = float('inf')
+patience_counter = 0
+
 # モデルのトレーニング
-num_epochs = 25
+num_epochs = 50  # 最大エポック数を設定
 for epoch in range(num_epochs):
     model.train()
     running_loss = 0.0
@@ -109,19 +117,37 @@ for epoch in range(num_epochs):
 
     # 検証データでの評価
     model.eval()
+    val_loss = 0.0
     correct = 0
     total = 0
     with torch.no_grad():
         for images, labels in val_loader:
             outputs = model(images)
+            loss = criterion(outputs, labels)
+            val_loss += loss.item()
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
 
+    val_loss /= len(val_loader)
     accuracy = 100 * correct / total
-    print(f'Validation Accuracy: {accuracy:.2f}%')
+    print(f'Validation Loss: {val_loss:.4f}, Validation Accuracy: {accuracy:.2f}%')
+
+    # 早期停止のチェック
+    if val_loss < best_val_loss:
+        best_val_loss = val_loss
+        patience_counter = 0
+        # モデルの保存
+        model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'Models', 'digit_classifier_v2.pth')
+        torch.save({
+            'model_state_dict': model.state_dict(),
+            'num_classes': 11,
+            'class_to_idx': {str(i): i for i in range(10)} | {'Other': 10}
+        }, model_path)
+    else:
+        patience_counter += 1
+        if patience_counter >= early_stopping_patience:
+            print("Early stopping")
+            break
 
 print('Finished Training')
-
-# モデルの保存
-torch.save(model.state_dict(), os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'Models', 'digit_classifier.pth'))
