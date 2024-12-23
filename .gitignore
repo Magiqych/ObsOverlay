@@ -1,29 +1,16 @@
-# 他の無視するファイルやディレクトリ
-node_modules/
-dist/
-10.ImasSlOverLays/OCR/CapturedImages/*
-Testdata/*
-SongImage/*
-# すべてのvenvディレクトリを無視
-.venv/*
-*/venv/*
-venvBatch/
+# vscode
+.vscode
+# venv
+.venv
+# IP+著作権コンテンツ
+songimage
+log
+document
+cinderella.idolmaster.sl-stage.sqlite
+# 学習データセット
+train_data
+# キャッシュ
+__pycache__
 
-#VS Code設定
-.vscode/
 
-#Pythonのキャッシュファイル
-__pycache__/
-*/TestData/*
-*/SongImage/*
-*.mp4
-/10.ImasSlOverLays/OCR/venv
-/10.ImasSlOverLays/OCR/ImageAssets/TestData
-/10.ImasSlOverLays/PaddleOCR/data
-/10.ImasSlOverLays/PaddleOCR/venv
-/10.ImasSlOverLays/react-fastApi/backend/Assets/TestData
-/10.ImasSlOverLays/SceneDetecter/Assets/TestData
-/10.ImasSlOverLays/SceneDetecter/venv
-/10.ImasSlOverLays/react-fastApi/backend/public/songimage
-/10.ImasSlOverLays/react-fastApi/backend/train_data
-/10.ImasSlOverLays/react-fastApi/backend/log
+
