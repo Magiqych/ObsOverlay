@@ -2,6 +2,7 @@
 # IP+©関連
 #　モデル/学習データセット/その他IP+©に関わりそうなもの！
 cinderella.idolmaster.sl-stage.sqlite
+win2k
 
 # 環境変数系
 .env.*

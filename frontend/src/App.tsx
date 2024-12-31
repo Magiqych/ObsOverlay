@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
+import './styles/classic-stylesheets-master/themes/win9x/theme.css'; // 追加
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div style={{ width: '1920px', height: '1080px', backgroundImage: 'url("./src/assets/background/title.png")', backgroundSize: '1920px 1080px', margin: 0, padding: 0 }} className="win9x">
+        <section>
+          <div className="example" style={{ width: '1920px', position: 'absolute', top: '940px' }}>
+            <div className="flex-row gap">
+              <div className="progress-bar" style={{ width: '1920px'}}></div>
+            </div>
+          </div>
+        </section>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
