@@ -114,7 +114,7 @@ async def main():
                 continue
             
             # 1秒待機
-            await asyncio.sleep(1)
+            await asyncio.sleep(0.1)
             
             # バッチサイズごとにコミット
             if (i + 1) % batch_size == 0:

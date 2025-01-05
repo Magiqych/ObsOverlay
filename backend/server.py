@@ -21,7 +21,7 @@ from Module.DataManager import DataManager
 #region 定数定義
 # スクリプト自身のディレクトリを取得
 script_dir = os.path.dirname(os.path.abspath(__file__))
-db_path = os.path.join(script_dir, '..','..','..',"00.DataStorage","cinderella.idolmaster.sl-stage.sqlite")
+db_path = os.path.join(script_dir, '..',"cinderella.idolmaster.sl-stage.sqlite")
 # 曲情報を格納する変数
 songDetail = None
 songLevelDetail = None
@@ -348,7 +348,7 @@ async def run_subprocess():
     env['PROCESS_NAME'] = 'OCR_CLI_Process'
     # OcrCli.pyを実行
     await asyncio.create_subprocess_exec(
-        os.path.join(script_dir, '..','..','..','.venv','Scripts','python.exe'),
+        os.path.join(script_dir, '..','.venv','Scripts','python.exe'),
         '-Xfrozen_modules=off', 
         os.path.join(script_dir, 'OcrCli.py'),
         '--Caller', 'Server.py',

@@ -100,5 +100,5 @@ if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
     db_path =  os.path.join(script_dir, '..','..', 'cinderella.idolmaster.sl-stage.sqlite')
     output_dir = os.path.join(script_dir, '..', 'public', 'songimage')
-    json_path = os.path.join(script_dir, '..','Assets','song_hash.json')
+    json_path = os.path.join(script_dir, '..','Assets','SongImageHash.json')
     SongImageRegister(db_path, output_dir)

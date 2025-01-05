@@ -164,7 +164,7 @@ const ScoreBoard = ({ SongData, ScoreData, RecordsData }) => {
                       </Grid>
                     </Grid>
                     <Grid height={50}>
-                      {graphData.length > 0 && <MyresponsiveLine data={graphData} />}
+                      {graphData.length > 0 && <MyresponsiveLine data={graphData.reverse()} />}
                     </Grid>
                   </Grid>
                 </Card>

@@ -202,7 +202,7 @@ def send_request_with_retries(url, message=None, retries=3, interval=5):
                 print("All retry attempts failed.")
                 return None
 orb = cv2.ORB_create()
-def compare_images(targetimage, imagemask, compareimage, IsReturnValue = False, threshold = 0.6):
+def compare_images(targetimage, imagemask, compareimage, IsReturnValue = False, threshold = 0.5):
     # 画像を読み込む
     MaskedFrame = cv2.subtract(targetimage, imagemask)
     # ORB検出器を作成
@@ -629,30 +629,25 @@ def main(input_source):
     else:
         # デバイスIDの場合
         # キャプチャデバイスのインデックス（通常は0または1）
-        cap = cv2.VideoCapture(0)
+        cap = cv2.VideoCapture(3,700)
 
         if not cap.isOpened():
             print("キャプチャデバイスを開けませんでした")
             return
         # 解像度を設定
-        cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1080)
-        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1920)
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                print("フレームを取得できませんでした")
+                break
+            # フレームをリサイズ
+            new_width, new_height = 640, 480
+            frameToProc = cv2.resize(frame, (new_width, new_height))
+            process_frame(frameToProc)
+            # フレームをRGBに変換
+                #frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            # フレームを仮想カメラに送信
 
-        with pyvirtualcam.Camera(width=1280, height=1024, fps=30) as cam:
-            while True:
-                ret, frame = cap.read()
-                if not ret:
-                    print("フレームを取得できませんでした")
-                    break
-                # フレームをリサイズ
-                new_width, new_height = 640, 480
-                frameToProc = cv2.resize(frame, (new_width, new_height))
-                process_frame(frameToProc)
-                # フレームをRGBに変換
-                 #frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-                # フレームを仮想カメラに送信
-                cam.send(frame)
-                cam.sleep_until_next_frame()
         cap.release()
 #endregion
 

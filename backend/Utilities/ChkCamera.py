@@ -4,7 +4,7 @@ import numpy as np
 import cv2 as cv
 
 def check_cam_by_index(i):
-    cap = cv.VideoCapture(i)
+    cap = cv.VideoCapture(i,cv.CAP_DSHOW)
 
     if not cap.isOpened():
         print("Cannot open camera")

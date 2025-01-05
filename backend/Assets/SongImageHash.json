@@ -1,0 +1,3327 @@
+{
+    "お願い！シンデレラ": {
+        "ahash": "e300b1c38107ffff",
+        "phash": "af48c03f71e4857a",
+        "dhash": "d671650f6b77174d",
+        "whash": "4301b1c38187d7ff",
+        "crhash": "d671650f6b77174d,8f636952d2e7e141,588e06866745942c,074e5373e2a5d953,06231939194c4c54"
+    },
+    "お願い！シンデレラ（GRAND VERSION）": {
+        "ahash": "f872db83c3c34a1c",
+        "phash": "e4cd5bf33b087841",
+        "dhash": "72c4b2570daa96b8",
+        "whash": "f866daa1a7db4218",
+        "crhash": "72c4b2570daa96b8,343a1bcce4f17979,3e171511171a0604,9c9e1f1d9c1d0f8e,0b135b5b595b0b03,1f15159555170717,2333333333553b1f,289014180418383f,8717170785054313,8f1313138f8b460f,0f17139c523b1b0f,ef676a9a9e8dc1b5,1f8b0b0d30f1266e,33381c3c1f1f2f3f"
+    },
+    "とどけ！アイドル": {
+        "ahash": "00bc1d07cfb9c1ff",
+        "phash": "ae466e6da4288f72",
+        "dhash": "2769698f9e631735",
+        "whash": "003c0d27c7b9c1ff",
+        "crhash": "2769698f9e631735,3d8f8147936cadbb,a74f353c3d1c31b3,951515a32b9a925a,367265cf1f98993d,938b99936be6b671,09325d7f4b5adae9,661b3b17998d4c98,f1b19343c7ce3b72,e9d38e7b772ccd57,58b293073e3d25e4,13b9d960233372d5,b6ccd4958d656331"
+    },
+    "輝く世界の魔法": {
+        "ahash": "f7c3e0a066fff0f7",
+        "phash": "e625a494b64b9bd1",
+        "dhash": "26060b45cca9812d",
+        "whash": "f782402066fff0e5",
+        "crhash": "26060b45cca9812d,1e2be3e17372c2d6,2e8f25428b991746"
+    },
+    "We’re the friends!": {
+        "ahash": "df83c181c0f3c3ff",
+        "phash": "ea3e95819ad2dad0",
+        "dhash": "3927212919d7963f",
+        "whash": "9f83c181c0e1c3ff",
+        "crhash": "3927212919d7963f,3179dacedada96b6,2f2b1d0c9d584d05,787e775b7bf5d69c,29696f96969212ca,920b0dc767a7b129,c5e3e36b6be76b3b"
+    },
+    "メッセージ": {
+        "ahash": "df83c181c0f3c2ff",
+        "phash": "ea3e858592f2cbd0",
+        "dhash": "1b27210919d6865d",
+        "whash": "df83c18180e9c2ff",
+        "crhash": "1b27210919d6865d,71735ace5ada96b6,0f132c3c9c181d04,383f775b79fc6c0c,e469a5a54e46666c,29696396929252ca,1b0d67a7b5656697,592f0d29290f2c69"
+    },
+    "Absolute NIne": {
+        "ahash": "3004cf0effffdad9",
+        "phash": "d71648460e1d8bfd",
+        "dhash": "e0941a7c4dd63231",
+        "whash": "3000cf0ea7fbda99",
+        "crhash": "e0941a7c4dd63231,3397d53cb2bab3a3,800144d00220e84a,0c4ccec64b27a627,904d67664384a4b7,222c196d6d6c6c39,d376e672323c9325"
+    },
+    "つぼみ": {
+        "ahash": "3004cf0ea7ffc2dd",
+        "phash": "d7114c440e1f89ff",
+        "dhash": "e0941a7c4dd62239",
+        "whash": "3000cf0eaffb82f9",
+        "crhash": "e0941a7c4dd62239,b597d414b2b9b3a3,800144d00220e84a,0e06c5c74d23d313,986d2762c384a4d3,222c196d6d6c6c39,0c081a1a3b3b3c58,f266e672322c9325"
+    },
+    "EVERMORE": {
+        "ahash": "00000043ffffff7e",
+        "phash": "952f53f600a31bd6",
+        "dhash": "cd0f7b96b469d4f0",
+        "whash": "00000003ffffff7e",
+        "crhash": "9bb6b47c45d8d0f0,69ce16619ab3b6ba,9ec9c1d96554d1c5,5766642525292311,23b1b5b7b79ba665,596c2424a32162a3,e8b2f0d4e8693332"
+    },
+    "Yes! Party Time!!": {
+        "ahash": "0000343c3fffffff",
+        "phash": "936a6d393d14172e",
+        "dhash": "93136de8d5d0b44a",
+        "whash": "0000243c2d7fffbf",
+        "crhash": "f4c8c8a4e42e1c35,b4346c46b4d04a13,6b6f6969e949c901,7c5852137268a337,6de890d550d42a4a,860d33a791dc3e64,9393496de8d4d550,a185b123590e07c1,822165124ab5359d,4f4fc9e3323b1b66"
+    },
+    "Take me☆Take you": {
+        "ahash": "c18888e1d3c37ffd",
+        "phash": "ea7a5924e2e37a84",
+        "dhash": "9b31390d2617d639",
+        "whash": "c18088e173877bfd",
+        "crhash": "9b31390d2617d639,7a9cf0f2f075c390,8b4e348cc861b979,525332c63e99f939,882a6a3c4652711b,0f3f332b261b662d,6d8c9dcc2d9b9b16"
+    },
+    "キミのそばでずっと": {
+        "ahash": "c18888e1d3c363dc",
+        "phash": "ea7a59a4e2e3b844",
+        "dhash": "1b31390d2617d739",
+        "whash": "c180c8e1f3d763bc",
+        "crhash": "1b31390d2617d739,7898f0757075c390,8b4e3c8cc861b979,882a6a3c46527119,0b3f332b261b6625,8cbd8d4d17921e34"
+    },
+    "恋が咲く季節": {
+        "ahash": "c0e2f6c0820eeedf",
+        "phash": "f56ad23968c39d60",
+        "dhash": "1984a092165e4cbc",
+        "whash": "c0e4f4a0828eeedf",
+        "crhash": "1984a092165e4cbc,252f6f27e54cccd7,365bc7a3c3634b45,4733b3560d6f6252,2469dbd3830b4a08,65918a37735bd79d"
+    },
+    "always": {
+        "ahash": "c9e0f640820ee6df",
+        "phash": "f462ca3928c39f6c",
+        "dhash": "1904a092165e0cb5",
+        "whash": "cde4f440820ee6df",
+        "crhash": "1904a092165e0cb5,2e7397a3e3d34b4d,063393146eeb5236,11718590160c888f,5a8db33b5859dbde,4b2da927c921a6d1"
+    },
+    "Vast world": {
+        "ahash": "1b13a7e3c33f701e",
+        "phash": "a5ad4d09694a9f3c",
+        "dhash": "72a66e8f0ff9b5d4",
+        "whash": "2b1ba7e3e31f0078",
+        "crhash": "72a66e8f0ff9b5d4"
+    },
+    "Trust me": {
+        "ahash": "0d35253f9f003017",
+        "phash": "aebb425dbc4338d0",
+        "dhash": "7969c96f3629c5f5",
+        "whash": "0d17ed3f9f003037",
+        "crhash": "869bcf464b25b3ad,b6d09fdbeb6e7cd9,3ef6662caca62262,cc987139d9e992b4,3a7cecec4d5e585d,cd4faa88b466d6d6,b0ecc4c6b7b7a7a6,8d8c89b8f8f0d3c2,32b1b4e8a933f3dc,6be7f1a942e9fcfc,7969c96f3629c5f5,1d9d27231e3e4e36"
+    },
+    "君への詩": {
+        "ahash": "0d25253f9f003f1f",
+        "phash": "ae7a015dbc837a91",
+        "dhash": "7969c96f3629ca75",
+        "whash": "0517cd3f1f003f17",
+        "crhash": "869bcf464b25b3ad,f6d09fdaea6e7cdb,3af6662caca62262,9c187279b9db12b4,7478f859585c595b,cd6ea88cb266d6d6,b0fcecc4c696b7b7,3646ce5a92ba3b3b,7969c96f3629ca75,9d9d26231e3e4e36,39496b7939793d7d"
+    },
+    "青空エール": {
+        "ahash": "0787c7c3c1e12040",
+        "phash": "b6b404435a5f7556",
+        "dhash": "e63606070f8b4d8c",
+        "whash": "07c7c7e3e3e924c0",
+        "crhash": "e63606070f8b4d8c,03132c5932cc9225,4bc9a5a5989a0e18,9e9dc49232f6ca24,332367e6ccc891c3,962c583931e3c78b,5fd872129232b200,1b11274b936ba9ab,17969597df151773,c504132b4b72ecdc,1c2c6696c32721f4,1c57230d88476713,0d9498250c263bd0,4d17337575717111"
+    },
+    "Stage Bye Stage": {
+        "ahash": "0000009efffffe11",
+        "phash": "957f69801ed72949",
+        "dhash": "45122a2c3cbcc063",
+        "whash": "0000009efffffe17",
+        "crhash": "243232b292d2dbd9,cd283000e2b7a5c1,1d84b092ced05440,fce43776549496b0,88456dd3d82628d9,8a455593d47678f9,45122a2c3cbcc063"
+    },
+    "夢をのぞいたら": {
+        "ahash": "0103d9d1624b7b75",
+        "phash": "a93e9b3146ccf883",
+        "dhash": "572fb3a5ce92d2e9",
+        "whash": "0503d9d1634b7b75",
+        "crhash": "572fb3a5ce92d2e9,fdd166389cb49424,26294b4f4c4c5ce3,2f3d4d5d39214997,37e7e5c4337b7363,191193c31e73bcfa,2dac2627356cf163,a2bcf7efbc72e8d0,4f4c6f679f963c65"
+    },
+    "夢をのぞいたら（for BEST3 VERSION）": {
+        "ahash": "0103d9d1624b7b75",
+        "phash": "a93e9331c6ccf883",
+        "dhash": "572fb3a5ce92d2e9",
+        "whash": "0503d9d1634b7b75",
+        "crhash": "572fb3a5ce92d2e9,fdd166389cb494a4,26294b4f4c4c5ce3,2f7d0d5d39214993,37e7e5c43b7b7363,191393c31a73bcfa,6dad262733356873,a2bcf7efbc72e8d0"
+    },
+    "Sun! High! Gold!": {
+        "ahash": "f2c6bef0c3bee000",
+        "phash": "d59541b560c39f99",
+        "dhash": "861e70811e708045",
+        "whash": "f2c6bef0c79ee000",
+        "crhash": "861e70811e708045"
+    },
+    "オウムアムアに幸運を": {
+        "ahash": "01ffff494d8cfe38",
+        "phash": "99a84e3a497b5e94",
+        "dhash": "4f2e909b9b1948e0",
+        "whash": "01ffff494908f630",
+        "crhash": "4f2e909b9b1948e0,cdd1a1c9c9cd1702,66ee2d656d656d65,8c1753d3e1417363,15959d95959d9595,60785848c8cf6f69,6359717351130c96,64488064c4082925,5bdd1f37bb69f9be"
+    },
+    "Brand new!": {
+        "ahash": "7cc4c17e0081e3e6",
+        "phash": "f008f60dd0c52b7f",
+        "dhash": "a00c0b9434030e8d",
+        "whash": "fcc4c17e8081e3e7",
+        "crhash": "9890a2868726260e,a52333f1e4c0f1b5,f590b0beacae976b,7cfce6ccccce88b0,ab4bccaa22727a48,8998b6a626263034,74b4d4edacece869,ff767c3c79e3c68d,463391cccc1390e8,2e27223a4e3a74e5,d7a994f3afdcbae4,a00c0b9434030e8d,e8e891274d99366d"
+    },
+    "Never ends": {
+        "ahash": "ffcf4341f9f1818c",
+        "phash": "eaa09ec49f60c53d",
+        "dhash": "b19b979553cb2d79",
+        "whash": "ffcf4145f0f1018c",
+        "crhash": "b19b979553cb2d79,ca96bd886264dfcb,fa37675b5beb4b07,d8cdcfbd9d87090d,0f0ceeaf66666292,9dcec6e77d74e0c5,b6873d2d2d7d5ddf,aa72232630981791"
+    },
+    "なんどでも笑おう": {
+        "ahash": "ff8309212490d0e7",
+        "phash": "aaa9f4d493cc9893",
+        "dhash": "9517534b4da3a42d",
+        "whash": "ff8301212590f6f7",
+        "crhash": "9517534b4da3a42d,526462f464d9c868,ab85c26130dc5e17,3636b6acec99d959,9cdcbe3ecedc9f8f,962b095b9b1bc967,67af3953d69c19b9,e567cc962b6bc9c9,709eb79919473efc"
+    },
+    "Let’s Sail Away!!!": {
+        "ahash": "0000cd40d2cfff7e",
+        "phash": "b1629ab54ed0b3cc",
+        "dhash": "0f1f8b96a69e92b2",
+        "whash": "0000cd40ebcfff7e",
+        "crhash": "0f1f8b96a69e92b2,46074ccda58cc3b1,8c3b4d0c198e87b3,dad2929e6dcddd9b,53b3338e4f2f0d9d,365c93465ab6a64c,4c5043ddd3d634e7,1c0b162d6b91a764,d10b762c999e4f4c,19cb49c30b133fcc,b632723272b4b7c8"
+    },
+    "EVERLASTING": {
+        "ahash": "ff83c1c7c3cf861d",
+        "phash": "bee68f9883c6884d",
+        "dhash": "6d2f278d9e3b2e3b",
+        "whash": "ff83c1c5c2cf8219",
+        "crhash": "6d2f278d9e3b2e3b,c7cdcc0b3b7663c6,9f8bdf1d4e4e130f,868cd9a14c191a8e,7851c5158fcb51e9,6677199989475b8a,898fc30726222326"
+    },
+    "キセキの証": {
+        "ahash": "00247efffb7e3800",
+        "phash": "cb335a2e2d8d94c9",
+        "dhash": "4949dccaaac46133",
+        "whash": "00247efffb7e3800",
+        "crhash": "4949dccaaac46133"
+    },
+    "VOY@GER": {
+        "ahash": "8080007b3f2baffd",
+        "phash": "c774fa0f81b8e116",
+        "dhash": "012414d6d6ca6b49",
+        "whash": "8080007f3f2baffd",
+        "crhash": "012414d6d6ca6b49,0182449696d6da6b,68d7360e8c070b11,8c0f4bc8978b2f34,5a1c1c1827b61e7b"
+    },
+    "ココカラミライヘ！": {
+        "ahash": "801800187effffff",
+        "phash": "896aaafaaa272237",
+        "dhash": "133172f2f2f0f6f2",
+        "whash": "800000183effffff",
+        "crhash": "88b3139793292a34,f47a9de69717cbf3,b37170ecec64d450,72f0f2f0b0f0f2f2,0b11317250b2f2f0"
+    },
+    "ダンス・ダンス・ダンス": {
+        "ahash": "008e7e7e7e7e9c80",
+        "phash": "d1a97be7272a6460",
+        "dhash": "0b1890f8d4e4291c",
+        "whash": "009c7e7e7e7ecc00",
+        "crhash": "86c3e36670989c1c,0b1890f8d4e4291c,f118f1e2cc983337,46e0c0447298cc63,84464e2c28c899aa,cd9f9f2e6ce87020,dc7091c43452c682,95e7edddfbdd6cb6,c48498f39a7a29a4,d4d48997b3211e49,f001402008c2701c"
+    },
+    "Dreamy Anniversary": {
+        "ahash": "00107c3e3c5c38fe",
+        "phash": "c4136479f55e914e",
+        "dhash": "94a0f1ec6cb9a1a2",
+        "whash": "00107c3e7c5d78fe",
+        "crhash": "94a0f1ec6cb9a1a2"
+    },
+    "Next Chapter": {
+        "ahash": "0000000078ff7f7f",
+        "phash": "817c17ec6d0f5a23",
+        "dhash": "3396dc3392d8d2ca",
+        "whash": "004200007bffffff",
+        "crhash": "485b2d5b5b699959,5333925675757556,b26918c4d2daccd2,3396dc3392d8d2ca,b8cafa361b331a4e,594c784848c848c8"
+    },
+    "パジャマジャマ": {
+        "ahash": "3cfcc381cec2ff9f",
+        "phash": "d4468a553b2f31d5",
+        "dhash": "71a4ae4b9c163239",
+        "whash": "3c7cc281c682ff0f",
+        "crhash": "71a4ae4b9c163239"
+    },
+    "この恋の解を答えなさい": {
+        "ahash": "cf9787809fdfdc00",
+        "phash": "beb391c01f53f0c1",
+        "dhash": "9a2f0b2936943868",
+        "whash": "cfc7c7009bdddc00",
+        "crhash": "9a2f0b2936943868"
+    },
+    "WINTER and WINDOW": {
+        "ahash": "ffd1fd83c7ff8142",
+        "phash": "f8c360873517c73c",
+        "dhash": "d413613b3f433796",
+        "whash": "f7c1bd83c3d38142",
+        "crhash": "d413613b3f433796,3108181d18181973,da25696b2b6b6f2e"
+    },
+    "アタシポンコツアンドロイド": {
+        "ahash": "e6ef85ff038381c3",
+        "phash": "bbd24065853a5e3b",
+        "dhash": "c48c29174e2f2b13",
+        "whash": "e7ef85ff03818181",
+        "crhash": "c48c29174e2f2b13,2f49c9b2c961766d,796870cc4d2d2d27,93939f1f172be985,8f0f2ed499599123,37141c69051b16b6,b8da8c8ca589c95b"
+    },
+    "Nation Blue": {
+        "ahash": "0876c79783707ef1",
+        "phash": "b43a41433f556b6a",
+        "dhash": "39d49c372fcaec67",
+        "whash": "0076c79787727eb0",
+        "crhash": "90584020253b2938,e2f3f3737c4f6701,78d4bd272fcaec67,333371d93cf6b695,5b537c5a9d5a1e2c,c935344bdca53b3b,789c1f2951998d6b,8f131e1fbb9f1525,8c864f15a36323b1,6d6e73e6f6373323,d4d6545c90931ee9"
+    },
+    "Orange Sapphire": {
+        "ahash": "00ffc37fff0800fd",
+        "phash": "e9b5661d90273b70",
+        "dhash": "8e960edab8736309",
+        "whash": "00dfc36fff0800f9",
+        "crhash": "8e960edab8736309,438f17293171251a,81138bc37396cbc3"
+    },
+    "ススメ☆オトメ ～jewel parade～（CUTE VERSION）": {
+        "ahash": "7eef858300fbdff9",
+        "phash": "bb52c08505be5e3b",
+        "dhash": "f098291757321753",
+        "whash": "3cef818300ffc399",
+        "crhash": "f098291757321753,2f49c1b2c9697665,796970cc4d6d2d07,93939f173729e999"
+    },
+    "ススメ☆オトメ ～jewel parade～（COOL VERSION）": {
+        "ahash": "10f6c79793642cf1",
+        "phash": "f4bc41432f1b682f",
+        "dhash": "75949c37278cdce7",
+        "whash": "00f6c79787760cf1",
+        "crhash": "2420800001070a1e,c2f9fc7d7e4f6705,f494bd27278cd4e7,33337575d4969a96,c935344bdca73b3b,589c1e33229a1be6,8f131e9fbb9d1525,cb694f8d959590c4,b62a78d958ce4a1f,7a99bb8caece3e6c"
+    },
+    "ススメ☆オトメ ～jewel parade～（PASSION VERSION）": {
+        "ahash": "04d3806ffe3800ff",
+        "phash": "c12c4e5a93037f7a",
+        "dhash": "69b60edab8a2d0b0",
+        "whash": "10d3826b7e3828ff",
+        "crhash": "69b60edab8a2d0b0,0b1b6d7173686833"
+    },
+    "ススメ☆オトメ ～jewel parade～": {
+        "ahash": "5fffe781e3c3c25f",
+        "phash": "b093983c1d3d38d7",
+        "dhash": "92cd8c0f0d170eaa",
+        "whash": "5e7fc381c3c1425b",
+        "crhash": "92cd8c0f0d170eaa"
+    },
+    "パステルピンクな恋": {
+        "ahash": "1ce0a1bcfe7b7a00",
+        "phash": "c4fb2095de1aaac5",
+        "dhash": "754b552576d2a2a4",
+        "whash": "94e0a3f4fe7b5a00",
+        "crhash": "754b552576d2a2a4,58c8c8d95a463858,39182e4d6348d612,c7c9db2f7eddc76e,4946888c789ccb65,850fc9ad7b3f3e7f"
+    },
+    "オルゴールの小箱": {
+        "ahash": "f7f39190003e7eb6",
+        "phash": "c6eae5813ed85623",
+        "dhash": "65672521eec48e66",
+        "whash": "f5f19181007e7e36",
+        "crhash": "65672521eec48e66,c277df886412e0cd,2c1e1ed7c38f0b5f,1b8fd3471990a1d2,11181b8ead27cf87,260c25556531695c,1a7a724a572b4d6d,5878518d1cd963bb,766f1713bb535878"
+    },
+    "絶対特権主張しますっ！": {
+        "ahash": "ffcb99cf173e2e00",
+        "phash": "b9fb4b8420f70a1e",
+        "dhash": "9313731eb5e6dcd7",
+        "whash": "ebcb9dcb133e0e00",
+        "crhash": "9313731eb5e6dcd7,e9c3c780e144f0f0,a91970e1c9c9c398,65251d167c5c1869,2e1f47e3e564e119,a6c6878b2ecf8633,0c0927939b3c2c0d,bdccc4e5e30a09c5,9e8dfaba1b8f8c3b,15182a380de1e143,cc0726cc3f4dcd9b,6b696defeba5242c,d9f976466e44646c"
+    },
+    "ゴキゲンParty Night（CUTE VERSION）": {
+        "ahash": "f4e0a1b4bc3c7e3c",
+        "phash": "c27f21d0de84aad5",
+        "dhash": "054b552550f1d4d1",
+        "whash": "f4e0a094bc3d7e2c",
+        "crhash": "054b552550f1d4d1,39182e4d63c8d612,838f9d5c5c1889e5,e3484d0d7fcecb26"
+    },
+    "ゴキゲンParty Night（COOL VERSION）": {
+        "ahash": "f5f39090003c7e3c",
+        "phash": "ceeac1c57ad05e28",
+        "dhash": "050725256bf0c464",
+        "whash": "f7f59181003c7e3c",
+        "crhash": "050725256bf0c464,c277df886412c0cd,2e1e0fcbc3870b4f,1b8fd347393839e2,11181b8e2927cf87,92646557de5ad856,554dad4d6b695d44,5871998c18c963bb"
+    },
+    "ゴキゲンParty Night（PASSION VERSION）": {
+        "ahash": "ef8b89c7133c3e3c",
+        "phash": "8bb9c39424f74a1e",
+        "dhash": "1f13739eb7e0d8c9",
+        "whash": "ef8b81cb133c3e30",
+        "crhash": "1f13739eb7e0d8c9,e9c3c580e144f0f0,695870e1c9c9c091,0e3d47cbe764e139,4e1e39713153cbc5,26654ede723572f2,b171599b13646472,8ac86a1884a131c3,0d85869c9c19187a"
+    },
+    "ゴキゲンParty Night": {
+        "ahash": "fd9d814f5f00386e",
+        "phash": "8baddbc8a04bf047",
+        "dhash": "6b71259bb49169c8",
+        "whash": "fd9d910f4b40386e",
+        "crhash": "6b71259bb49169c8"
+    },
+    "明日また会えるよね": {
+        "ahash": "0206c2c3c7ff8bf9",
+        "phash": "b5140f8f2e6d845d",
+        "dhash": "6ecc9eabbea61343",
+        "whash": "020642c3cf7f8bbb",
+        "crhash": "6ecc9eabbea61343,c494692bfcc6ec71,1c5d99d9a125a6ac,6c3d770f1f1b0743,cc0c14b737336b4b"
+    },
+    "咲いてJewel": {
+        "ahash": "f4746fc78124db80",
+        "phash": "f4d0441e6da782db",
+        "dhash": "a48c8c072ba83236",
+        "whash": "fe746fc7c1248f00",
+        "crhash": "a48c8c072ba83236,6dfcda3179c6f439,e287c8ee9ef3c3c3,8ca68c92321e1839,06277139387a581e,9b0b141412b62626,fefe092ce6c70731,f3f3cb97371d77ee,a360c366e1676c06,7c504a34d01c1c5c"
+    },
+    "きみにいっぱい☆": {
+        "ahash": "1f0f8fdfff545065",
+        "phash": "989901d78b4c76ed",
+        "dhash": "f8d234a9d955b5d9",
+        "whash": "1f0f0edf7f149005",
+        "crhash": "f8d234a9d955b5d9,acac2c69f7f7ef6f,6365656c560c244d,1332653e3c2c3c34,aca7735a3d0d4943,3d4b33a4c9b3b5c5"
+    },
+    "Near to You（CUTE VERSION）": {
+        "ahash": "0206c3c3c7ff99ff",
+        "phash": "bc150f8f3c2c853d",
+        "dhash": "6edc9eab3ee73333",
+        "whash": "0206c2c3c77f91fd",
+        "crhash": "6edc9eab3ee73333,2c2e8d2964deec71,4da99b7333b7868c,e197256d87335276,8c0c12b333336949,6e6c6e33b1626d33"
+    },
+    "Near to You（COOL VERSION）": {
+        "ahash": "f46467c3813edb00",
+        "phash": "f4d2445a6da982db",
+        "dhash": "a48c8c0f2ba823a6",
+        "whash": "fe7467c7c12e9900",
+        "crhash": "a48c8c0f2ba823a6,2dfcda3179c6f439,8ca68c92321e1839,06277139387a581e,9b0b04141297a666,db7f1f2713f1f162,f3f3cb97373d7fff,6463444c602d9790,d991e5e5b7965652"
+    },
+    "Near to You（PASSION VERSION）": {
+        "ahash": "1f0f86df7ffc9805",
+        "phash": "98190bc7aa0cf66f",
+        "dhash": "fad234abc9cc32cd",
+        "whash": "1f0f04df7f7c8005",
+        "crhash": "fad234abc9cc32cd,a4ac3c6df7f7f76f,6365656c560c244d,1370a10d8294cccc"
+    },
+    "Near to You": {
+        "ahash": "8e04ff9900ff71ff",
+        "phash": "afb5901b2fc9d422",
+        "dhash": "5a6d05737171e149",
+        "whash": "8a04ff9800ff50ef",
+        "crhash": "5a6d05737171e149,266e777191436d33"
+    },
+    "チョコレート？レモネード？どっち？？": {
+        "ahash": "64ff918cb383c3f3",
+        "phash": "acdbc035d3703e45",
+        "dhash": "cdc3375d623786c7",
+        "whash": "24fb9185a383c3f3",
+        "crhash": "cdc3375d623786c7,0309148c74f3696b,f072272765d8d931,5729a39968a51f32,b5311a9ab4e9573e"
+    },
+    "Starry Night": {
+        "ahash": "01313afffe344101",
+        "phash": "ac8f2d11babb1534",
+        "dhash": "7367625dac6c9797",
+        "whash": "1131befffe50c101",
+        "crhash": "7367625dac6c9797,0e0626693b064e4e,4d4d1267c6c84c6e,8e860e0306ef67f3,2e56a2e25343611c,c39d24343632b4b7,6d4f3f1b8d8c747b,195367596971a7a5,f8fcbe8e73f5c2c6,1f3b3b7bfb21a100"
+    },
+    "認めてくれなくたっていいよ": {
+        "ahash": "00007efefefcfcfc",
+        "phash": "d5646b6e30f580d6",
+        "dhash": "a2e0c494ecc028a8",
+        "whash": "00007e7efcf8f8f0",
+        "crhash": "c08494ece0482888,a222c48694e8e008"
+    },
+    "銀のイルカと熱い風": {
+        "ahash": "fcf0feff3e000000",
+        "phash": "c6d5687b879a5192",
+        "dhash": "10a6a45464f335f5",
+        "whash": "fcf2feff3e000100",
+        "crhash": "1822a4e8d46462d3,4bc3939b33a3a799,0c583c1b85121934,c9c1071b6e3c6d3f,95cc4f676725ae83,446082d13525d1f7,233bb37343477d39"
+    },
+    "とんでいっちゃいたいの": {
+        "ahash": "e00064e3d8ffbf3f",
+        "phash": "c64248ff7da78243",
+        "dhash": "04c0cc56142c66e3",
+        "whash": "c00060e2d8ff3f3f",
+        "crhash": "04c0cc56142c66e3,cc66396c17195621"
+    },
+    "夏恋 -NATSU KOI-": {
+        "ahash": "00000060fcff7e1c",
+        "phash": "9c631ca34f817b96",
+        "dhash": "f070b0c260f8f8f0",
+        "whash": "000018f8ffff7e1c",
+        "crhash": "f0f0fcece4e0e061,f070b0c260f8f8f0"
+    },
+    "CoCo夏夏夏 Holiday": {
+        "ahash": "1e7effe32138001c",
+        "phash": "cfd01c053e70df0d",
+        "dhash": "b0b2a80f4bcbb239",
+        "whash": "1e7effe32129009c",
+        "crhash": "59581878fc9c6757,b0b2a80f4bcbb239,71b2ec7871e18314,04666e3733b3b2b5,5aa2613276e60107,cc9a1a3039471f77,f9ac252569cdd134,1873595151b53369,6064f139c8cb3c3c,d3d19633d2ce7119,ac585852599b8ee0"
+    },
+    "秋風に手を振って": {
+        "ahash": "033f3f3f28ccf8e2",
+        "phash": "878f7548370d3768",
+        "dhash": "467c6e695999a10e",
+        "whash": "003f3f3f28c8f8e2",
+        "crhash": "467c6e695999a10e,466160786d67717f,989b8b262d070b1f,1b12327903072f08,c4e9d32649932570,0a89a1878c1c3870"
+    },
+    "Halloween♥Code": {
+        "ahash": "30303c2c1b5fffcc",
+        "phash": "d04764ac3e9b10bf",
+        "dhash": "f4c4d8d972b4b81c",
+        "whash": "30703c2c1b1fffc4",
+        "crhash": "e4c096828b83303c,f4f0e9d4c8e0f0e8,61e2f178ceecb098,f131b070e981c2d2,c8277e0ccc73d816,f0c44ecc86cad46c,8fac6466a4b48ed2,cd881a97a5b0b191,7cd8c9c9c2869ce1,f4c4d8d972b4b81c"
+    },
+    "さよならアンドロメダ": {
+        "ahash": "00001c0070ffffbc",
+        "phash": "c51b3ae12dbf48e0",
+        "dhash": "73f0f078c6e24f70",
+        "whash": "00001c0872ffffff",
+        "crhash": "766666742c18f306,86c0700e47087070,3360f0ecf86686c0,0322434242120c00,3f3fbb9f9d9fcfdf"
+    },
+    "空想探査計画": {
+        "ahash": "3f3f1f1f03010000",
+        "phash": "8c91d76649db3364",
+        "dhash": "fffcfef3f7b52561",
+        "whash": "3f3f3f3f17071000",
+        "crhash": "ebf6b6b2d8fa15cd,2b7f4fcecedb3a70,e3993476dadb7971,d5d1f1f0a8c8c0b0,fffcfef3f7b52561"
+    },
+    "ツインテールの風": {
+        "ahash": "c7ce7f7ffe700004",
+        "phash": "91f33368b308ced9",
+        "dhash": "1d9cf2c2d0a1b3d8",
+        "whash": "c5ce3f7f7e700004",
+        "crhash": "1d9cf2c2d0a1b3d8,67270f2d3b3f3e38,063f7b7939171c9b,05091207130f0707,6430182d96cf63b1,793c773b381b0501,6e797c1f8f63d09c,b494d6d29a190d45"
+    },
+    "White again": {
+        "ahash": "7f7ebfffff1a00ff",
+        "phash": "9dc7623da26a9932",
+        "dhash": "d2c470738e32338d",
+        "whash": "183e3cb97f0800ff",
+        "crhash": "f3c47073618eb233,019848c230898b8b,bab232323b27a929"
+    },
+    "Frost": {
+        "ahash": "c3c2c0e0c3c1dfff",
+        "phash": "e965b42f869aca34",
+        "dhash": "0e8e8ecb17333b39",
+        "whash": "c3c2c0e0c1c9cbff",
+        "crhash": "0e8e8ecb17333b39,9ab5d53636353928,0f8f070d0b29692b,e7c99b13372d7b67,0c01c0c024230f3d,69c31f3f3f9f1e4f,3c1d97c69793a45c"
+    },
+    "冬空プレシャス": {
+        "ahash": "0040ffe30016e0ff",
+        "phash": "e010693a0f7f8f63",
+        "dhash": "09948a8ead268ec6",
+        "whash": "0044fff50076e0ff",
+        "crhash": "93975eb22232b7b3,c8491d983a358d4e,10cc2c9c1db9b365,c5a626898b8ca932,8a7ac63266ccec78,ac9ad94b62e6f6f8,0994868aad660ec7"
+    },
+    "桜の風": {
+        "ahash": "e0b0fefe7e7e2400",
+        "phash": "d2ea6b9432d089b7",
+        "dhash": "0961e094d4e0c849",
+        "whash": "e020fefe7e7e2400",
+        "crhash": "0961e094d4e0c849,c943861d3bedc957,0a4d49183e676e6a,325011c2ce9d324f"
+    },
+    "HARURUNRUN": {
+        "ahash": "fcffec8080843f07",
+        "phash": "b6ca80777e927321",
+        "dhash": "48a3952d2e5cf8bf",
+        "whash": "fcfffc8000843f07",
+        "crhash": "48a3952d2e5cf8bf,4e1c9b3b3c3c8536,c8cccaca60b73863,c8379c2463b191a9,15948463c1c5262e,9193939383cc78e3,4d4acec7d56c98be"
+    },
+    "未完成の歴史": {
+        "ahash": "0000feffff7e0000",
+        "phash": "d05b0fe6fc03d072",
+        "dhash": "e0f09892aea4e8f0",
+        "whash": "0008feffff7f2000",
+        "crhash": "f1dcd885a188c499,c052d39684a18dcf,84b0ce6a8c8eea98,d8ccce4cecf2e320,6964048d8b8cf9ca,dad3b233331313d2,e0f09892aea4e8f0"
+    },
+    "Spring Screaming": {
+        "ahash": "00003e7eff7c3030",
+        "phash": "85332e78b0c673ec",
+        "dhash": "f6bec8ccbad0e0e0",
+        "whash": "02003e7eff7c7c30",
+        "crhash": "fc3ce98c2d317605,c9a6c5d90b2f2d07,a7a7da6826262436,ca9398b14d8b2da5,889894269015658d,b4c08bb25b0fdcc2,562babefcd991183,32b2b398d881b2b3,f6bec8ccbad0e0e0"
+    },
+    "不埒なCANVAS": {
+        "ahash": "00070e1987fef0c0",
+        "phash": "b52565c52e491b37",
+        "dhash": "cac6d8b36e384107",
+        "whash": "00070f9f8ffef8c0",
+        "crhash": "2c2cd8987367cd3d,99374d3a98430235,6661e9f080819a30,6aceaeec99275f38,3a985142420a3575"
+    },
+    "印象": {
+        "ahash": "bf3f2f7b7b770301",
+        "phash": "87ca1ed4e9c2d02f",
+        "dhash": "65f7cfc3c3c4e64f",
+        "whash": "3f3f273b6b760200",
+        "crhash": "65f7cfc3c3c4e64f,7cdcbcece4e4e4e4,60d0d09094a1a929,bcf4cff3f1e6e6e6,92e565e7d3d3d32b,90b0b4bec3b7062e,89c9999090103626"
+    },
+    "躍るFLAGSHIP": {
+        "ahash": "00003feffeff3800",
+        "phash": "80a54df570aba59d",
+        "dhash": "96f2ee8d94caf1b0",
+        "whash": "00003fff7eff3c00",
+        "crhash": "96b0ee8d948e69f0,883bc7cbcbcbc9eb,984fb1018109e2e1,f1f1b3b070d1c990"
+    },
+    "Athanasia": {
+        "ahash": "7f7f1f3f3e001f00",
+        "phash": "8181f9ea47987eb8",
+        "dhash": "fadafaececf8ba6c",
+        "whash": "7f7f1f3e1e000f00",
+        "crhash": "fadafaececf8ba6c,1f1fd3e3637ef6b2"
+    },
+    "イケナイGO AHEAD": {
+        "ahash": "fefcfd780c447cf8",
+        "phash": "d0a5fa14b5a52ba9",
+        "dhash": "cca1a9b0d4d4c839",
+        "whash": "fefcf838084078f8",
+        "crhash": "cca1a9b0d4d4c839,a2c8b449b6cd762b,01c1191b44cc8d78,1c52c22585037226,2f68be33387ffff1,783f0b99681c11b1,785f5395330fe1e1"
+    },
+    "Snow Wings": {
+        "ahash": "0000007f3e608fff",
+        "phash": "9464fb4a9631e44f",
+        "dhash": "e0898eace4c43b5a",
+        "whash": "0000427f3e64dfff",
+        "crhash": "e88e3216c3f03eb7,7a7af6c49999c0c1,9155d85acaa9ac9d,e5af1e1eaea8e9e0,a86b3b3a6a4c4c20,e0888f8eecc4993a"
+    },
+    "Tulip": {
+        "ahash": "0000707c787c7878",
+        "phash": "c83227cb76dc54e4",
+        "dhash": "c58fa6e0e1f0f0e0",
+        "whash": "000176fcfc7c7c78",
+        "crhash": "e0f8f1e2fcf8f0c0,c58fa6e0e1f0f0e0"
+    },
+    "Tulip（SP VERSION）": {
+        "ahash": "00001e3e030f7e3c",
+        "phash": "956cca346ed035cb",
+        "dhash": "e4e1f0e4679ef8f0",
+        "whash": "10083e7f070f7f3c",
+        "crhash": "dbb6fef8f0a0f0e0,e4e1f0e4679ef8f0"
+    },
+    "ハイファイ☆デイズ": {
+        "ahash": "3c3c7fff7fcf7618",
+        "phash": "c1834eb25fe33a85",
+        "dhash": "c9d4b22a969bce32",
+        "whash": "24087efb5f4f6610",
+        "crhash": "c9d4b22a969bce32,e167879ffeecf1f9,70399dce2790e919,822000093ec0c2d0,3173737b0ea6e1f0,395e23c8d21d2f5b,e0d8d8b98b879191,3999b4b536196161"
+    },
+    "生存本能ヴァルキュリア": {
+        "ahash": "e0c8fffef8f00000",
+        "phash": "c9993e62d0878db9",
+        "dhash": "041172e090216380",
+        "whash": "e0e8fffefcf00000",
+        "crhash": "5878d8e5a5245239,1efac29a582c2d09,2e2b333b28212e39,9987c6636bbe9c89,1dd1d39a93b3b6a4,041172e090216380"
+    },
+    "純情Midnight伝説": {
+        "ahash": "00387c7eff7e7c00",
+        "phash": "c4166eed3782027f",
+        "dhash": "e4f0d8cc72f0e0e4",
+        "whash": "003c7c7efe7e3c00",
+        "crhash": "c4e0e0bc8ccc93b4,9bafe6cc8ab5252d,92929c9a78d59a4a,32c4597074b46442,e4f0d8cc72f0e0e4,91330a374dc292b6"
+    },
+    "Love∞Destiny": {
+        "ahash": "8120bdbf7f7f0400",
+        "phash": "8b8f3aa128bec369",
+        "dhash": "7969696dd4cc3579",
+        "whash": "8110bfbfefff0000",
+        "crhash": "929996939b9c9992,7969696dd4cc3579"
+    },
+    "サマカニ!!": {
+        "ahash": "e1e06880b00d7f3f",
+        "phash": "eb62e8627eb910d4",
+        "dhash": "83c3d25164ebfbf3",
+        "whash": "e1e06881b00dff3f",
+        "crhash": "8381c9ea5a6566ad,ff7df9c1f33c8e9b,c6e1e866d5d7a8d0,6a2d613e79969293,66adf95b8269f3db,8383c2576164e9db,181846e7262c4e4d,34315bbf7d6d298c"
+    },
+    "BEYOND THE STARLIGHT": {
+        "ahash": "8100387c7e000081",
+        "phash": "ce8e3930d38b2d6c",
+        "dhash": "1b157161e0330d2b",
+        "whash": "ff813d7efe180081",
+        "crhash": "f0b2f0aaaecce8a0,1b157161e0330d2b"
+    },
+    "ラブレター": {
+        "ahash": "c0c083034fcf817f",
+        "phash": "b97a52d0846fbd21",
+        "dhash": "0899232a9e1e4bee",
+        "whash": "c0c0830b4fdf857f",
+        "crhash": "000030204e89898b,c0c4669ef8f0d0b0,1b2aba9e1e19cfee,9ce2c0cc7cd936c6,080899532aba9e1e,2c2e2c2adb9cbb3e,e7c7979654d71a54,342c5949c3c58b36,16562529cf9c186c,870323170b071e3f"
+    },
+    "Jet to the Future": {
+        "ahash": "fffcfcf730000000",
+        "phash": "d6e2e88d85879ad2",
+        "dhash": "80890d4664700084",
+        "whash": "fffcfcf7f0008000",
+        "crhash": "80890d4664700084"
+    },
+    "あんきら⁉狂騒曲": {
+        "ahash": "ffff0f0f00323f37",
+        "phash": "8df9c44d788536f0",
+        "dhash": "33b35c7a1966e6e4",
+        "whash": "ffff8f0300303b06",
+        "crhash": "33b35c7a1966e6e4,c99b79433220a9b9,27715b3b26819f96,83092829030e9d19"
+    },
+    "命燃やして恋せよ乙女": {
+        "ahash": "efc2dec7c2c2f000",
+        "phash": "f5b14be7a1a280e6",
+        "dhash": "1e2eaebe8ea624c0",
+        "whash": "efcadacfc2c2e040",
+        "crhash": "cc8e1a3a2ea6b6b2,c1c0c7ecd0d65653,34b09496a4a48483,26f4e46466e66686,26b66e64a48ee078,b0b4d1a9e4968b26,d826aad045f3bca0,3160449ccc3e3e7f,e6e65ad8cc123358,c97930b3629265da,1a2ebebe8ea624c8"
+    },
+    "Sweet Witches’ Night ～6人目はだぁれ～": {
+        "ahash": "ffe7e000040100e2",
+        "phash": "e392e19e910dd87c",
+        "dhash": "c8cd0be87d2503cc",
+        "whash": "ffe7e9340c1181e2",
+        "crhash": "d67a6844a861468c,6ce86966b8f78366,a126b6786d6a4a86,96974b4b72626c6d,cc9e3a9ef83464ec,33b6347468494c8c,fbf2b81d36fd81c4,2980cbe171696c92,c8cd0be87d2503cc,cc8f91951bb32f1a,c2653b1c8c92c8e0"
+    },
+    "情熱ファンファンファーレ": {
+        "ahash": "fffbe10000873ffb",
+        "phash": "ade9c4360933fec0",
+        "dhash": "06a3031a332d6ea3",
+        "whash": "fbfbc100008717fb",
+        "crhash": "06a3031a332d6ea3,173607455d362c0c,6ab22ab4654dd3c3"
+    },
+    "桜の頃": {
+        "ahash": "c1e1f191e3e17f1c",
+        "phash": "e86a50fb198d6a87",
+        "dhash": "9785c7334303f2a8",
+        "whash": "c1c1f1a1e1e1ff18",
+        "crhash": "46a082606c2a8b33,9585c733534393e0,f0c8946206a4cce8,938587e713534b93,93b3dafcf062a898"
+    },
+    "∀NSWER": {
+        "ahash": "005e3f7ffef40600",
+        "phash": "948973626f9649b5",
+        "dhash": "c0b4f8f82084ccf8",
+        "whash": "005e5f7ffef40600",
+        "crhash": "acd9a7d190a52e50,6c6164684151b3c6,c0b4f8f82084ccf8,b1cda7993446474e"
+    },
+    "Nothing but You": {
+        "ahash": "007c7e7e7c781000",
+        "phash": "c19322670a9f6eea",
+        "dhash": "e0f0f0f0f0e2f2b1",
+        "whash": "107c7e7e7e7e1800",
+        "crhash": "e1d0f0f9f1f0e2f1,e0f0f0f0f0e2f2b1,863d5f1f3f9fcde7"
+    },
+    "モーレツ★世直しギルティ！": {
+        "ahash": "0000fbffff7e0000",
+        "phash": "81ba6a919543d7b5",
+        "dhash": "c9b173d0bebad366",
+        "whash": "0001ffffff7e2000",
+        "crhash": "c9b173d0bebad366,31b233f0f031f551,053333c88e8db926,34d21859d81436a2,830d386ccd9d1b25,2b4990a71e793163,0620e0868100ba08,4aec9e3575e184a4,a2464ed6923a1a4a"
+    },
+    "With Love": {
+        "ahash": "081e3f7ffefef840",
+        "phash": "d09b7bfa69e30085",
+        "dhash": "9838f696b6b48286",
+        "whash": "001e3f775efcf800",
+        "crhash": "9838f696b6b48286"
+    },
+    "リトルリドル": {
+        "ahash": "00bafc3c7f6efe70",
+        "phash": "c5be7ab10efc4380",
+        "dhash": "d4704575c6da92c5",
+        "whash": "0018fcf87e4efa70",
+        "crhash": "d4704575c6da92c5,658993264d1f77b3,9c47a944291994cd,4c16868b4365128d,5890e16103471b3b"
+    },
+    "Kawaii make MY day!": {
+        "ahash": "fbff3f0000e8fffe",
+        "phash": "910dcce9371a4ad7",
+        "dhash": "d2b2fcc94a91b4a4",
+        "whash": "7aff3e0000e0df56",
+        "crhash": "d2b2fcc94a91b4a4"
+    },
+    "双翼の独奏歌": {
+        "ahash": "00067cffff7c6000",
+        "phash": "c09e37e1bcc9492e",
+        "dhash": "ececf0b2a6c0c042",
+        "whash": "002e7cffff7c6000",
+        "crhash": "f0f0f0f0e0f0f0f0,f170aca4a3808481,f5e68a4cca9a9ad5,ececf0b2a6c0c042"
+    },
+    "イリュージョニスタ！": {
+        "ahash": "181c7e7f7f3c0076",
+        "phash": "925a7e2fa5c9d070",
+        "dhash": "71798cf2d4d47194",
+        "whash": "001c7c7f7e3e007e",
+        "crhash": "71798cf2d4d47194,a49cf8b3b79ab2cc,71798cf2d4d47194,8a93859c2cf6738d"
+    },
+    "Twin☆くるっ★テール": {
+        "ahash": "7e0e3efedec0ce00",
+        "phash": "969521e86ee16ace",
+        "dhash": "dcdc6cac24119a15",
+        "whash": "7e0e3e7edec0ca00",
+        "crhash": "dcdc6cac24119a15,c3cf91c4e8cdc9cd,c5f3b3d1d1f0d6ec,bcdc4c6ca5301695,74f474542491a929,180d2e661b21482a"
+    },
+    "Trinity Field": {
+        "ahash": "6ee3e0b8d4c088d0",
+        "phash": "fca725b0dc1b007e",
+        "dhash": "dc4eab7024b22ab6",
+        "whash": "eee3f0b8dcd088d0",
+        "crhash": "00000142a4d5c9e1,dc4eab7024b22ab6"
+    },
+    "Happy New Yeah!": {
+        "ahash": "ffe78181c3c3db81",
+        "phash": "bc87c2b01a4f3ed8",
+        "dhash": "6c8c472b97963329",
+        "whash": "ffe78181c3c39981",
+        "crhash": "6c8c472b97963329"
+    },
+    "美に入り彩を穿つ": {
+        "ahash": "0d0f1f7f7f3c0000",
+        "phash": "819b7a53a91ccab5",
+        "dhash": "d9fbfef7dae8ecbb",
+        "whash": "0f1f1f7f7f3c0000",
+        "crhash": "f6f67e1f93cff15e,39f2fafafd77bc90,d9fbfef7dae8ecbb,6adb547edfcb9ac6"
+    },
+    "Virgin Love": {
+        "ahash": "f1e3c7c10fdef800",
+        "phash": "e1e745ce0cdc189b",
+        "dhash": "a3cf9f376ab893d7",
+        "whash": "71e3c7cb07def000",
+        "crhash": "dc98b16363ce9693,f674d8ba33a6eecf,f7978bf24c70e186,cfacee3e3ccea636,1683a8f0f0b8dc7b,c264c83528def4b3,f7db7ffffefef8f0,85010307072e79dd,a3cf9f376ab893d7,69697139da461973"
+    },
+    "凸凹スピードスター": {
+        "ahash": "fbff88890001ff80",
+        "phash": "efebc48e68812f44",
+        "dhash": "47465b1b1523a426",
+        "whash": "f3ff88898011ff82",
+        "crhash": "47465b1b1523a426"
+    },
+    "クレイジークレイジー": {
+        "ahash": "ffdbdbba242c0000",
+        "phash": "c9983843d61cdf6c",
+        "dhash": "cd933232ccc8b332",
+        "whash": "ffffdbba242c0000",
+        "crhash": "71f0f0d0a84969cc,cd933232ccc8b332"
+    },
+    "ガールズ・イン・ザ・フロンティア": {
+        "ahash": "20fbffff7d393800",
+        "phash": "caa5654b32659b4b",
+        "dhash": "c366b0adf971f1f9",
+        "whash": "20bbffff3d390000",
+        "crhash": "c366b2ece9f9f1f1,ff5f2d2e6667c3cb,87860e0606878d80,0a1795959a2e2c3c,a9d9f971f1d179b8"
+    },
+    "Pretty Liar": {
+        "ahash": "bf868dc9c08180e3",
+        "phash": "fa9ea286e18baa52",
+        "dhash": "692c1d33870d3a87",
+        "whash": "ff868df9c0c180e3",
+        "crhash": "8260e1e06ce1e064,f0f8f0f0ecd23130,fcfcfcfcfaf0e1c1,0f0f3c7ccc844446,f0f0febcb070d050,49c9c8f8f0c8c9c9,5a5a524869943a2a,7272f2f03e3c7c96,692c1d33870d3a87,6969696969696969,6969696969696969"
+    },
+    "ドレミファクトリー！": {
+        "ahash": "3e3abbffbea0a040",
+        "phash": "979d0b1390fb7458",
+        "dhash": "d85222cc6c4549a9",
+        "whash": "3e3abbffbea02000",
+        "crhash": "d85222cc6c4549a9,c7672c0922241232,5d5ed07e0d750d01,3474393b333636ad,4986992b1eb2cd5d,85133e5e5f7e6126,7869616366661858,efeeeffbebe9dd5b"
+    },
+    "ドレミファクトリー！（U149 VERSION）": {
+        "ahash": "fefa9a7f0e000000",
+        "phash": "d4dd4843905b3c5f",
+        "dhash": "b08222cc6c4c49a9",
+        "whash": "fefafaef8e200800",
+        "crhash": "b08222cc6c4c49a9,333316040200024a,851b6636bf7ee126,0080214343a9386e,efc7fffddbd9dd5b,414b3171f3d18638"
+    },
+    "アンデッド・ダンスロック": {
+        "ahash": "00007e7effff0000",
+        "phash": "c1c53eb8b817c1e9",
+        "dhash": "f2e0dab2b2927071",
+        "whash": "00787e7effff0000",
+        "crhash": "cd4d0d51594f0cc8,901e666c21262765,e7456132d3d252f2,dbcec6c74f4f97f5,dbdbcec6d65c86e6,f4126f0ed83073c5,f2e0dab2b2927071"
+    },
+    "Starry-Go-Round": {
+        "ahash": "ffff7e7e54563c00",
+        "phash": "94eb0ff478876096",
+        "dhash": "b4f0e0d4b4d4d0f0",
+        "whash": "ff7e7e3c00563c00",
+        "crhash": "b470e8d4b694d4f8,9acacac2c4da9afa,30e8d49694d4f0f0,0b2a356a4656e6e4,afabcd333132d636"
+    },
+    "Sunshine See May": {
+        "ahash": "ffffff81c1404000",
+        "phash": "e0cf93e069b692e1",
+        "dhash": "8080642f978c8cb3",
+        "whash": "ffffff81c1444000",
+        "crhash": "8080642f978c8cb3"
+    },
+    "Palette": {
+        "ahash": "ff9680db1f39313f",
+        "phash": "8ef2848eb9e0417f",
+        "dhash": "656c153369e3e7fa",
+        "whash": "ff96c0991d39311a",
+        "crhash": "656c153369e3e7fa,1e0b010205051400,4009072e1e32f58d,ecd9a74e9d3972e6"
+    },
+    "スパイスパラダイス": {
+        "ahash": "3921cfdefee38370",
+        "phash": "e5836dcac8b5c1d2",
+        "dhash": "62465e3ea8a22696",
+        "whash": "3820cffefe438350",
+        "crhash": "2cc683030bc61c81,491983a2a2d46c71,480cae5e1e9c33c7,8cea8c98d4ac6ccb,f195b93378ce8f94,63c7662c9cd44c54,7bcb9131666467cd,534c68e574b4a5e4,aece38e5ecccde2e,9a36a6e5484c1c9c,68d22b4a4693c8e1,42380c7203060e38,76c79d2918363593,199b53ca48626a9b,71cc96b21b134f6d,26e3c1811001631e,62465e3ea8a22696,b21363dac655328c,092418c02183271e,96332b191351ceaa"
+    },
+    "義勇忍侠花吹雪": {
+        "ahash": "420f081838f8f8fc",
+        "phash": "d935b5e05f424a4b",
+        "dhash": "9e9e796971e98949",
+        "whash": "4a0f0818b8fcfcfc",
+        "crhash": "e8e0b4d0e0a5f8f2,70b5f229ca76d4f5,1796a66ccd3ee445,3364bba52999a139,8042207076780107,9e9e796971e98949"
+    },
+    "Needle Light": {
+        "ahash": "fcfedcc0f0608040",
+        "phash": "d1dd93c7433e48c2",
+        "dhash": "d0d29838c0820c88",
+        "whash": "fcfefcc8f0e08440",
+        "crhash": "3f951e1c34fad4a8,6cc8dc889c9e1e14,819282889999989d,8eaab3333333aa8e,5e76634590b23454,958cab272d5be6c9,d0d29838c0820c88"
+    },
+    "Fascinate": {
+        "ahash": "e7c381400081fffe",
+        "phash": "e1209597d4c07bcf",
+        "dhash": "8e0f0387ad1b9ea0",
+        "whash": "e7c3c1404081fffe",
+        "crhash": "78c8b8f8769d2c2e,994c4c4c4d4ec3e0,2dda3a639f974e78,d9ac7695a8cb6294,542ae39383b2c54d,46abad5175b52d62,52aaeb1c4cb1c01a,8e0f0387ad1b9ea0"
+    },
+    "O-Ku-Ri-Mo-No Sunday!": {
+        "ahash": "6066800182e7ffff",
+        "phash": "fe43c172210b5dbc",
+        "dhash": "c3cc344d0c0d3333",
+        "whash": "2066800187c7ffff",
+        "crhash": "c3cc344d0c0d3333"
+    },
+    "無重力シャトル": {
+        "ahash": "00303e0e31fc5e1c",
+        "phash": "d42f45603ab9da8d",
+        "dhash": "19c2623ce1a8ba20",
+        "whash": "00703e0e79fc7e3c",
+        "crhash": "95c8a3d3643a4e62,dc3af2c4b8d9f366,7fff7cf0f032b4e4,b3e8a62c8db57436,b199999999989922,19c2623ce1a8ba20"
+    },
+    "バベル": {
+        "ahash": "7e7c7e7e0c000003",
+        "phash": "90d1295b3bc6e55a",
+        "dhash": "f2f8c4ec79ae3117",
+        "whash": "7e7e7e7e0c001c83",
+        "crhash": "f8f0d9f8e48ee438,4b678f5cb66ce4b1,f2f8c4ec79ae3117,c3430b331b0761d8"
+    },
+    "comic cosmic": {
+        "ahash": "ffffbf030081fff8",
+        "phash": "afb4c06227859ed3",
+        "dhash": "aaa874674d49d332",
+        "whash": "7fdf9f010080f8f8",
+        "crhash": "aaa874674d49d332"
+    },
+    "ミラーボール・ラブ": {
+        "ahash": "ffffd3000047f964",
+        "phash": "aebcc1914e3af0c5",
+        "dhash": "8cd2177565d453ca",
+        "whash": "ffffd3000005f962",
+        "crhash": "8cd2177565d453ca,adcf0d6d69c9cd5b,69a8356562e3a365"
+    },
+    "Unlock Starbeat": {
+        "ahash": "ffe4808c3a0829ff",
+        "phash": "9a72a561953a5ae5",
+        "dhash": "914c2939e2b34b7e",
+        "whash": "ffac80886a1039ff",
+        "crhash": "914c2939e2b34b7e,64683938caa27959,3118513333b34d39"
+    },
+    "TRUE COLORS": {
+        "ahash": "021f39ffffc7c0c4",
+        "phash": "940d1435777f644b",
+        "dhash": "9ebc6131acb61b9c",
+        "whash": "021f38ffff8780c0",
+        "crhash": "9ebc6131acb61b9c,b96777ef8a9efe7e,a66363676d6d2d2d"
+    },
+    "ステップ＆スキップ": {
+        "ahash": "ffff07870081ffff",
+        "phash": "ba93c16a72b56cc4",
+        "dhash": "9acb171dad2baca9",
+        "whash": "d4ff0781008157ff",
+        "crhash": "9acb171dad2baca9"
+    },
+    "Gossip Club": {
+        "ahash": "0000103c3c7e7e7e",
+        "phash": "947e61538f4c3e61",
+        "dhash": "e0b23171f8fce0f0",
+        "whash": "0000183c7e7e7eff",
+        "crhash": "858d5aaab6dce971,716171d8fce0d4f0,e0b2357179fce4d0"
+    },
+    "Secret Daybreak": {
+        "ahash": "ff7f7f7e0e000000",
+        "phash": "9180aedbd0ecdca5",
+        "dhash": "c8ccc494dc53131e",
+        "whash": "ffff7f7e2a000000",
+        "crhash": "c8c8cc94dc531317,0f1b76865b4f1c70,94dc5c535313161e"
+    },
+    "ギュっとMilky Way": {
+        "ahash": "ffe7ffdb03000062",
+        "phash": "bdd2c12e85f89235",
+        "dhash": "8c44983766291386",
+        "whash": "ffe7ffd103000162",
+        "crhash": "8c44983766291386"
+    },
+    "幸せの法則 ～ルール～": {
+        "ahash": "202c3efffc3c0000",
+        "phash": "de8725c2e46d85cc",
+        "dhash": "444d707070791354",
+        "whash": "f02c3ffffe3c0000",
+        "crhash": "664c7870707c7153,1ad8d8195858993a,444d707070791354,ff00000000000000"
+    },
+    "Gaze and Gaze": {
+        "ahash": "7c7c7cfc09c1c103",
+        "phash": "ead2257982f4313e",
+        "dhash": "d0c9e8c9991b03e3",
+        "whash": "7c7c7cfd49c18103",
+        "crhash": "d0c9e8c9991b03e3,19130e3e1fb9ecfd,250587cf37761606,9a11397373475787,b4b1b5c5dc3eef6d"
+    },
+    "輝け！ビートシューター": {
+        "ahash": "436727159303c3c3",
+        "phash": "a0a270697a5b2777",
+        "dhash": "9f97ce2d23561e1e",
+        "whash": "436727af8303c3c7",
+        "crhash": "9f9dce4d67a6161e,e5e4e0e6e6a04666,0d2dade4e06c2da9,02162c095992640c,d5a5b5a4a429a82a,9f96ce2d23561e8f,2b070e1c39331307,2e1e37b74e87a328"
+    },
+    "Great Journey": {
+        "ahash": "003820187e7effc3",
+        "phash": "c1436399382e767e",
+        "dhash": "d0d2c4f2b0f032ae",
+        "whash": "0078203c7efeff42",
+        "crhash": "4eb863cec88fcbe4,cb5b52baca6a261a,72c6ac4c38d3b264,d0b0b1b1f0f0f057,c6a3e586c1ea6e66,4c5a189e6ce88919,d0d2c4f2b0f032ae"
+    },
+    "オタク is LOVE!": {
+        "ahash": "303ca28f8302beb9",
+        "phash": "9f444a48afbf6063",
+        "dhash": "d7f04e7e0a926863",
+        "whash": "303cb28fa302bfb9",
+        "crhash": "d7f04e7e0a926863,c0b1b92d6d6e6ee6,34c45a933936d883,9ed8c94d8cbe7d2d,5b474dcdc8e4ad51,29509dafaf7c999b,0c8d9b8d4e7c4d47,2124d652e1666dbf,646236464736acc9,ccf9f3c6c968b951"
+    },
+    "ほほえみDiary": {
+        "ahash": "0331f8bdd4df7f5c",
+        "phash": "882d04b23ab3f17f",
+        "dhash": "d7e3b27315b8bdb0",
+        "whash": "031178dbc05f3f5c",
+        "crhash": "d7e3b27315b8bdb0,aeeb63627e34dc9d"
+    },
+    "太陽の絵の具箱": {
+        "ahash": "cf8104808783c3f3",
+        "phash": "be12e9a9c4a4879b",
+        "dhash": "2b2b3834365b2f27",
+        "whash": "ff8504828783c3f7",
+        "crhash": "2b2b3834365b2f27,020266264d8d1276,c84e2b0b13130b47,468fc31565d50f95"
+    },
+    "Joker": {
+        "ahash": "005c1c1c7eff7c40",
+        "phash": "d01c6ac76b4b9d68",
+        "dhash": "61acb0f8d8e0c089",
+        "whash": "004e1c3e7eff7c40",
+        "crhash": "a4be36e4346451b3,fc420ba597536ba6,02703c03cc31c410,1cd454775c545274,c89255e8e480040d,61acb0f8d8e0c089,c69c327066ad292d,b264dbd2922b6448,694b53929431be8c,58646b09aaccc773"
+    },
+    "ヒーローヴァーサスレイナンジョー": {
+        "ahash": "e7e07c63987f3ef0",
+        "phash": "c3a262ba3ca4c7da",
+        "dhash": "4dd9c8c631c1d880",
+        "whash": "e7e07862187d3cf0",
+        "crhash": "4dd9c8c631c1d880,7c5cd1b313f3e7c7,3d7c7c9cb571c38f,3c6b6322104c42e3,8e0f4f0f131984d2,ccc6d653717869d0,6edf9f3f79ffdcf3,23eff3710d8ffef7,c83061c385060c0c"
+    },
+    "Go Just Go!": {
+        "ahash": "040c3d7900ff7f6e",
+        "phash": "933b36f46484c46f",
+        "dhash": "8c59d9d3dac4dccc",
+        "whash": "04083d7b00ff7f2e",
+        "crhash": "8c59d9d3dac4dccc,4b0b46c5dae8b090,d2c30f162626eeec,645454299496b424,8c8f0c5d33696b6b,0d2d2d4c6dad31e5,194d4ccdcd5d5c8f,1656565b5b586627,522f53d9496460b1"
+    },
+    "オレンジタイム": {
+        "ahash": "8fff3e9cf0640fff",
+        "phash": "d6bda960781897c5",
+        "dhash": "35d66c3025cc9d59",
+        "whash": "8ff23e0070640ffd",
+        "crhash": "35d66c3025cc9d59,d2cbe96d7d9f9311,343430b45c743455,183c5ec61c393738"
+    },
+    "THE VILLAIN’S NIGHT": {
+        "ahash": "00183c3c3c3c99c3",
+        "phash": "9a45685b90bec4de",
+        "dhash": "70b2e0f8786931b7",
+        "whash": "00187c3e3cbd9dc7",
+        "crhash": "74750569ee68eac9,4d5dcd356628b969,d6cc725684a4b691,c2d2b2aca7b7c646,f8f0f8f870703030,c180c0c022222263,70f0e8f8f0706071,70b2e0f8786931b7"
+    },
+    "Wish you Happiness!!": {
+        "ahash": "181c3effa73e3818",
+        "phash": "8ed248be7dac8623",
+        "dhash": "b170f4244d707171",
+        "whash": "183c3febb13e3818",
+        "crhash": "b170f4244d707171,27033b9197100527,182c63d3d0e66f1b,66cb94cd630f3c69,939794f3cdee5627,49d49e96cc69338f,33930c4c53551796"
+    },
+    "EVIL LIVE": {
+        "ahash": "1102000240e7f7f7",
+        "phash": "b40ca7e24ba56a5b",
+        "dhash": "e33636b691854c44",
+        "whash": "1102901660fff7f7",
+        "crhash": "be8e4cccccc3c026,5878c8e9f929a6d6,2f2d2e76f8e191b1,ccc9c1ac9c9094dc,c7ce9c944c6c282c,e33636b691854c44,8b8ace8c84c4c423"
+    },
+    "Just Us Justice": {
+        "ahash": "01033e6cdcffefff",
+        "phash": "b12d2a2a6bc2cedc",
+        "dhash": "bf3ef4d830cd9c0b",
+        "whash": "01031a40dce7e7ff",
+        "crhash": "bf3ef4d830cd9c0b,5f1f5f1ffbe2c54d,fccc10f4d55b5958,4cc1ce5e54acac42"
+    },
+    "Hungry Bambi": {
+        "ahash": "183c3c3c3c3c3c3c",
+        "phash": "c328c30b7d763699",
+        "dhash": "71e8ec4c7169e8e8",
+        "whash": "383c3c3c3c3c3c7c",
+        "crhash": "f0d494da6ce487ca,e8f0c4ccccb2cccc,71e8ec4c7169e8e8"
+    },
+    "Home Sweet Home": {
+        "ahash": "3c7e7e7f7f5c3800",
+        "phash": "80d245c82fee7cad",
+        "dhash": "f0f0a8edd1b0f2c6",
+        "whash": "187e7e7f7b183800",
+        "crhash": "f0c8f0a8ecf1f0b3,b6ecaca484a6c4a6,f0f0ecc4d4d4f0f1,f0e8c8ccd4d0f8f8,ccccccecc8ccfe7e,36566e6c529aa8ea,f0f0a8edd1b0f2c6,000040441494ea28,6d3f6f6dd4949613"
+    },
+    "パ・リ・ラ": {
+        "ahash": "99bf912c20ffc342",
+        "phash": "be1ee8c343785c2c",
+        "dhash": "71693755d5da1754",
+        "whash": "91ff932403ffe300",
+        "crhash": "71693755d5da1754,7269f1da8d8d4d9e,a1846d35d4d6d4b2,3435b35ad6ca8659,1e33b33113531134,8e337179ec6d292b,4c9ca697b124ba89"
+    },
+    "Secret Mirage": {
+        "ahash": "ff83c38981c383ff",
+        "phash": "bb8785c7dad8c038",
+        "dhash": "4a46171b19071717",
+        "whash": "ff83c381818383f7",
+        "crhash": "4a46171b19071717,9a3c79c4849c9998,c8a4b8ecd2c469ad,63d1592da664cefe,ce171b1919075737"
+    },
+    "レッド・ソール": {
+        "ahash": "000f7f3a4000073f",
+        "phash": "84a7bb794c0ccaf2",
+        "dhash": "c7decd668a9afefe",
+        "whash": "011f7f3b60000fff",
+        "crhash": "bb1ae4c6ef331918,d131297c38fe0ee6,4ce8c68eae8a8bcb,4f78f0c0c5c0b0b0,f5b861cb8c64f470,e4ec91b264c4da95,c7decd668a9afefe"
+    },
+    "星環世界": {
+        "ahash": "0020383e7e7e3f20",
+        "phash": "856a6f91729c70cd",
+        "dhash": "c9e8e0f0e8f8e2e2",
+        "whash": "0030387e7e7f3f30",
+        "crhash": "e5786878f9b05873,ead8d8c8f0e1d3c2,c9e8e0f0e8f8e2e2"
+    },
+    "Drastic Melody": {
+        "ahash": "c000dcfeffb80001",
+        "phash": "99f02a7ea55ad898",
+        "dhash": "0d0ab8d6f8712bab",
+        "whash": "c1005fffffb90003",
+        "crhash": "d271f4a67af1e5d3,0d0ab8d6f8712bab,971191959f99b125,3788b3a68d8b132b"
+    },
+    "かぼちゃ姫": {
+        "ahash": "0038667e7e627e1c",
+        "phash": "854d4e695c33738e",
+        "dhash": "72f2ccdce2ceccf4",
+        "whash": "003c667e7e627e1c",
+        "crhash": "d3f1a9d49c96a2cb,70f0e080c8c8c2d3,293e3ab1b9ba2a26,73a2054cb6d59465,138f8cccc8f0b2f6,72f2ccdce2ceccf4"
+    },
+    "堕ちる果実": {
+        "ahash": "000028363c3c1f03",
+        "phash": "8b7629da64b349a9",
+        "dhash": "7171515461717933",
+        "whash": "00003c3e7fffbf01",
+        "crhash": "b8d16161b8bece6f,7171515461717933"
+    },
+    "トロピカルガール": {
+        "ahash": "201f0fc98bdb39cb",
+        "phash": "ad06456f73437127",
+        "dhash": "c6a2aa1b17976393",
+        "whash": "201f07818bdb7bcb",
+        "crhash": "c6a2aa1b17976393,c1713fc61d1e3664,462f4d49c9c9489a,6343505253191961,8e1b2719496cf6db,2eac8cc62f6eacac,6fc98e8c8d8da526,59cbb1262267e74f,3dd72b379b6b1702,1c791b1b663a3321"
+    },
+    "Demolish": {
+        "ahash": "10182667fffec762",
+        "phash": "854e4dcc603757f2",
+        "dhash": "e7f4cc8e844e8eca",
+        "whash": "10182646fffec762",
+        "crhash": "f0b8f8b224e0e1f9,c46652baeaad25a0,a1b1b29a9b919545,70c0f8f8b9313818,87e1d1dbecfcfef6,e7f4cc8e844e8eca"
+    },
+    "ストリート・ランウェイ": {
+        "ahash": "bf0001808059ffff",
+        "phash": "880f85d8fef081f5",
+        "dhash": "31ebea1131b39cd6",
+        "whash": "bf0009850059ffff",
+        "crhash": "31ebea1131b39cd6,52da581941406665,0eb37119d89091b9,a5b5a5c8c4d4ce86,4e48c9496d175a4b,327260777161606e,c48db535a7a2dbdb"
+    },
+    "ラビューダ♡トライアングル": {
+        "ahash": "ff87bffe77780003",
+        "phash": "a5ff2068e74b8b18",
+        "dhash": "1636784aa6d793df",
+        "whash": "ef879eea77700003",
+        "crhash": "1636784aa6d793df"
+    },
+    "New bright stars": {
+        "ahash": "003c7c7e187e7e00",
+        "phash": "85606ec93db2f07a",
+        "dhash": "8ee0d4ccf2f0cc44",
+        "whash": "003c7c7e5e7e7e00",
+        "crhash": "9a8ccc969acde6c2,949626a6242c99b3,e5cf6ce66772ea6c,76ca99b2f0d4d4d4,ec86e4cce3c4c18b,8fec60d88913a2e8,8ee0d4ccf2f0cc44"
+    },
+    "まほうのまくら": {
+        "ahash": "18187effffffdcf8",
+        "phash": "dc09591c6b34257f",
+        "dhash": "3333b4ae33b43053",
+        "whash": "001812f7fbde9cb8",
+        "crhash": "3333b4ae33b43053,92921129ec11312d"
+    },
+    "メモリーブロッサム": {
+        "ahash": "cb89bcfc7e3c91c3",
+        "phash": "cbf92907f06e864c",
+        "dhash": "9b3b61d4d4692396",
+        "whash": "cb893c7c3e3c81c3",
+        "crhash": "9b3b61d4d4692396"
+    },
+    "No One Knows": {
+        "ahash": "18187e7e7cda7e80",
+        "phash": "dd0a2b689ec67d82",
+        "dhash": "6970f0f4f092dc5c",
+        "whash": "10187e7e7eca7e80",
+        "crhash": "d1e0a0a0e6e266a6,12364e62321a3e3e,8e98a080a0b09c87,b1f0d6b2b39accf0,b3a48e8e8f8f9bb3,6a6a6aead3939796,464666e4c4464606,9c1c0ce99bcfe56b,c965b1682c6483a5,b8cc4d4cb188a898,6970f0f4f092dc5c"
+    },
+    "チカラ！イズ！ぱわー!!": {
+        "ahash": "fddf9ff2e7c10000",
+        "phash": "f6da0aeae14a8996",
+        "dhash": "352c2c260e976c66",
+        "whash": "fddf9ffac7400000",
+        "crhash": "153d2c29260e969b,90c384c5e1b0b898,bc99b3978e9d3b34,d8628719f2267ee0,8c0c193030780de3,7c0c1a0c0c2a0806,2a0e969b4c6d6c46"
+    },
+    "ささのはに、うたかたに。": {
+        "ahash": "7e7effbf00c3c141",
+        "phash": "a1d7505646f76568",
+        "dhash": "ccf8526b2b071f97",
+        "whash": "7e3eff3f00c38101",
+        "crhash": "868eccecbaf27979,23f1e9d87292b296,defdfee845912920,55d1b27090aace86,90921abb13054561,dab2785b7a7e54b5,24cc595c6ecebc2c,ccf8526b2b071f97"
+    },
+    "サマーサイダー": {
+        "ahash": "f4e0500264aff7ff",
+        "phash": "f654f2c3970c92d2",
+        "dhash": "c484a466cc59178e",
+        "whash": "f4e0500264adc7ff",
+        "crhash": "62c28281c2d35153,84a466cc594b970e,cc848084a4a646c8,33c7d9342b77d68e,cc8912724c202161"
+    },
+    "ギョーてん！しーわーるど！": {
+        "ahash": "00027fa2eff4c0c3",
+        "phash": "f5873856b34fc089",
+        "dhash": "942ad24a6aac1696",
+        "whash": "008a7fe2aff6c0c3",
+        "crhash": "942ad24a6aac1696,b9995c4c4d969cfd,46198b8b93f3caee,294b493b67694f4f,5ad546129a3c3b72,026dd393ce4cca4c,a881468d8c2525e6,a1c48d1965419995,e35b989d05163032,94b6b29c906d666e,595b602536f83d29,a93b385f4e4bd392"
+    },
+    "廻談詣り": {
+        "ahash": "3c383818181818b9",
+        "phash": "c9c9e372d83af222",
+        "dhash": "f072f27070717171",
+        "whash": "3c3a383c381839ff",
+        "crhash": "b2bdadd26d948d32,cad4ca95dc2c6c93,9392d4cbdb616acc,f072f27070717171"
+    },
+    "MOTTO!": {
+        "ahash": "7f3ffe80043e3c54",
+        "phash": "96ed809368e2d51f",
+        "dhash": "c2e66425757ceda5",
+        "whash": "7e3ffe80003e3c54",
+        "crhash": "c2e66425757ceda5,3171ecd4cacacad4"
+    },
+    "UNIQU3 VOICES!!!": {
+        "ahash": "07070d0cfffb4f0f",
+        "phash": "bb1610e49f3bcc91",
+        "dhash": "5dddb9599ad3db1b",
+        "whash": "0f060d00fff94f0f",
+        "crhash": "5dddb9599ad3db1b,cce6f2f2ce07e79a,f369e4f6e4c75d79"
+    },
+    "ダンシング・デッド": {
+        "ahash": "7e18fe7e3c100072",
+        "phash": "c5dae51e87b081d9",
+        "dhash": "cc71f2ec61f4b2c2",
+        "whash": "7e18fe7e3c12007a",
+        "crhash": "9092929696b6b696,e0cc66673528c901,71b19aead8adcacc,8a39b0e4eac9b932,98596a4a67652a54,70d447aaca5d1993,544dcdabe607cef0,c0e8b2f26ebedcf4,78fc9adad2522880,f8fcf4c4b2a6d890,cc71f2ec61f4b2c2"
+    },
+    "Majoram Therapie": {
+        "ahash": "c01874f08081ffb7",
+        "phash": "ee4187787ee220d6",
+        "dhash": "13f0c42131332b65",
+        "whash": "c0187ee18083ffb7",
+        "crhash": "004651868ce9f1f0,923369e9f2cccc55,c4214a31133b4965,6c91c8cf9f383039,993b3b5a16ccd069,13b1ecc52130173b,cd2d2d2d2c2dcb16,93d34726339b0e03,6666662626246661"
+    },
+    "Majoram Therapie［ももクロ×シンデレラVer］": {
+        "ahash": "0c5fce43c31f3c00",
+        "phash": "91b15b9a705f51f0",
+        "dhash": "b8ba9a8696f06834",
+        "whash": "0c7fcf63433f3c00",
+        "crhash": "b8ba9a8696f06834,79c5d292b4f4b119,3b4371bf2d05428a,b7af8c66f6decbca,1008c88c6c60d0d0,c8ec2e3b1433a7ae,510425235993b5b5,8da9898bd97cb4ab,d3b38683cb65d60f,1a3093cbc9923164"
+    },
+    "ハートボイルドウォーズ": {
+        "ahash": "7cfe3c3ec4bc2401",
+        "phash": "87d409fc2b071f36",
+        "dhash": "a0b0e8f42970e86b",
+        "whash": "3cfe3e3cacbc2009",
+        "crhash": "3c2c2c2cb59d9c9d,9d89498999d97656,b4b6726c6c640049,4d4570584d4c4249,ac585b33b4f6a6a5,72719e968c6cf4f8,a4a534e5c4b3a1a3,0f9aca67a5da93e7,a0b0e8f42970e86b"
+    },
+    "Isosceles": {
+        "ahash": "80e5ffe7c7df99f4",
+        "phash": "f7624c2c630fac74",
+        "dhash": "0f4d2a4b8c3722cd",
+        "whash": "8025fee7c3db14e0",
+        "crhash": "0f4d2a4b8c3722cd"
+    },
+    "N.O.R.～Notes of Revolution～革命についての覚書": {
+        "ahash": "127e003fefc31b08",
+        "phash": "e41054ee5b0f7a0f",
+        "dhash": "9494cc5b0a2763b0",
+        "whash": "267e027febc31b08",
+        "crhash": "93c9e5f2e9cc8ecf,e8c81c76969c1cf9,66c38d162746d8e1,4fdebc1859f1e306,f0f0b170ecccf3f2,9494cc5b0a2763b0"
+    },
+    "ミライコンパス": {
+        "ahash": "dc838180c0f9ffff",
+        "phash": "ea3d94c074d2db45",
+        "dhash": "35170b051351e505",
+        "whash": "dc038180c0f9fcff",
+        "crhash": "35170b051351e505,52592aaa0a424bc3,a5116c3135250b16"
+    },
+    "さやけき花の生命に": {
+        "ahash": "81067e7e66001808",
+        "phash": "93c66c39a3cc69c3",
+        "dhash": "0b7cc4cccc1a73cb",
+        "whash": "c33e7e7e6f811808",
+        "crhash": "0b7cc4cccc1a73cb"
+    },
+    "全開！ミラクルアドベンチャー！": {
+        "ahash": "fefa83c3810064ff",
+        "phash": "fdddd246f8003b82",
+        "dhash": "54121a333345cd13",
+        "whash": "fefa87c1810064ef",
+        "crhash": "54121a333345cd13"
+    },
+    "悠久星涼": {
+        "ahash": "7c7f3e3c3c3c7c00",
+        "phash": "83a569c36bda3a1c",
+        "dhash": "c8ceece8e8e8f0f3",
+        "whash": "7c7e3e3c3c3c3c00",
+        "crhash": "c8ceecccc8e8f0f0,c8ceece8e8e8f0f3"
+    },
+    "Night Time Wander": {
+        "ahash": "00207092fefeffff",
+        "phash": "d56f02527c3dbca0",
+        "dhash": "20c0e23230b0c8b6",
+        "whash": "00001080fefeffff",
+        "crhash": "c0c6223230f8cab6,02e0c6e222323020"
+    },
+    "ノートの中のテラリウム": {
+        "ahash": "fbeac181c678f0f0",
+        "phash": "edb9c580deae40c5",
+        "dhash": "0212033d2ccac260",
+        "whash": "fbebc085c470f0f0",
+        "crhash": "0212033d2ccac260,032f4fdebd7af8e3"
+    },
+    "無限L∞PだLOVE♡": {
+        "ahash": "fffff9018080bf7e",
+        "phash": "fac1953c6b856ac8",
+        "dhash": "68ca91132335744c",
+        "whash": "bfffe1008080bf2e",
+        "crhash": "68ca91132335744c,7043cfcca1c49c18,6e93292e32256c08,4bcea24290c0854a,7d40a7b682cc4c80,ccdd8d688cccd1c7,c6d6d55444e48969,26e66c4a46c2c464,c9a883cf69c71040,8390951725291774"
+    },
+    "Hardcore Toyworld": {
+        "ahash": "407e3e18797f7f02",
+        "phash": "804277e87a707eab",
+        "dhash": "94d4e2b1f1b4ba72",
+        "whash": "007e7e10797f7f00",
+        "crhash": "ca983133b237353d,3834c4d9d0b4eaca,b6b1f1b3b4b8d272,94d4e2b1f1b4ba72,2655a9db9b5b5b0b"
+    },
+    "HALLOWEEN GAME": {
+        "ahash": "63670fda795f1a03",
+        "phash": "81b327c1675d361d",
+        "dhash": "4edf3ab28bbaf256",
+        "whash": "236f0f5e785f1803",
+        "crhash": "b4ebfae4ce866408,1a92cccdf3f9349e,f0e4a4d05070e2ca,e1e4cce6e6dc9a93,09a4a686c6c6c6cc,e8d4ccecb2868616,ceac8d2c3ba9ca6e,0e4d4c4a4a2abab2,56ba4e94b0d8d9c9,dcd462ecd4acdcd1,d098e4269bf9b1da,7ef9f8f8f8d85a97,4edf3ab28bbaf256,99098f8c11671c30"
+    },
+    "D-ark L-ily’s Grin": {
+        "ahash": "8f87e70f00081d0c",
+        "phash": "bfa5bd3e1488c0f0",
+        "dhash": "3f6f8f4c7d7179fc",
+        "whash": "9f8fe72f04181d1c",
+        "crhash": "7929979f3732783a,dc7eff7975b5d5b1,4ee82160f4b43533,b1bcbc3c3c94d695,cf4d4e4a725a5b31,988c343c743430c4,bbfcbb9a3c3cd8d8,3f6f8f4c7d7179fc"
+    },
+    "Teeenage☆Groovin’": {
+        "ahash": "39f0b80040daf723",
+        "phash": "cc4b83f8233f19a9",
+        "dhash": "d3a27266b6b4b4d6",
+        "whash": "39f03802c0daf73f",
+        "crhash": "d3a27266b6b4b4d6"
+    },
+    "Come to you": {
+        "ahash": "98bc80c7e7c05df9",
+        "phash": "ea1f5a56a6386589",
+        "dhash": "7179228ecf849981",
+        "whash": "98bc80c7e7c05df1",
+        "crhash": "7179228ecf849981"
+    },
+    "ワタシ御伽ばなシ": {
+        "ahash": "00187e7e7e7e7e18",
+        "phash": "c43e29e32fd2328d",
+        "dhash": "ccd4f4e8c6ccc8f0",
+        "whash": "00007e7e7e7e7e18",
+        "crhash": "38387aedcbc9db06,6a494973fb69549d,50447ab6c5a8d4c4,64dc9ccedbe0b891,ccccb4d6b2b2aa94,ccd4f4e8c6ccc8f0,d2464cdb93260d33"
+    },
+    "ミステリーハート": {
+        "ahash": "fff7c1800107efff",
+        "phash": "eecc81b65dd2a129",
+        "dhash": "f0070b21370f0953",
+        "whash": "fff181800103e5ff",
+        "crhash": "f0070b21370f0953,070b032437e78d0d"
+    },
+    "スバル": {
+        "ahash": "00003e7efff7f630",
+        "phash": "c51b6f2c09dc1eb1",
+        "dhash": "4acafcd0d8e624e2",
+        "whash": "00003e7e7ff7f620",
+        "crhash": "c9f8d4f0d8e6e624,db01c9a4c6d66670,9989a8a4d675743e,c9a9dcd8d26a6a34,ba42c978d4f1d8e6,dacce6e70424e262"
+    },
+    "書きかけのラブレター": {
+        "ahash": "763efe9809e56c20",
+        "phash": "d38c97726cc5e08d",
+        "dhash": "cc6cd2313b09484c",
+        "whash": "763e7bd808e5ec20",
+        "crhash": "cc6cd2313b09484c"
+    },
+    "ジュビリー": {
+        "ahash": "030762787466e4c0",
+        "phash": "c48f31364cc9376e",
+        "dhash": "5e5ecaf3a58c8c83",
+        "whash": "072f6e7c74e6e440",
+        "crhash": "a6462d98fc68d0e2,6c3a3462c3069c91,0cac5eba74c9f3b7,661c3b74e891a6cf,e68e9c7868e2a3c5,848c9c8c9048cc90,5e5ecaf3a58c8c83"
+    },
+    "神様！絶対だよ": {
+        "ahash": "1ef824beff31b9f0",
+        "phash": "cf904198543f36bb",
+        "dhash": "f4514d6465556340",
+        "whash": "06f820baff71a1f0",
+        "crhash": "f4514d6465556340,935bdbb9b139bcd2,6d4b372e3d3b366c,515d6565e5d543c4,c5c7871663c5cd7d"
+    },
+    "アッパレ♪Mahara★Japaaan!": {
+        "ahash": "bd95000899897cff",
+        "phash": "9a6cc69bcf413926",
+        "dhash": "712917d17939d4ec",
+        "whash": "bd950008998d7cff",
+        "crhash": "712917d17939d4ec,29594450f85ccc94,a25a6a6aaa5a261a,c8d244c94c494b6e,363926242126a524,7631b0d1556169ab,4b60125292905392,b839393939393939,8988a68c8cecac8e,d5923274615193ba,7f3f199d1db33f2e,030306062603c9c6,6d0fb690693993f5,ea2d34932515c964,7c7e2e2e2e999f9d"
+    },
+    "流星浪漫": {
+        "ahash": "0018127e7eff5a00",
+        "phash": "952f6be04a6c271e",
+        "dhash": "cafae6f0e88eb2f0",
+        "whash": "001a3a7e7eff5a08",
+        "crhash": "82e2c4aa4d14adc3,9e9f2766b44b5a0a,a266ecaace69b2ce,94a46c4d9d2969e6,f0f0f0f4cc869692,271333f0f0f4614d,cafae6f0e88eb2f0"
+    },
+    "Enishi": {
+        "ahash": "ffffc10000004160",
+        "phash": "e1bec68ed289588b",
+        "dhash": "4d0e1b134b17d7cb",
+        "whash": "ffffcbc980006360",
+        "crhash": "9ded6d0d0c1e1e1b,1c70c7d8a4216060,0c1f13394397d7c9"
+    },
+    "バラカストーリア ～月と太陽に祝福を～": {
+        "ahash": "3c7efcf8f0e06000",
+        "phash": "ca9607760eca3e59",
+        "dhash": "e4ca01a1810181d2",
+        "whash": "7c7efcf8f8e06000",
+        "crhash": "e4ca01a1810181d2,4bdbcb131e3971d1,44c0e49099593984,3133e6cddb3b76cd,2f87e17119292626,ca0181a1000183d6"
+    },
+    "S（mile）ING!": {
+        "ahash": "df8f8787cfd380c1",
+        "phash": "be9b48ccc26ee462",
+        "dhash": "3c182f2d1c36270d",
+        "whash": "9f8f8787cfc280c1",
+        "crhash": "3c182f2d1c36270d,0e13b3b93938785a"
+    },
+    "Never say never": {
+        "ahash": "230174f1f3fbf0e1",
+        "phash": "ea19219da7d29752",
+        "dhash": "d6b3e9c563a2c5c7",
+        "whash": "230170f1f1fbf0e1",
+        "crhash": "d6b3e9c563a2c5c7,c826e79a64c9f167,3f38684ccc9486d6,3c2f476365666b37,e7d2dad9d39c2c39,0c0d2d6d59583626"
+    },
+    "ミツボシ☆☆★": {
+        "ahash": "031ffbbf3300c7ef",
+        "phash": "af1d3220a7f540e7",
+        "dhash": "37733276678fcdcc",
+        "whash": "031fdbbb2100c76f",
+        "crhash": "37733276678fcdcc,cb9125300a786c35,773b1e53475e7bed,b1bb9bb21793defc,16ac85cb477178b4"
+    },
+    "おねだり Shall We ～？": {
+        "ahash": "e3c3e6e6e303ffff",
+        "phash": "e666892fc6d21ec4",
+        "dhash": "4e068ccc06761134",
+        "whash": "e2c0c4e6e003fdbe",
+        "crhash": "4e068ccc06761134,8f093d636726e7ce,719e0c0e133519b9"
+    },
+    "Twilight Sky": {
+        "ahash": "d3f7e6f9f970c000",
+        "phash": "ecad3648896c52bb",
+        "dhash": "a76e0ea3b3e1277b",
+        "whash": "53f7e6f97970c000",
+        "crhash": "a76e0ea3b3e1277b,eb699dcdc4666725,0a9297991b933771,0120058103165e5d,cd9d9ec745303b9f,ab9eb32f9775948e,95b1f1d91ca5984d,0607f3871d753656"
+    },
+    "DOKIDOKIリズム": {
+        "ahash": "f3f0f1f0e00006f6",
+        "phash": "e6c9a639e23da132",
+        "dhash": "0749824505062ccc",
+        "whash": "f3f8f5f0e00006f6",
+        "crhash": "0749824505062ccc,44d199d9c54638ea"
+    },
+    "風色メロディ": {
+        "ahash": "9f009bc3830fcdf7",
+        "phash": "bc0cd2b2e4f0e5c6",
+        "dhash": "3c71571616593947",
+        "whash": "df009bc38305cdf3",
+        "crhash": "3c71571616593947,1d6623f673296dd5"
+    },
+    "ましゅまろ☆キッス": {
+        "ahash": "d9890f3fe7c507f7",
+        "phash": "bb5d5c70c49cc0b6",
+        "dhash": "33515b6b4f1f1f0d",
+        "whash": "d9880f13e3c503f7",
+        "crhash": "33515b6b4f1f1f0d,463a29a6c64426a4"
+    },
+    "あんずのうた": {
+        "ahash": "fff19fe50030075f",
+        "phash": "abea9047f2b29591",
+        "dhash": "05331b256b637fba",
+        "whash": "ffd18fe50020075f",
+        "crhash": "05331b256b637fba,5bd891e1db24382d,4f4b05a5c3012f7f,165bdb6d6d760602,c00c35cf33dc536e,051f3f5f77cdb9e7,789f8731f393b2e1"
+    },
+    "華蕾夢ミル狂詩曲 ～魂ノ導～": {
+        "ahash": "ff1f8f8f818381fb",
+        "phash": "bd90c566d8b3a1c3",
+        "dhash": "aa735e1f372f2763",
+        "whash": "5b1f8f87808381fb",
+        "crhash": "aa735e1f372f2763,d3d9f4dcda480827,9c7ce8e9e9e9e0d2,062f1b1e9f9a7337,de0d6f1a9a372543,d9d0b1a586084e39,2d0e4e694ccbe3da"
+    },
+    "ショコラ・ティアラ": {
+        "ahash": "e7c7873f1f0501a7",
+        "phash": "bef0e10b9547946c",
+        "dhash": "8e1f156e393d2767",
+        "whash": "e7c787370f058187",
+        "crhash": "8e1f156e393d2767,37a9ad2e1e6cf669"
+    },
+    "ヴィーナスシンドローム": {
+        "ahash": "89b17135f9f0fcff",
+        "phash": "ea29b555bf5a9180",
+        "dhash": "5347c5690194296d",
+        "whash": "89a11531f1e0f8bf",
+        "crhash": "5347c5690194296d,077971e1d1912869"
+    },
+    "Romantic Now": {
+        "ahash": "9f0f9ecee1e474fe",
+        "phash": "fc3d9d20f990e0e2",
+        "dhash": "31776c3805ada4ca",
+        "whash": "9f0b8ccce0c464fe",
+        "crhash": "31776c3805ada4ca,8979e0dca2d2e071,830f3353f76a6a39,77d9d895664e5138,2324bc7062381830"
+    },
+    "You’re stars shine on me": {
+        "ahash": "04043ff98bf3e3ff",
+        "phash": "ab12167d9be28c33",
+        "dhash": "bcfcf0d353230f8d",
+        "whash": "04041cf989f3e1ff",
+        "crhash": "bcfcf0d313230f8d,8dbc3c7cfcfcfcf2,430343742c1d8fe7,d253e1850e0c0b1b"
+    },
+    "TOKIMEKIエスカレート": {
+        "ahash": "fbf0e0e1cbcf8890",
+        "phash": "e8c41eb189e7b351",
+        "dhash": "732509c7931f1571",
+        "whash": "ebf0e0e1cbcf8490",
+        "crhash": "732509c7931f1571,8e1b37306dc6cb30,db9099a6de4139ea"
+    },
+    "Naked Romance": {
+        "ahash": "f9e98181f1f0f0fb",
+        "phash": "ea2bcbcca512b325",
+        "dhash": "93111915e7050147",
+        "whash": "f9c90180f1f0f0f7",
+        "crhash": "93111915e7050147,0b39e4f173430763,d9d9d9d89a5c683a,0fc48b9c393135e9,fcd6cc6c3c3e6e7a,c9a2829fa62651d3"
+    },
+    "Angel Breeze": {
+        "ahash": "fcfc88f3f3fa980b",
+        "phash": "ddd212c5a6ee213a",
+        "dhash": "015811663282235a",
+        "whash": "fcfc08f2d2fa8803",
+        "crhash": "015811663282235a,933970a1e367e743,d59b90a1e58481d8,e7273b6be4901115,9992814b4e3a7a6c"
+    },
+    "アップルパイ・プリンセス": {
+        "ahash": "9f8f079f8fcf8081",
+        "phash": "bf9f3c98d8c4804b",
+        "dhash": "345b4d373b8c4f17",
+        "whash": "9f8f07838fcf8083",
+        "crhash": "345b4d373b8c4f17,2b19b408a5335848,a3c11c203981a163,1eafca682e0703e1,3b6d792e92818f2e,4c4c15576e8c360e"
+    },
+    "エヴリデイドリーム": {
+        "ahash": "fff1e1e1e0c084cb",
+        "phash": "ebcd9596b413d10a",
+        "dhash": "f6c3131b05080997",
+        "whash": "fff1e1e1e1c084c1",
+        "crhash": "f6c3131b05080997,0f9cf2f29e9aac14,0d84cb6d24361e4f,3f5ee743c3674e4a,393d3e5a1c193b32,bb0907215adb3635"
+    },
+    "Bright Blue": {
+        "ahash": "00000306f187ffff",
+        "phash": "e522ed5b581336c9",
+        "dhash": "02074e1cb72e1326",
+        "whash": "0000a306f387ffff",
+        "crhash": "02074e1cb72e1326,c367659ae6e4f8e6,13264e5b5e1e1c5d,942dc983438d9b73,1614d4d4d4d4d4d2,c7cf9cbe3b3c6cf3"
+    },
+    "Rockin’ Emotion": {
+        "ahash": "141073f361f1f3f2",
+        "phash": "ed1b5d7af6b44800",
+        "dhash": "b473c6c6cda3a646",
+        "whash": "1c1033e3e5f1e3b2",
+        "crhash": "f094a2a0a294e071,9c38f0527189942c,34961c3967cf3e3c,c000c600c0f21c77,e5672b2d2da7bb95,64e3c6568f6b46a6,5a83e0d80c26a1d1,292b473c6dc6d2c9,3933e64f77353474,e305811b2f2e7836,9a2e4e5c1b98184e"
+    },
+    "花簪 HANAKANZASHI": {
+        "ahash": "f1e0e0e0e0e9ffff",
+        "phash": "e3668c9295d899d5",
+        "dhash": "c14503434a9917aa",
+        "whash": "f1e0e0e0e0e9e13f",
+        "crhash": "c14503434a9917aa,533b1ec6d9c8c717,27858f1e1632666c"
+    },
+    "Hotel Moonside": {
+        "ahash": "c0c0e0b0c0c8cfc1",
+        "phash": "f845287f4f0fc1b0",
+        "dhash": "00a08840180b3907",
+        "whash": "f0e0f0b8c8e8cfe1",
+        "crhash": "e19187ca5269d85a,30178589931f03c0,d999398cf6be0e0d,fe3e86f37c2c9fdf,00a08840180b3907"
+    },
+    "お散歩カメラ": {
+        "ahash": "88f0f0f1f7d5c901",
+        "phash": "eacf1bb98390c6b0",
+        "dhash": "591185c5a5ad9999",
+        "whash": "88f8f0f1f5d54d01",
+        "crhash": "591185c5a5ad9999,c1821b1bb93b6339,ebd9d9d3da9ca718,850e1c5cd1b3a6be"
+    },
+    "メルヘンデビュー！": {
+        "ahash": "b808d9f3c3e1ef1f",
+        "phash": "eb491a63a4c4cbb9",
+        "dhash": "535933070e4bdd6c",
+        "whash": "a800f9e3c3e1671f",
+        "crhash": "535933070e4bdd6c,317dad2d292a220c,2507d39853b3592b"
+    },
+    "2nd SIDE": {
+        "ahash": "fdf9f0f0f1018bdc",
+        "phash": "eaca99abc43516e2",
+        "dhash": "6911050401591bb5",
+        "whash": "fdf9c0d0f10183dc",
+        "crhash": "6911050401591bb5,0147450d1e037161,1f4d0e1b33632333,93064e9b173f327d,92dbd9d4945a6638"
+    },
+    "熱血乙女A": {
+        "ahash": "9f808f198980fc7f",
+        "phash": "bf3d925c8291b1b1",
+        "dhash": "3f371e731333f0cc",
+        "whash": "1f808f988980fe7f",
+        "crhash": "3f371e731333f0cc,0f0f65e6e3636797,d6d8d1879e5979a4"
+    },
+    "き・ま・ぐ・れ☆Café au lait!": {
+        "ahash": "de0783c1e1f18b0f",
+        "phash": "bfc41fc03978c513",
+        "dhash": "322d27330bc71a3a",
+        "whash": "de878381e1f18b0f",
+        "crhash": "322d27330bc71a3a"
+    },
+    "薄荷 -ハッカ-": {
+        "ahash": "fffbf1f9f9350500",
+        "phash": "eec93693d9328433",
+        "dhash": "c3c7e7e3e3e56de5",
+        "whash": "fff1f1f971150100",
+        "crhash": "c3c7e7e3e3e56de5,093e65494f27171a,b2f16d0ec6034b63,3a797e3f9d8e47a1,cd0c1c0c2c2f1309,4fcfcf8f8726b8e5"
+    },
+    "毒茸伝説": {
+        "ahash": "3c3f0f1f733c1400",
+        "phash": "92b356ca6b181b6d",
+        "dhash": "edec54f8c279b564",
+        "whash": "3d3f0f3f733c1400",
+        "crhash": "6b754a1bb554b5eb,b938f0b9995e94e6,31218ad2f4f9b253,f8b6345c7c989934,a60e0d39a6b4a69c,54b1f07727a7b3cd,e8e8bcc6c2c3868c,5aa6e0c0d8ec7832,edec54f8c279b564"
+    },
+    "秘密のトワレ": {
+        "ahash": "73f1e4f223e3e1df",
+        "phash": "e6468a2d8dd5963a",
+        "dhash": "e7eb4dc6e64f87b5",
+        "whash": "73f1e0e203e3c1c7",
+        "crhash": "e7eb4dc6e64f87b5,f5cdeced3e3d1f8b,193e6f272339c99d,260687aa2b0f55de"
+    },
+    "小さな恋の密室事件": {
+        "ahash": "0020721783e1f5f1",
+        "phash": "e6154a7a3c96e925",
+        "dhash": "dcc6c6ee0f096d65",
+        "whash": "00627237c3f1f5f1",
+        "crhash": "f1f830b9e96e6c0c,707cdcf94fa3e3b7,5383898919197c64,6773508ec3b09118,dcc6c6ee0f096d65"
+    },
+    "Can’t Stop!!": {
+        "ahash": "63433bf21018f9f8",
+        "phash": "c1a53a5262e75f0b",
+        "dhash": "ce96d2c6f171b129",
+        "whash": "63436bf23818f9f0",
+        "crhash": "ce96d2c6f171b129,e0fc709838f3994f,5ccc4e6c0d4249c5,3c6d39f3c78f4a22,4343e1a191d81f1e,091112050312553f,c60b1c3c4d0e96d4,d4d2dc6bebc21d19,c3273b9f170f0f0e"
+    },
+    "恋色エナジー": {
+        "ahash": "8901f0f0fbf9f0fa",
+        "phash": "ef2b2929f554ca81",
+        "dhash": "3373656ec2e14252",
+        "whash": "8901f0f0e8f9f0fa",
+        "crhash": "3373656ec2e14252,0f3315d2e1a1d2c4,7b59490a2c59d4d9,63383f1b87818994,d151e5a5070e1b72"
+    },
+    "青の一番星": {
+        "ahash": "e74fefcf8fc6e220",
+        "phash": "f0a8473483e676b5",
+        "dhash": "4b911589be0c044e",
+        "whash": "e74bebc70fc6c020",
+        "crhash": "4b911589be0c044e,555d4f5376362d2f,0f1f4f2d0e039181,357767736b656637,30c0313c4d2d05c7,26497f370787c784,5e0d41404d3d7377,450e460e47250c1e"
+    },
+    "気持ちいいよね 一等賞！": {
+        "ahash": "7b79ec0406e1e9ff",
+        "phash": "ea0c8d35945bb91b",
+        "dhash": "f2e599cd0c8b5b1b",
+        "whash": "3b75ed0006c0a9ff",
+        "crhash": "f2e599cd0c8b5b1b,2d3a74dcc4d94143,dac6ce3ae1504008,ececbcb247614119,7bcdcdcf83d2c2f0,963a935b6b6523eb,196d55210d41919c,5052d25533f0c9d1"
+    },
+    "ラヴィアンローズ": {
+        "ahash": "efe7f3f3f0c480f1",
+        "phash": "e6859b728c4d94ea",
+        "dhash": "4aca2666050c01c3",
+        "whash": "e7e3f3f3e00480e1",
+        "crhash": "4aca2666050c01c3,440d2753430e3c3d,c606470d8c8c0593"
+    },
+    "in fact": {
+        "ahash": "fd80c418d87cf3f8",
+        "phash": "ca1aa689cda2dae3",
+        "dhash": "792509b1b2d98e51",
+        "whash": "fd80c018d87cffd0",
+        "crhash": "792509b1b2d98e51,f87fe30f7faf65cf,7cd8b83249b9e870,6b6b4fde9ca9c978,d946f569e2d94b62,63c93163030d83d2,6f319c0c4c060301,b3e1614c9e9ecc4a,070343f1f38e96ce,9959531b1550434b,6a76f0761a0e86a1"
+    },
+    "ミラクルテレパシー": {
+        "ahash": "bf9fc3838103e7fd",
+        "phash": "bf95d0195ee4c0e8",
+        "dhash": "647c076f7f1b2b99",
+        "whash": "9f8fa3838101c3fd",
+        "crhash": "647c076f7f1b2b99,85930e2f0c0c5cd9,6b2f2f9bd63f375b,22461786840c25b3,71b86717123b1910"
+    },
+    "恋のHamburg♪": {
+        "ahash": "8b07cfcf93808fef",
+        "phash": "be181b6fb8b94cc0",
+        "dhash": "3bbebc3e27671c5c",
+        "whash": "8b074fcf83808f8f",
+        "crhash": "3bbebc3e27671c5c,a121e2c35e3838d0,9399beb6b4d1596c,2a94dd9979258603"
+    },
+    "共鳴世界の存在論": {
+        "ahash": "fffffb2000400000",
+        "phash": "c0ce9ae23ba7e88c",
+        "dhash": "c9d8e2cab291d89a",
+        "whash": "ffffff2611402008",
+        "crhash": "a1d958f2e3caaab3,e8ce9c39a9e9f03c,79f8f0e18b36fd9a,1c061b466395c866,f0e2caa293c1d89b"
+    },
+    "Radio Happy": {
+        "ahash": "c01c9181a7cbf7f3",
+        "phash": "ec1ec0b17f7c20c3",
+        "dhash": "15b525274f9ba726",
+        "whash": "c01e8181a7c3f7f3",
+        "crhash": "15b525274f9ba726,8bdb5eac4e415eda,40311971395d1d81"
+    },
+    "To my darling...": {
+        "ahash": "71f3e7d190f1f0fd",
+        "phash": "eea1916e1ac99396",
+        "dhash": "e3858cb32567a5d5",
+        "whash": "70e3c7c180e1f0fd",
+        "crhash": "e3858cb32567a5d5,2c8ccae4e05041c5,0180f8c3d8663a1d,941c7533784cd279,a79931656f99523b,3827063c3e5c7b79,d90f3330189b0c06"
+    },
+    "みんなのきもち": {
+        "ahash": "ff0f8100f1ede7fb",
+        "phash": "eb1f95d0cc74c8e0",
+        "dhash": "491b496363591cd3",
+        "whash": "ff0d8100f189c7f9",
+        "crhash": "491b496363591cd3,296e644e365d69e2"
+    },
+    "こいかぜ": {
+        "ahash": "ff8fbf8f07030307",
+        "phash": "bfdf480496e0e4c6",
+        "dhash": "38595d1e6ff7d76f",
+        "whash": "ff8f9f8f07030103",
+        "crhash": "38595d1e6ff7d76f,7660635978793b27,0f3e6ff7dbf35f2f"
+    },
+    "こいかぜ -花葉-": {
+        "ahash": "00040c3f3df3fdff",
+        "phash": "8b16766f8b730c4a",
+        "dhash": "692c996a6962cbeb",
+        "whash": "00060c1f3d73f5fd",
+        "crhash": "692c996a6962cbeb"
+    },
+    "lilac time": {
+        "ahash": "f9991bf2e3830fef",
+        "phash": "af4e8b60e09e8db1",
+        "dhash": "23313326860f1b8a",
+        "whash": "f9991990e0838feb",
+        "crhash": "23313326860f1b8a"
+    },
+    "追い風Running": {
+        "ahash": "f991990132f0f19f",
+        "phash": "ed2becc114639a95",
+        "dhash": "3333735be4032726",
+        "whash": "f981990116f0f39f",
+        "crhash": "3333735be4032726,265ccad8dc791d8e"
+    },
+    "One Life": {
+        "ahash": "1f7b8f0608ccede3",
+        "phash": "b904a35b0796bb0f",
+        "dhash": "ebd33e2c78195946",
+        "whash": "0f7b0f060c8dade3",
+        "crhash": "ebd33e2c78195946,e4f4f8dc4c2cb881,fbacaa9b8db287a6,3838195e3d1f1d0d,8080161f1f7f7f7f,30188c0d26231399"
+    },
+    "祈りの花": {
+        "ahash": "ffd98f8f87870300",
+        "phash": "bfd840c6939716a3",
+        "dhash": "4193397a6c2f4ece",
+        "whash": "ffd98f8f87070300",
+        "crhash": "4193397a6c2f4ece,532a33b399580e2e,797f734dc60791c8,c4c44043070f9cb1,f141343b35368e41"
+    },
+    "楽園": {
+        "ahash": "e7e1e1f3e0e18b9b",
+        "phash": "eb6399d69494e213",
+        "dhash": "4e4b4b07458f1b3b",
+        "whash": "e7e1e1e1e0e1898b",
+        "crhash": "4e4b4b07458f1b3b,3e73d1796c6103c1,fb7b672725259409"
+    },
+    "Last Kiss": {
+        "ahash": "f07c7e1e063eca10",
+        "phash": "d5c26c463cf18a79",
+        "dhash": "e0e0d0d42c681a32",
+        "whash": "f87c7e1e063eca10",
+        "crhash": "e0e0dade2c6c1b33,4c1c32cc9c495357,21d0d86ce8c08c16,fcf5e7e61999131c,4b2d9d0f27a50dcc,4e4666734489b393,f29a8bcf4b295939"
+    },
+    "おんなの道は星の道": {
+        "ahash": "00002d7f6f8f0743",
+        "phash": "a34a2d7cc04f39a7",
+        "dhash": "cdcd69c98d1b6f96",
+        "whash": "00042f7f7f8f0747",
+        "crhash": "cd69c9cdbd5b6e96,339acb67b1d86673,ce9e3470e9e1c39f,2522a2a6d9d86a69,1c38f8f8f0e0e1e0,cdedc969d9cd8d3f,9b999e939b1e1771,e4c7d79f2e6751da"
+    },
+    "谷の底で咲く花は": {
+        "ahash": "103030387ef87830",
+        "phash": "c41e38f035c77aa6",
+        "dhash": "e464e4e4c4e1c0d3",
+        "whash": "1038303e7ef8fc78",
+        "crhash": "456299998c26244e,f878786ce5b2fae0,8482ac2cdcd894f0,e464e4e4c4e1c0d3"
+    },
+    "炎の華": {
+        "ahash": "01202080230f7fff",
+        "phash": "af4e9035be387443",
+        "dhash": "bdc355356a5e5a3b",
+        "whash": "01303881330fffff",
+        "crhash": "32695968eca9b836,d6c77b4b12b29c94,9ef2e1f3d3aea8e1,267e7a7461c28c30,98eccac7d4e38110,972e36366534a79d,b37968c5a2c4e91b,35539b333a1a182c,bdc355356a5e5a3b"
+    },
+    "LOVE☆ハズカム": {
+        "ahash": "43ffff1f87818920",
+        "phash": "bb800178077f60ff",
+        "dhash": "9f97b4552d3b6bc8",
+        "whash": "43ffff9787808120",
+        "crhash": "9f97b4552d3b6bc8,c8c9a5ca72b0420a,630f3e7967556564,a4c52b96567cecd8,6a5a360e192d6dce,6727667866621873"
+    },
+    "しゅがーはぁと☆レボリューション": {
+        "ahash": "bfc1ecfbb1118081",
+        "phash": "ae91328ea59782d7",
+        "dhash": "6b0b49436763290f",
+        "whash": "bfc1edbbd9118081",
+        "crhash": "6b0b49436763290f,f881013e7efada50"
+    },
+    "もりのくにから": {
+        "ahash": "fff3f3f3e1810081",
+        "phash": "eec41f13cc1ba463",
+        "dhash": "63272e27871b5927",
+        "whash": "fff3f3f1e1800081",
+        "crhash": "63272e27871b5927"
+    },
+    "春恋フレーム": {
+        "ahash": "f3f1f1f9f1e1819f",
+        "phash": "eeccb4669931e498",
+        "dhash": "6667631335c74b35",
+        "whash": "f3f1f0f89161018f",
+        "crhash": "6667631335c74b35,a6a2bb21fa96ccf1,7e7f71713397929a,1f1d1d1c961b99b9"
+    },
+    "OTAHEN アンセム": {
+        "ahash": "cf038bcfeee2f0f0",
+        "phash": "fdba0ad5d0a8c4ca",
+        "dhash": "1a5b33178a4ab330",
+        "whash": "ef0189c3e6e2f1d0",
+        "crhash": "1a5b33178a4ab330,b4cbb1b9ceb0b0b4,aad5ea6a6bebf1f1,ff9d989898991909"
+    },
+    "あらかねの器": {
+        "ahash": "000c1c1e1c3c7e9f",
+        "phash": "9833a6463ca5ec3b",
+        "dhash": "d879b8d470e1e836",
+        "whash": "000c1f1e1c3c7fdf",
+        "crhash": "b9e16969f4eeecf1,c028491d9696b231,a73e3ef298cc6499,0b84c1f8a4c6b182,a2da32b2a9ac9b9d,d879b8d470e1e836"
+    },
+    "私色のプレリュード": {
+        "ahash": "df8f07278f637100",
+        "phash": "a3bcd8d898c405fe",
+        "dhash": "b75d4ecf58cae74b",
+        "whash": "df8f0727af607300",
+        "crhash": "b75d4ecf58cae74b,603a3c1763a18c5c,d3c7a6070d7d7276,dc4fe7fbf1919333"
+    },
+    "Claw My Heart": {
+        "ahash": "66787efec0d10f04",
+        "phash": "c4c407ea76972a73",
+        "dhash": "c4d4e8a403237a6c",
+        "whash": "74707efec1d12f00",
+        "crhash": "62e3e969f1f0e9c8,f2e8edd998808898,9495b5c4ec484467,cd246a75b5b91f63,f3e79fab8ee87056,d9f9ecc2a3a58d07,938d85e3ca606252,c4d4e8a403237a6c"
+    },
+    "世界滅亡 or KISS": {
+        "ahash": "9bf1f9f910e0e0e6",
+        "phash": "ed8db56995b39402",
+        "dhash": "3273732363874d4c",
+        "whash": "9bf1f1f110e0e0e6",
+        "crhash": "3273732363874d4c,1e7f23335130e3e3,8991113537097966,26478fc66425a524"
+    },
+    "オヤマトペ♪": {
+        "ahash": "9f0f0f87078f991f",
+        "phash": "bfb2c9cc84ce838c",
+        "dhash": "72535d2c363e3357",
+        "whash": "9f0f0f07078f901f",
+        "crhash": "72535d2c363e3357,540dceeb8d2c64f6"
+    },
+    "弾丸サバイバー": {
+        "ahash": "0f6f6f171a0212cf",
+        "phash": "9193fb0d582ca3e9",
+        "dhash": "29dcddb4d2663698",
+        "whash": "0fef6f171a0202cf",
+        "crhash": "0c0ac4cccc8c06b6,a3b535683bd9cde6,75e59cac8c87c3c2,591494da583934c8,3c19fefef2fa7e3e,dcb8b495b396c4c6,88b4f65868f4d936,312e1c90f8160d19,84a18381e5b6f17c,c64973e6cc8c8d9b,9a9d2998c8cdc161,cec86d654543389b,29dcddb4d2663698,be93b6a68ea69612,da9a4b0b97ea264e"
+    },
+    "Shinobi 4.0 忍者のすゝめ": {
+        "ahash": "1018b892b2d1fbfb",
+        "phash": "cd178124a537eb87",
+        "dhash": "66f06b56662377d3",
+        "whash": "2018b883b2d1fbfb",
+        "crhash": "259ad2f1f159d9ca,e86968d472edcec2,e96b56462333d7db,2393c9ada49aec74,bc59d6e781f1f971,e3e44c6af0555ad2,66706936562333d7,305f757171731306,6cd6efc4270b894b"
+    },
+    "あこがれステッチ": {
+        "ahash": "df8fc99b83030ff1",
+        "phash": "bbf9c234cc88e8c3",
+        "dhash": "935d5b532e17da4b",
+        "whash": "cf8fa98d830307f1",
+        "crhash": "935d5b532e17da4b,1f0f060d059e1a9e,39730e4e4606c3c5,0f173f7f7f8f4773,d3891ca4cd491b3e,29cca91b93934b7b,e11d1e06f3713133"
+    },
+    "思い出じゃない今日を": {
+        "ahash": "d3907bf393873de9",
+        "phash": "efe85a3ce08ab194",
+        "dhash": "3737e347665c695b",
+        "whash": "d380bbf393821da9",
+        "crhash": "3737e347665c695b,c31666eece4f470d,962f4f9c8f4b73e5"
+    },
+    "初夢をあなたと": {
+        "ahash": "9f8f2f7f87070f19",
+        "phash": "befd0cf4e8818463",
+        "dhash": "3678daa92f2cfaf1",
+        "whash": "9f8f0f4f83070719",
+        "crhash": "3678daa92f2cfaf1,3c3f6f7331317933,c7c7c73b8b0f8234,939b9b1b97af7e9e"
+    },
+    "Milky Mode": {
+        "ahash": "9f9707894707e7e7",
+        "phash": "b698ddb6cc992622",
+        "dhash": "3375cd3b8d2d8ece",
+        "whash": "9f930589070767f6",
+        "crhash": "3375cd3b8d2d8ece,0f370731d1637258,0e3e93386bc6d86e,9285828db9707232,2dc98121854579c8,d0e1394bcbc3916c"
+    },
+    "泡沫のアイオーン": {
+        "ahash": "ffcfcf6f792c0201",
+        "phash": "91f27dc3a8959a85",
+        "dhash": "db3939decb78de33",
+        "whash": "ffcdcf6f290c0201",
+        "crhash": "db3939decb78de33,7370dc8889e06436,934b62e2395c0449,caa5c97ceecb7339,ce6329244d9d7913,2e040283c36190e8"
+    },
+    "満願成就♪巫女の神頼み！": {
+        "ahash": "f8f8f0f0e1e0f1f9",
+        "phash": "ebdaca60979c84a6",
+        "dhash": "2941752a4f87c7c3",
+        "whash": "f8f8f0f0a0e0e1f8",
+        "crhash": "2941752a4f87c7c3,0b3909a7178d8e4d,0f8e131b1e0e45e4,63c71b5bf179542a,a1a7a48c3e6f3307,98991c8e0b414636"
+    },
+    "Beat of the Night": {
+        "ahash": "00063e7ffffffff9",
+        "phash": "86153f727833c94b",
+        "dhash": "3c6cf0e5e5c54d23",
+        "whash": "00003837f9ffe7f0",
+        "crhash": "2c64f0e5e3c44d23,5d3cac6474f0f2f5"
+    },
+    "ひまわりマークをさがせ！": {
+        "ahash": "fbc1e1a1e1e1fef8",
+        "phash": "eb32988c4d97c3d1",
+        "dhash": "f2854d4f0bc732d3",
+        "whash": "7ac1e081e1e1faf8",
+        "crhash": "f2854d4f0bc732d3,b333159556060505,d0756d27353319cd,3d3e9b0b53210381,6c8c0c0d091b363c,c5c28e193357d34e,c7a1959335078706"
+    },
+    "ソウソウ": {
+        "ahash": "df898defe0c49e9f",
+        "phash": "ffea9c7080857247",
+        "dhash": "31336b5b191c3676",
+        "whash": "df8981efc0809e9e",
+        "crhash": "31336b5b191c3676,1c26233771735a4c,d2c3c94b1a0a3494,590901637373672f,1f161189c040c8e4,a8c8912627676d2b,099a0c1cfd2f2b7b"
+    },
+    "Packing Her Favorite": {
+        "ahash": "f793870fbfb0d968",
+        "phash": "eab648cc93b343b1",
+        "dhash": "2d351b59552133c3",
+        "whash": "e791850fafb0d928",
+        "crhash": "2d351b59552133c3"
+    },
+    "トキメキは赤くて甘い": {
+        "ahash": "fff3c188d093e1f7",
+        "phash": "ec91878ed41b98e6",
+        "dhash": "54261b30273707c4",
+        "whash": "fff381889083a1f3",
+        "crhash": "54261b30273707c4,a69939383abc591b,1ec3831e7bd6262e,cc7f63311c4ca6a5,d77373c90c080d0d"
+    },
+    "サイン・オブ・ホープ": {
+        "ahash": "9f8f0300902d1787",
+        "phash": "bfbdbcd8dc04022c",
+        "dhash": "3d564f7630596627",
+        "whash": "9faf030098af9787",
+        "crhash": "3d564f7630596627,8e9693921c3c6d33,61c71e73794f67e6,28650d1f143c7699,c28391b8be79dfc7,a787e34b47767a33,62735552334555e5,5a54556449edc59d,ad9393b2a2c2d1bd"
+    },
+    "ノーチラスソナー -Nautilus Sonar-": {
+        "ahash": "00030fe92b1f0603",
+        "phash": "b52336556bd29833",
+        "dhash": "ba2e9a8bdaf23c7a",
+        "whash": "0207cffb2b1e0e0f",
+        "crhash": "b8189e66cc99d270,9ef8d21939b392b6,4e4ea39696768aa4,ba2e9a8bdaf23c7a"
+    },
+    "ACE": {
+        "ahash": "f8fc0009ede74308",
+        "phash": "ebde54e55821446d",
+        "dhash": "305d49994b8b8b91",
+        "whash": "f8fd2009e9ef6308",
+        "crhash": "305d49994b8b8b91,443293c181818080,c9460280c0a03818,e4ece3731e078b2e,5f9ec7f1594d3f8f,5a5a4146893ce8b1,a223610d1dc383c9,213e3c6f297824ec,61b86711923109c3,ac961b999c96616c"
+    },
+    "セレブレイト・スターレイル": {
+        "ahash": "dfc7c18741cffd18",
+        "phash": "b8f78cb90586dc68",
+        "dhash": "3a1d150d9b9911b3",
+        "whash": "dfc7c18701cfc918",
+        "crhash": "3a1d150d9b9911b3,9e272143470f3edb"
+    },
+    "GEMSTONE": {
+        "ahash": "dfa7731b08801b07",
+        "phash": "adefb65891886cc2",
+        "dhash": "374de753583532ad",
+        "whash": "ffaff39b08801a03",
+        "crhash": "3733494da7335a58,aca67379989c5a33,2e5ebcf8b162c349,264620d25429c973,34acbab48c9db3b3,334da75358353aad,db5b7a314b0f86d6"
+    },
+    "アイム・ア・リトル・プリンセス ～お星さまにお願い～": {
+        "ahash": "fdf8f87bf93800c0",
+        "phash": "cbce339ca305d478",
+        "dhash": "5161b1d3a3d0549b",
+        "whash": "fdf8f879f92800c0",
+        "crhash": "5161b1d3a3d0549b,ec0e0741a3c31387,999995372d0083c9,7cfc3e7f0fc78f8f,3e7dbe5e3e27a747"
+    },
+    "アタシガルール": {
+        "ahash": "021f7e7e4f07262e",
+        "phash": "953c073c716c5ad9",
+        "dhash": "6eec90c69eadea4a",
+        "whash": "021f5e7e0f0f262e",
+        "crhash": "1cba7eb3da68680a,3624a5ababfbd6d4,5a30a098b4c6d46c,195955a52d2da546,6cf23c78dcb8f9e2,c9a07044187cd6d3,5c1837b2746469c9,5ad68d98b2b89d93,6eec90c69eadea4a"
+    },
+    "あの子が街に来なサンタ": {
+        "ahash": "10fbdfe7c0c25a48",
+        "phash": "f08e8d6573933459",
+        "dhash": "e5a7ac8a9ea692d4",
+        "whash": "10ffd7e7c0c25a60",
+        "crhash": "e5a7ac8a9ea692d4,e4ce9692723264ad,163fd6673333a331,a791134bc376663c,3a1e33f3f15163a3,9b310d27c68cb573,8346470e0e8c2150"
+    },
+    "はにかみdays": {
+        "ahash": "cfc70f17878f0707",
+        "phash": "b6f0f1f9078691c2",
+        "dhash": "1a3ead673c1e6f3f",
+        "whash": "efc70717070f0707",
+        "crhash": "1a3ead673c1e6f3f,1c3e5ecbe3f16969,b1cd7353c14d1531,3e3bb99c169f3a21,4d67730332361c16"
+    },
+    "AnemoneStar": {
+        "ahash": "98f8f4f0c3070302",
+        "phash": "e4db1eb95d171064",
+        "dhash": "7225c5623697266e",
+        "whash": "b8fdf4f0d3070702",
+        "crhash": "393882c2e0319bd7,87beded8f42405e5,dd8ccc29b18acc79,9481812571d8626d,e7d38980de3e3e3b,99192c6ff273796d,4c38b1f0e16acc81,233333353336bc96,7225c5623697266e"
+    },
+    "ステップ！": {
+        "ahash": "efcf8f8f8f072111",
+        "phash": "bad9c220d8e623cf",
+        "dhash": "9a1b5b3c3dcf4d21",
+        "whash": "efcf8f8f0f032101",
+        "crhash": "9a1b5b3c3dcf4d21,286ac48485d2ccdc,9616251d0c2741b1,0d8ad55d6e4c6e6a,e9ce0c9150a25e4d"
+    },
+    "ニャンと☆スペクタクル": {
+        "ahash": "e787874f0f1f0f99",
+        "phash": "bfe3fc02c280ce0f",
+        "dhash": "8d1e4fdd49733e23",
+        "whash": "e7c3870f051b0f99",
+        "crhash": "8d1e4fdd49733e23,89cbd09e8b465098,4b850456c3994bee,64669d8d2c8b1787"
+    },
+    "SUPERLOVE☆": {
+        "ahash": "fefdcdc073a73620",
+        "phash": "e2d897a761583b8c",
+        "dhash": "886d3993866f64db",
+        "whash": "fffdcdc043872600",
+        "crhash": "886d3993866f64db,3369c5c88bbf966c,657039997266c646,1377cd9c3c5a7c59,a9c4b5886738b356"
+    },
+    "空と風と恋のワルツ": {
+        "ahash": "df898484267ff1f1",
+        "phash": "be39e887c7c69068",
+        "dhash": "371d3c2c6cec6127",
+        "whash": "df818084263ff1f3",
+        "crhash": "371d3c2c6cec6127,c7b33b449581171e"
+    },
+    "青空リレーション": {
+        "ahash": "7060f0f8fbf38383",
+        "phash": "ed4017adf116d827",
+        "dhash": "c097a1a28337661f",
+        "whash": "7060f0fcfbd38381",
+        "crhash": "c097a1a28337661f,2e8e39658f8e163c,64414d592d6e4ecf"
+    },
+    "Bloody Festa": {
+        "ahash": "060e3c3d99899917",
+        "phash": "9e50367ba459239d",
+        "dhash": "acacf8e9737b31ed",
+        "whash": "060e3e3d9d899b27",
+        "crhash": "3cfce96de6dcd1b3,cca4b3c99d26260e,bae2c3f3a7cd9139,26164cb820c040e0,5121a1938068fe00,acacf8e9737b31ed,c2d2a88f162b2925"
+    },
+    "にょわにょわーるど☆": {
+        "ahash": "731670c0ecfcf8f8",
+        "phash": "ca258db3f668c951",
+        "dhash": "c6e6a2254d512373",
+        "whash": "73427080e4fcf8f9",
+        "crhash": "c6e6a2254d512373,1cde9d9b113878e1,354151b93b9f3650,c40b3dae67674d0c,3949a89a93926e6c"
+    },
+    "スローライフ・ファンタジー": {
+        "ahash": "0078110f1fb5fbff",
+        "phash": "8b41f476952d6e68",
+        "dhash": "d4d2d3565145637c",
+        "whash": "003a100e3fa5fbfe",
+        "crhash": "d4d2d3565145637c"
+    },
+    "Frozen Tears": {
+        "ahash": "c381e1c9ffd30173",
+        "phash": "ed7f2cbcd068e042",
+        "dhash": "37530313172327c3",
+        "whash": "c181e189fff30173",
+        "crhash": "37530313172327c3,071b31795ce4d999,cc8a89cd963378d4"
+    },
+    "薄紅": {
+        "ahash": "f7e2e0e1f3f9e080",
+        "phash": "e7e2348cacb2d25c",
+        "dhash": "6646094b27e34636",
+        "whash": "f7e2e0e1f1f0e280",
+        "crhash": "6646094b27e34636,06a601090b4ab667,19c3083346979734"
+    },
+    "夕映えプレゼント": {
+        "ahash": "58181c0f0fe3fe3f",
+        "phash": "8948c768b1dcea9b",
+        "dhash": "b3f1b09a9b87325a",
+        "whash": "50180c0f0fe3fe3f",
+        "crhash": "b3f1b09a9b87325a,0e1e6ce194e48e16,e6ffb79da7d3cbc9,435b67262e038599,3535537c9d9fcfc9,375d5f1d1c1d45a7,937b2927a5a54cc8,336996060323c3c8,cf172537333f7f66"
+    },
+    "Memories": {
+        "ahash": "df83839f8181fbfb",
+        "phash": "be38c18b99c4ce66",
+        "dhash": "131f2f2a33772737",
+        "whash": "df83c38b8181b3b3",
+        "crhash": "131f2f2a33772737,031931b0303d5a96,872b658a944d330f"
+    },
+    "Happy×2 Days": {
+        "ahash": "ffcbd78321763000",
+        "phash": "e4b9d1870bd68687",
+        "dhash": "9a96963647c6e4e1",
+        "whash": "ffcbd7c301727800",
+        "crhash": "9a96963647c6e4e1,463379b9393971f4,dccc9c1cd9db2634,1555550d8965a111,5ddc4a6c7d7fd7f6"
+    },
+    "できたて Evo! Revo! Generation!": {
+        "ahash": "cf838181818787ff",
+        "phash": "be699193d8b0874b",
+        "dhash": "9a0b67150b2f0d0d",
+        "whash": "ef838181818787ff",
+        "crhash": "9a0b67150b2f0d0d,1c3c7cb9bc545c68,e834946864d1c7e6,e4b0e9dcccf418d2,1b53d7360b4f4f3d,dd0592cc41494b09"
+    },
+    "GOIN’!!!": {
+        "ahash": "580b1f0f0fe3fe3f",
+        "phash": "8108cf6839dcea9f",
+        "dhash": "b2f2b69a9b87325a",
+        "whash": "58030b0b0fe3be3f",
+        "crhash": "b2f2b69a9b87325a,0e1e6ce1d4e48e16,e7ffb79da7c3cbc9,474b472636078199,65cf3b8f86a62633,375f5f0d1c1f1d85,93732927a5a54cca,03e9960603a3c3c8"
+    },
+    "Shine!!": {
+        "ahash": "e0c0e0ff7f7f7fc0",
+        "phash": "e07d7d88e4c24747",
+        "dhash": "02024888dbe5ad05",
+        "whash": "c080c0777f7d7f80",
+        "crhash": "02024888dbe5ad05,f6f8f1e6c6b29a66,0e46262e12155951,9803070b3b7363d7,9d3e636b633b59c1,425a5e56d60ead31,1b252d29292775d8"
+    },
+    "私色ギフト": {
+        "ahash": "ffcb84bdc38b8383",
+        "phash": "bdd2a9b1c48e5a64",
+        "dhash": "141b75658e1b3333",
+        "whash": "ffcd019dc3898383",
+        "crhash": "141b75658e1b3333"
+    },
+    "Heart Voice": {
+        "ahash": "ff99200081c3e7e7",
+        "phash": "eb4994ac9e3681e3",
+        "dhash": "33334b6b0b134f4d",
+        "whash": "ff98080081c3e7ff",
+        "crhash": "33334b6b0b134f4d"
+    },
+    "Wonder goes on!!": {
+        "ahash": "ff7f0301008ff3f3",
+        "phash": "ac8de6d26828b96e",
+        "dhash": "a746e3b3d1194527",
+        "whash": "ff370301008ff1f3",
+        "crhash": "a746e3b3d1194527,c3d9991962a2d0a4,b6b6b2d3cdc94dcd,d9ef547fbb6c9393,41122929c2a54b0b,316b4aca6a797863,bbb6574b8eb25dff"
+    },
+    "この空の下": {
+        "ahash": "0103001c1fc0e7ff",
+        "phash": "bc00e56f925a69ad",
+        "dhash": "0f9e163d3d030e06",
+        "whash": "0103031c9fe1e7ff",
+        "crhash": "b3b36bcb8cb6b0b2,0f9e163d3d030e06"
+    },
+    "Nebula Sky": {
+        "ahash": "0e0e0e1c10c0ff78",
+        "phash": "9293b6e64cba6394",
+        "dhash": "fc78f8f8b007acd0",
+        "whash": "0e1e1e1c18e1ff78",
+        "crhash": "787870f3b2a0e1e0,fc78f8f8b007acd0"
+    },
+    "Trancing Pulse": {
+        "ahash": "ffe7c183050181fd",
+        "phash": "bab5d116c649897a",
+        "dhash": "4c0d13572d3d1119",
+        "whash": "ffe7c183050181fd",
+        "crhash": "2214214616220909,783b57d93bbbcba3,f2e6646ba2d4d8e2,663e6ecec4c48c9c,637331e363e4e179,5368504004393003,1fad690c8a4c51b2,4e0d195624341111"
+    },
+    "流れ星キセキ": {
+        "ahash": "04060a4fffff7b00",
+        "phash": "80142efe7a8bbd45",
+        "dhash": "edd4d6daa93ae3cf",
+        "whash": "04062a6fffff3900",
+        "crhash": "e8e8e4c2c6a1b12d,edd4d6daa93ae3cf,f0f8fef2f9fdf8e3,e5edd4d6dad9a828,41673c2c368bc94e,c38f37534f2347ce,aa69f1e7cacdcb56"
+    },
+    "あいくるしい": {
+        "ahash": "d8c0f0f8fcf8e800",
+        "phash": "d1f83dd01cc9acc5",
+        "dhash": "b090c281c8c14872",
+        "whash": "d8c0f0fcfcf8e880",
+        "crhash": "b090c281c8c14872"
+    },
+    "Flip Flop": {
+        "ahash": "ffffff00007dffff",
+        "phash": "aee8d10626e9f925",
+        "dhash": "75d4172765f15431",
+        "whash": "1dffc300007cff98",
+        "crhash": "75d4172765f15431,bb494a5e0d485858,c3b3d269642a2f3c,13598bfbc6929332,1a26a6a6a8634f68"
+    },
+    "Lunatic Show": {
+        "ahash": "00005effff7e0000",
+        "phash": "c52d7aca85e5d452",
+        "dhash": "cc97bed2e8c489cc",
+        "whash": "0000feffffff0400",
+        "crhash": "cc97bed2e8c489cc"
+    },
+    "shabon song": {
+        "ahash": "ffffff0000803e3c",
+        "phash": "9fa8d0394f03f88d",
+        "dhash": "55342b6b562dd860",
+        "whash": "ffffd70000803e3c",
+        "crhash": "55342b6b562dd860"
+    },
+    "Nocturne": {
+        "ahash": "186cc98a1c333f1c",
+        "phash": "8d7a038e5cbd7898",
+        "dhash": "f0c99b327162e6f0",
+        "whash": "1864c98abc3b3f1e",
+        "crhash": "f1cd993b32347167,d8e8d4cc5ef270b0,f0c99b327162e6f0"
+    },
+    "キラッ！満開スマイル": {
+        "ahash": "ff93930d3d181838",
+        "phash": "8eec84d3d313e295",
+        "dhash": "d525275959e97160",
+        "whash": "ff91b38d7d091818",
+        "crhash": "d525275959e97160,0e07436373695373,071d344c72f8ae32,522bb614aacacbb3,6573552ba96a061b"
+    },
+    "エチュードは1曲だけ": {
+        "ahash": "e7f7df83c3819a1c",
+        "phash": "bee29666e31cc21c",
+        "dhash": "0cae954706273278",
+        "whash": "e7ff4f8383809a0c",
+        "crhash": "0cae954706273278,33332b330b494b0f,3a65d6c26d683933,316972383c239b86,55b33ecb43394a46,32864553573797c7,496426039391494d"
+    },
+    "SUN♡FLOWER": {
+        "ahash": "00efce087dff5e1e",
+        "phash": "906b2d6a0b155a7f",
+        "dhash": "9f971cb29194b6b2",
+        "whash": "00e3ce105dfe5e1e",
+        "crhash": "9f961cb2d194a6b2,482d938f9f9d9393,872b5a3972652b7f,1979f4b1f9e4317b,8e8c6062c48a1325,cd4dcd8e1b2d5fef"
+    },
+    "Blooming Days": {
+        "ahash": "e7ff00879ededb1b",
+        "phash": "bc27c7dc39614516",
+        "dhash": "066585173c343377",
+        "whash": "82ff00871e9e9f19",
+        "crhash": "066585173c343377,e5d64d63b2d1f3e7,252545632531111b,74599296169d4dca,3ecf6753d173706c,375fb52909951c49"
+    },
+    "秋めいて Ding Dong Dang!": {
+        "ahash": "ffefcff879181800",
+        "phash": "8bf3368de1948ab2",
+        "dhash": "c82b1d135373748d",
+        "whash": "7ffdcff829181800",
+        "crhash": "c82b1911d3737135,1312434bc6cd452d,6a36be6b7f56fca8,c722a1c04139b9ed,276b65e0e4e17336,071f310ca63733b9,0b11487ad060e4e1,e6a6b65265670f97,13d3537373340dc3"
+    },
+    "Snow＊Love": {
+        "ahash": "0000c8fffffefece",
+        "phash": "b369524739c97938",
+        "dhash": "5b4d92924eccec9c",
+        "whash": "0000c8fbefee7e46",
+        "crhash": "80ad6d5d4c6c4a42,f084f2f49d9b7371,1918b2a525e3b570,bebcaca99998b9b9,5b4d92924eccec9c,1e7371313d363475,e6cb7b1b33636320"
+    },
+    "なつっこ音頭": {
+        "ahash": "3f687e1f2f7e6e00",
+        "phash": "91c1488b1fbcace7",
+        "dhash": "f2808a7648d0d4b0",
+        "whash": "3f707e1f2f5aa800",
+        "crhash": "f2808a7648d0d4b0,92cd5936ece4766d,e86035647af66464,d1dacb4ab56c6513,595319163c2c0ce5,c253d3a5858a0905,09d3c33b938f9392,18cf5595ae462e5c,0229e929634924d3,d59495b4d39b6266,5949699d98d2a525"
+    },
+    "さよならアロハ": {
+        "ahash": "0262e6d6d3ffff7f",
+        "phash": "b476070c2c16b777",
+        "dhash": "a68e4cac963454d0",
+        "whash": "0202a246c23fff7f",
+        "crhash": "10c8dcf4f23abf14,a68e4cac963454d0,d450aacce944528a,43a1a0f8ecfefcfc,b1d3b22393898dbd,33101c1c0e0e8e83,4e963616d98d49c9"
+    },
+    "Max Beat": {
+        "ahash": "ffefe7c3181a0000",
+        "phash": "b9e3125c0c6f946e",
+        "dhash": "929a0f17b2b272b4",
+        "whash": "ffefe7e7405a0000",
+        "crhash": "b29e8b1f17b2b632,7367e16370d8d9db,1b1b594eacacd95b,9a0f1712b2b273b4"
+    },
+    "TAKAMARI☆CLIMAXXX!!!!!": {
+        "ahash": "8fef8702067e6800",
+        "phash": "b6bbf890204b1e3e",
+        "dhash": "3b0f6fd694ac9294",
+        "whash": "87ef8723067f5b00",
+        "crhash": "3b0f6fd694ac9294,796d6e563e3e3e3e,91130b3233756765,3726e5637373728f"
+    },
+    "Sing the Prologue♪": {
+        "ahash": "0308188fbfffe3fb",
+        "phash": "bf1921a5a4269e6e",
+        "dhash": "c752712d6d5dce13",
+        "whash": "01081887bdffe3d3",
+        "crhash": "c752712d6d5dce13,adc505a426061723"
+    },
+    "ダイアモンド・アテンション": {
+        "ahash": "f0fef03890000cc6",
+        "phash": "cdcef238602163f3",
+        "dhash": "a16442e2b234f88e",
+        "whash": "f0fef67a98000dc6",
+        "crhash": "d8d931794360b4ac,2cb8e0f031f9b120,68b0d1cac39492b3,99991336a6c0e4c5,138b8ab6ca68ccee,9194d44dcd3d9d71,d4c9e953672e1a1c,a16442e2b234f88e"
+    },
+    "君のステージ衣装、本当は…": {
+        "ahash": "ffdf1f51190005ff",
+        "phash": "a894977dc96a630d",
+        "dhash": "b4b4b7b5b3b3b9eb",
+        "whash": "dfdf4b51180001ff",
+        "crhash": "4c4cdcdd658bcae6,60e0a96072a78b9e,7c741cc6bedcf6fe,d67676c581d07331,8227ecd2b9cce47c,8dcde4b199cdf7ff,6763ccc1cacce6f7,e969ababd4e86a40,b4b4b7b1b3b3bdeb,777af9d9d959d074"
+    },
+    "Life is HaRMONY": {
+        "ahash": "dbfffb7400506246",
+        "phash": "c4bdbd3d12c00d3d",
+        "dhash": "3616b2c1dcb28e9c",
+        "whash": "dbfffa7400506246",
+        "crhash": "3716163272a1cdcc,3464e06468e432c6,9cb662b60c9cbc9c,0f171717878b8f87,0b330f07171f1f1f,32f2cddcb2868c9c,ce40070d3d74d4cc,b331c78e3d231f1b"
+    },
+    "よりみちリトルスター": {
+        "ahash": "ffffbf93918100fd",
+        "phash": "ae95d266ed35904c",
+        "dhash": "a9393373232d6d31",
+        "whash": "ff9f9f83818000f9",
+        "crhash": "a9393373232d6d31,130c8f1b2525311c,3f072752d06be353,343a9d0e0341130f,5e079194148d71e0"
+    },
+    "グッデイ・グッナイ": {
+        "ahash": "bf9d90b5979787b7",
+        "phash": "bedac1b485177243",
+        "dhash": "6c316965652d6765",
+        "whash": "9f9d809595878337",
+        "crhash": "6c316965652d6765,07397376db2f3775,0f0da42a1284070f,312d01214d461c9c,9d3e6fb65a2d138b"
+    },
+    "ゼロトゥワン!!": {
+        "ahash": "bffbc1c0b080e4ff",
+        "phash": "ffa8825794726a64",
+        "dhash": "7133131542580c2e",
+        "whash": "bffbc180e080c0ff",
+        "crhash": "7133131542580c2e,4c2c5253e8c6cc69,3d4edb59a54d89f1"
+    },
+    "shabon song ～For SS3A rearrange Mix～": {
+        "ahash": "ffffd181c1bd0000",
+        "phash": "befc819a750ecb40",
+        "dhash": "331523271f6961cc",
+        "whash": "ffffd38181bd0100",
+        "crhash": "331523271f6961cc"
+    },
+    "Lunatic Show ～For SS3A rearrange Mix～": {
+        "ahash": "81818181818181ff",
+        "phash": "af7e906bd584d0d0",
+        "dhash": "2b0b3561690b4dec",
+        "whash": "bd8181b98181adff",
+        "crhash": "2b0b3561690b4dec,cc97bad2e8cc89cc,6926b334ce4a25d9,5a496da4d2d2d424,82e4344948259272"
+    },
+    "Nocturne ～For SS3A rearrange Mix～": {
+        "ahash": "99818181818381ff",
+        "phash": "bf6bc10ed438b4c1",
+        "dhash": "334b1b31276571ec",
+        "whash": "9981c1819187bdff",
+        "crhash": "336b5b1531276579,90e8dadc4ecb72b4,aaaa4eaaaecda952,b2b225ad92ea2c24,204551d0b6b3b0a9,ecb0c80d8a080c0c,f0c99b327162e6f8,1beee4d0b0d8ccac"
+    },
+    "お願い！シンデレラ ～ゴージャス・トロピカル Ver.～": {
+        "ahash": "e781c3c383c7fdfe",
+        "phash": "be6ac39f34e0c486",
+        "dhash": "553b072b2f176bcc",
+        "whash": "a581838383c3bdfe",
+        "crhash": "553b072b2f176bcc,074370a6e2e6a161,97271938384c6c56"
+    },
+    "輝く世界の魔法 -Magical Step Forward Remix-": {
+        "ahash": "f7c381a1fff10100",
+        "phash": "eeee9482954ac999",
+        "dhash": "25070b4d5903afaa",
+        "whash": "f7c181a1ffe18542",
+        "crhash": "25070b4d5903afaa,1e2b73617372c2d6"
+    },
+    "ゴキゲンParty Night -Dance!!!!!!!!!!!!!!! Remix-": {
+        "ahash": "fb99838781b92400",
+        "phash": "afbdc0cb8583ca70",
+        "dhash": "3333075f536949cc",
+        "whash": "fb99c39f8199ad00",
+        "crhash": "3333075f536949cc"
+    },
+    "Near to You -PicoPico D’n’B Remix-": {
+        "ahash": "df85fb8199b12104",
+        "phash": "aeba92ab5d2cc4d0",
+        "dhash": "3129373333636dcc",
+        "whash": "df81fb819d81e324",
+        "crhash": "3129373333636dcc"
+    },
+    "メッセージ -Future PicoPico Remix-": {
+        "ahash": "df83c181e1c1afff",
+        "phash": "eb3c9486d39bc2c1",
+        "dhash": "1f270b0b470559c4",
+        "whash": "df83c181a181adfe",
+        "crhash": "1f270b0b470559c4,317bdace4ada97b6,2f0b144c9d589906,296b3343c594b514,9a4b8fc767a73929,594d0f6f2d2b3a49"
+    },
+    "あんずのうた -ノるあんず2000（DJ過重労働）Remix-": {
+        "ahash": "ffd1cf8181870e00",
+        "phash": "bfe8c0be4e91b112",
+        "dhash": "03131a2b633f59ec",
+        "whash": "fff1cf8191878d00",
+        "crhash": "03131a2b633f59ec,474325a5c3002f7f,63c36b2726b623c1"
+    },
+    "O-Ku-Ri-Mo-No Sunday! -ヒゲドライバー Remix-": {
+        "ahash": "a1a58181c5dbfb24",
+        "phash": "fe6bc7c8332d8850",
+        "dhash": "434d330f0d3337cc",
+        "whash": "a1a58181c1dbfb7c",
+        "crhash": "434d330f0d3337cc"
+    },
+    "Secret Daybreak -石濱翔 Remix-": {
+        "ahash": "ffbdbd858181813c",
+        "phash": "bb978479d1d0e44c",
+        "dhash": "69694d5d13172fe0",
+        "whash": "ffbdbd818181813c",
+        "crhash": "79694d4d5913170f,cadad2d2dcb6c9c1,2d2d94f42baaaccc,08000c0c0c0c0c0c,1f3bf6c6430f1cf0,94dc5c535313171f,9865216969696916"
+    },
+    "CINDERELLA NONSTOP MEDLEY -DJ KOO Mix-": {
+        "ahash": "fffff8e0f0c0c0f0",
+        "phash": "db8a95a0ea49c95d",
+        "dhash": "c13c504121151040",
+        "whash": "ffdef8e0f0c080e0",
+        "crhash": "c13c504121151040,0408418f2e3e3ab2,64e6e62623552c9b,26629410b1c31327"
+    },
+    "TAKU INOUE SELECTION!!!! feat.DJ KOO": {
+        "ahash": "fffeffe503c3c1a1",
+        "phash": "e39ce32912ebe489",
+        "dhash": "c90c155d9e934b4b",
+        "whash": "fffeff0503c10120",
+        "crhash": "c90c155d9e934b4b,038b3b5529692c1a,0d2d856696c3c3e7,ded65b8d8597d56b"
+    },
+    "キミとボクのミライ": {
+        "ahash": "003c7e7f7e7e3c00",
+        "phash": "d1e87b9568aa3455",
+        "dhash": "71f0d4c8f8d4f071",
+        "whash": "003c7e7e7e7e3c00",
+        "crhash": "71f0d4c8f8d4f071,71f0d4c8f8d4f071"
+    },
+    "Treasure☆": {
+        "ahash": "18007ef21f7f7f3e",
+        "phash": "807f0aaa2fe2d617",
+        "dhash": "f932f0c2fcf4d6f4",
+        "whash": "18003c780f7f7f1e",
+        "crhash": "f932f0c2fcf4d6f4,9c3c7662a3d4e578,f9f3eedcb878f8a0,872636332140d212,c9234e9c3c75f5b7,85ccc6c6e3f3f179,adad65676733391d,c4e6f37c7b3e9fed"
+    },
+    "エンジェル ドリーム": {
+        "ahash": "c0c1c30020fcff8a",
+        "phash": "f522f9f2369070a5",
+        "dhash": "0c2797acc4541252",
+        "whash": "c0e1c10066feffaa",
+        "crhash": "0c2797acc4541252,5dd5e464e521598c,36b4ac2e2a7ce903,3038919c6c64991b,6aa92359399aae98"
+    },
+    "サヨナラバス": {
+        "ahash": "8100009fff80ffff",
+        "phash": "fe2ba36894a9e885",
+        "dhash": "4d71412924233b4d",
+        "whash": "8100009dff80ffff",
+        "crhash": "4d71412924233b4d,4561014010245061,f1e971613135656a,2535b59494963464"
+    },
+    "LOVE & PEACH": {
+        "ahash": "00000824c3c3ffff",
+        "phash": "f713902cbbc689ac",
+        "dhash": "498e2a692b96e012",
+        "whash": "008098a5c3c3ffff",
+        "crhash": "498e2a692b96e012,962b4dcc8ecccc96,c3062e7c728ad870,392f97c6a09898f1,4c9669cc8e8e690b"
+    },
+    "HOT LIMIT": {
+        "ahash": "81002481ff6e8100",
+        "phash": "b36c6c91b16ed390",
+        "dhash": "2bcc4d2b8ccc2bb2",
+        "whash": "c300b5c3ffefa500",
+        "crhash": "f08c0e16160ecce0,9686968096869696,8e4d4d6d292b3333,6439183919191919,2bcc4d2b8ccc2bb2"
+    },
+    "友達の唄": {
+        "ahash": "070f0f1f2f7d3f0e",
+        "phash": "8a2a75e257d66195",
+        "dhash": "fdf9f9e9d999fdde",
+        "whash": "070f0f1f2f4d0f0e",
+        "crhash": "7abafab2faee6af6,bbb2b2b2b2b1b0ff,fdf5d5953531b9b4,0fdcb47cf8f898f8,fdf9fce9dbc1c59d,fdf9f9e9d999fdde,33313031194bcb38,87df474f4e479c07,030d99856547250c"
+    },
+    "行くぜっ！怪盗少女": {
+        "ahash": "ff0ff880073fff9f",
+        "phash": "9566d2823fe5d194",
+        "dhash": "8cd982027ef8663a",
+        "whash": "f607f880033f271f",
+        "crhash": "cca3cb1c92220233,335e78d0ce6cb65b,a8c1e18b0f1ba262,9232861b679c78d9,31379ecd668783e1"
+    },
+    "虹": {
+        "ahash": "dfffe7f3fe604000",
+        "phash": "f0bd58981fe121f1",
+        "dhash": "91398ec76c898088",
+        "whash": "dfdfe3e1fe410000",
+        "crhash": "90398ec744998e98,23072b178c8d0ccc,b0b92a978b4b73c6,9c0c1e162622d290,e6cc899b271939a2,01177f7e96fffcf8,284860a020010f3e,998e8a809098c8c8"
+    },
+    "スターラブレイション": {
+        "ahash": "ffffff8181ffffff",
+        "phash": "ff43c12f6a84814f",
+        "dhash": "4a5a402b2b40a252",
+        "whash": "baeabc0100ae5bed",
+        "crhash": "4a5a402b2b40a252"
+    },
+    "ツバサ": {
+        "ahash": "00000082e7ffffff",
+        "phash": "f40d42e435cf4a37",
+        "dhash": "9090492616858d1d",
+        "whash": "00000082e7ffffff",
+        "crhash": "04261604a5adcc15,0ccc643a09466363,8090220241063606"
+    },
+    "LIFE": {
+        "ahash": "0000c302c3ff7ec3",
+        "phash": "a52e0ec26959f66a",
+        "dhash": "abec16960fdcf086",
+        "whash": "0006c302c3ff7efb",
+        "crhash": "6e9616920fd4f286,b2a92a6ae4eca5b7,a693030f93930dc6,791e363b138b072e,4c54ad0a01cc26a7,733396940e4bc0d0"
+    },
+    "♡桃色片想い♡": {
+        "ahash": "ffdba5e51c309100",
+        "phash": "ceb1accc91ae4639",
+        "dhash": "33334d4d51642333",
+        "whash": "fffba4e53c309100",
+        "crhash": "33334d4d51642333,c4c9e125a189d9ca,c264708b4c4ceced,fc7e7f9fc77f2f9f,c0c1810e1c010b26"
+    },
+    "Hello Especially": {
+        "ahash": "0181f98383ffdfe7",
+        "phash": "af0f3b1d279cc0d0",
+        "dhash": "7b6b836e5697314d",
+        "whash": "0181f18043ff9fe7",
+        "crhash": "7b6b836e5697314d,dbdcdbd3d4d7d6d9"
+    },
+    "タッタ": {
+        "ahash": "c3187ec381bdbc3c",
+        "phash": "9e21d77a61a18787",
+        "dhash": "9671c88f0f716168",
+        "whash": "c3183ec381bdbc3c",
+        "crhash": "4c4d8e8e178e92b2,31e8cc0f0f756145,a268c4a2a2a2a2c4,8fb2337168e0ccd4,1f0f157161456968"
+    },
+    "全力☆Summer!": {
+        "ahash": "bf2bc0b74ff1094a",
+        "phash": "a89e0d9e95de7490",
+        "dhash": "65db944c99a55992",
+        "whash": "bf2b52af0dc11d42",
+        "crhash": "f8f8e4c699224544,0c84446ccc38e1e3,95d1c9c4e3783e98,9c98e0e0f0d1c963,fefcf9f2f9fc7e17,58cc2c4c2c5cf861,a69c8c91cee0fabc,3878f4c699b62951,269c38e08001020c,a565894a56545432,a549432e9cf0e031,61f0c81c76cb0303,49d3d3c8cfe378be,83f078cc963666cd,13261c70e001030c,7ef8f3f6f2f8fc1f,38fce2cf98b42820,2f4bb2661c90e1e3,1c9c3ccc58b070c0,65db944c99a55992"
+    },
+    "HIGH PRESSURE": {
+        "ahash": "3d71e3c78fdfbcfc",
+        "phash": "ba22ce98b2bcb187",
+        "dhash": "f9e9cf0e1cb86040",
+        "whash": "1d3163c3870ebcf8",
+        "crhash": "f9e9cf0e1cb86040,831333b5dc996c6a,a3cb9a3dd3445a76,f872e2c9993069d3"
+    },
+    "ハミングがきこえる": {
+        "ahash": "ffff6e3e1d000000",
+        "phash": "938766a8988f6733",
+        "dhash": "73cccc7031da333e",
+        "whash": "ffff7e3e1f000000",
+        "crhash": "73cccc7031da333e"
+    },
+    "紅": {
+        "ahash": "f0f0e8de1c180000",
+        "phash": "c8e766161cf4e12b",
+        "dhash": "a44993b471f0e1f3",
+        "whash": "f0f8f8de1f7c3000",
+        "crhash": "b0e2a69448a9e30f,197873e6c8b2e6c6,0c98f3332763488e,a44993b471f0e1f3"
+    },
+    "はじめてのチュウ": {
+        "ahash": "fc3d0670b181c33c",
+        "phash": "ce929cebc2603aa7",
+        "dhash": "71712c83572bb6a0",
+        "whash": "ff3d0320f381c35c",
+        "crhash": "71712c83572bb6a0,e86c55aba71d38e8,daa6a952d6d54b6d,ca6459453563c316,a1472f9f3f33d698,1c3cb1c1d3630f1f"
+    },
+    "RAGE OF DUST": {
+        "ahash": "001c3c1e7e7e3c18",
+        "phash": "902a6bb2342dcfd9",
+        "dhash": "aba8f0f4f4f0f0b0",
+        "whash": "003c3c3e7e7e7c18",
+        "crhash": "f0b0b276a4e87272,aba8f0f4f4f0f0b0"
+    },
+    "亜麻色の髪の乙女": {
+        "ahash": "0000df8f87c1ffff",
+        "phash": "ba0d446e3dc748bc",
+        "dhash": "e1b11b593f0d4c18",
+        "whash": "00008f8f87c1efff",
+        "crhash": "e1b11b593f0d4c18"
+    },
+    "君の青春は輝いているか": {
+        "ahash": "00387f7f7f7c3e08",
+        "phash": "80231f5c3bde68e5",
+        "dhash": "b4d2c2aa90b0f4f2",
+        "whash": "00287e7f7e7c3e08",
+        "crhash": "5352c6c5cdcccccc,0b85c1f099963226,6af2e4e4d0cc89c9,e64edccc9ca8a923,8d8b83989ada4c04,4d629a96b6a42331,e2e66eceaaac251a,4a6a64e6e2a3a1b0,b4d2c2aa90b0f4f2"
+    },
+    "大きな古時計": {
+        "ahash": "e7e7e7e7e7e76767",
+        "phash": "a7d8dc378a27d828",
+        "dhash": "4c4cd4cdcdccccce",
+        "whash": "a7e7e72727070303",
+        "crhash": "4c4cd4cdcdccccce,f0dc8a8eaa96e8b2,94d4d4d4ea7194f0,0f69692b3333334d"
+    },
+    "COLORS": {
+        "ahash": "01030338b81be3f3",
+        "phash": "8d3f61dcca332c89",
+        "dhash": "2363426a3232cac2",
+        "whash": "03830338b93af9fb",
+        "crhash": "f0fcfee686fefafc,4c5992c6c6c6e0d8,79d21c16268e9991,74dae7c6cf989a18,2363426a3232cac2"
+    },
+    "O2": {
+        "ahash": "ee42939a988d294f",
+        "phash": "98e423d3d98db271",
+        "dhash": "cc8eb6323119d598",
+        "whash": "ee47939a980c6d4d",
+        "crhash": "92c2e27479795d4c,c4e4b4e04c94bb29,e392d2bcf8cd99da,499392a6ccbaf264,cc86c3e0e6ba7898,b4524896169696f0,f00c6dce38f1c31d,fc9ab16644d6a63c,cc8eb6323119d598,9771414452453913"
+    },
+    "リバイブ": {
+        "ahash": "c3810181b818d9ff",
+        "phash": "bb3fe450f52084c7",
+        "dhash": "3e73733b78b1b167",
+        "whash": "c3898181ac18fdff",
+        "crhash": "c211460604142503,ca7298cdcdcd9f1c,cb9e3c78d1ea942d,6361d1d1f0a81ef4,356cc808c8d8d9d8,7139185888cc69b3,30b195b9a3a5674a,3e33733b7978b1a7"
+    },
+    "EZ DO DANCE": {
+        "ahash": "0137771f87c7e7f1",
+        "phash": "a404647b1f4378f7",
+        "dhash": "a7aec4fc3e9acea7",
+        "whash": "0007770f87c3e7f1",
+        "crhash": "e7ee8c7c7e1a8e27,c026168e8c1808ce,8c4a636363626ab4,3e17876363d8d496,a7a7c6f53e9acfa7,0375038707072e4e,2d2d2d2d2d2d2d2c,ed4d6d2c3cb39c9c"
+    },
+    "学園天国": {
+        "ahash": "0008edffdd7e3c00",
+        "phash": "daf905052cc6f25b",
+        "dhash": "e455993311c4cc4d",
+        "whash": "0004edff9f7f3c00",
+        "crhash": "e455993311c4cc4d,a9578e99b5ead5aa,211ac4621118589a,4c4d4d4646933164,ccd4c68d6c6d6d8d,ccceceb2d8cceccc,d4ccccccc8cad4cc,7852ca339923334b,521f38a9266a5a4a"
+    },
+    "STAR": {
+        "ahash": "f38c87cf48f0e163",
+        "phash": "e11eac4f01ef6439",
+        "dhash": "a26929aa9a64cb96",
+        "whash": "738c8fce48f0e163",
+        "crhash": "a26929aa9a64cb96,0ea4b498c8f27828,a654565a7ae9b498,1d436fdcb8b173e4,33c9300a740e599a,47474dabafaea6a4,629c2799d265b25a,6b3336aef93b3dd9,64870b423390ce68,ce21329db96b773f,76640f292a272c8e,104844066562027f,53666373b8cf034d,e46c25b319bc6c4b"
+    },
+    "Butter-Fly": {
+        "ahash": "10fffffffe005000",
+        "phash": "d49f2c2edf842b84",
+        "dhash": "2432d4d44ccdb492",
+        "whash": "10fffefffe001000",
+        "crhash": "242e92cc546ccc93,b12626669195978b,0c39431b701ae527,96928b57490531d0,6c4dce93a492923a"
+    },
+    "I wish": {
+        "ahash": "0000f404a7ee7fff",
+        "phash": "d36e9c312f18ce43",
+        "dhash": "3249c94d4d489a6a",
+        "whash": "0000f084a7ee7fff",
+        "crhash": "24a43435b9ada5b1,2c0cc24a2c0c2c2d,484cca9898ea6a2c,e7e7e3e7e7e3e3e7,3249c9494d4898aa"
+    },
+    "brave heart": {
+        "ahash": "3434c3ff3fc32424",
+        "phash": "c6c5161f1b787929",
+        "dhash": "68ec92b2f292e869",
+        "whash": "243ec37f3fc32424",
+        "crhash": "b7f1c9d4d4c8f433,e9a46a5db8e4456b,b0ccccd4a6263655,37b6b4ccd0b0b232,11100a29ad50426c,4b7b5697bbba32ef,cc3c9a1db2c4ed90,6e8548694686a6ca,71ac4fcccecccc4d,c4b67b4daa4db6e8,68ec92b2f292e869,8d25653637331b99"
+    },
+    "離れていても": {
+        "ahash": "ffffe7fffdfd0000",
+        "phash": "fa9505ca1cb56336",
+        "dhash": "f0cc8e3b31c99987",
+        "whash": "3cffc7dfc9780000",
+        "crhash": "f0cc8e3b31c99987,7c23032c13238b63,71f9789090b95c5c,6dae6d2467266764"
+    },
+    "見上げてごらん夜の星を": {
+        "ahash": "0000007effffff3c",
+        "phash": "c22f34ed4fc02cd9",
+        "dhash": "e0a8d4c468a2ccec",
+        "whash": "0000007cfeffff3c",
+        "crhash": "b3d6d6b6ac999ce6,24a4acb4b63632b2,e0a8d4c468a2ccec"
+    },
+    "Lost Princess": {
+        "ahash": "787afbc9e8b0c840",
+        "phash": "c187505e52ba4ff1",
+        "dhash": "d0c2e29b9b639398",
+        "whash": "787af3e9e8b0c940",
+        "crhash": "d0c2e29b9b639398,c218783c36666339,00163478cca4b898,ad89e8b8bdbd2575,d1848ca767692492,fa739f7ce0e47bfc,347993b7adc546c6,33a6242464cd290f,c8e36932b2282232,0e6ecc6c4c860fa1"
+    },
+    "Connecting Happy!!": {
+        "ahash": "e0d8bfbdbd0e0615",
+        "phash": "d6d154548a2f87ae",
+        "dhash": "94905a7139aca46d",
+        "whash": "60f0aebdfd0e0217",
+        "crhash": "94905a7139aca46d,b1b18086044db0b0,5dee464b8b737171,51742894a1971c59"
+    },
+    "OVER THE SKY": {
+        "ahash": "efb7f78a81030142",
+        "phash": "abd2903f539ce0e2",
+        "dhash": "4d6d875a4b6f6b9e",
+        "whash": "eff7f78aa1030142",
+        "crhash": "4d6d875a4b6f6b9e,a523212363c9d0e4,3676676a793556d5,f0b3b38a47cf6e5a,2d3b5a4d3b46263c,2c6f6e2c3d343d1d"
+    },
+    "アルカテイル": {
+        "ahash": "000018fffe183c3c",
+        "phash": "d9263a66b7986893",
+        "dhash": "1695b2f4e8b2f0f0",
+        "whash": "000058ffff387e3c",
+        "crhash": "1695b2f4e8b2f0f0"
+    },
+    "時を刻む唄": {
+        "ahash": "ffbdfd7f7c3830e0",
+        "phash": "cab56f87b14b9070",
+        "dhash": "6b6531c5d4616101",
+        "whash": "7f9db83d3c3830a0",
+        "crhash": "6b6531c5d4616101,2524264c0d634111"
+    },
+    "スカイクラッドの観測者": {
+        "ahash": "7c7efcff7f030000",
+        "phash": "81c04e8f937b7b52",
+        "dhash": "e0e4918ede52fad8",
+        "whash": "7c7e7cff7f010000",
+        "crhash": "b77b6367dcdcfcad,b6b088e8e5d5e764,151557929a4b45e7,01f3ddcd8b00e23e,f6e6ebe896b4b52e,e0e4918ede52fad8"
+    },
+    "Hacking to the Gate": {
+        "ahash": "01edf377208e7c00",
+        "phash": "e3ab585f22c4274b",
+        "dhash": "4919cba54d7cb083",
+        "whash": "01edf377718e7c00",
+        "crhash": "4919cba7cd7cb883,e4b8446b7296c871,3127071f2d66af8d,69dca0b4d469332e,b69f1d777b74f079,c5cd4c3c74c8a3cf"
+    },
+    "survival dAnce ～no no cry more～": {
+        "ahash": "00000040fffffffc",
+        "phash": "c0131fe8386d3e9e",
+        "dhash": "dac8c08a8c87e238",
+        "whash": "00080040fffffffc",
+        "crhash": "8ca6390c83c3719c,0723144541202849,dac8c08a8c87e238"
+    },
+    "CRAZY GONNA CRAZY": {
+        "ahash": "f1e00480070fcf6f",
+        "phash": "bb4ee1b8e43c1615",
+        "dhash": "07495c6c751d1bde",
+        "whash": "e3e004a6070f8fef",
+        "crhash": "07495c6c751d1bde,c427e4c898a8e8e6,f894a360e1aedcf8,f8f0f8f09cb0b4fc,9393131315515959,03c9dc6e761c189e,a5c66231ccc663b9"
+    },
+    "Overnight Sensation ～時代はあなたに委ねてる～": {
+        "ahash": "3e3e260200007ebd",
+        "phash": "95949a3b3da53686",
+        "dhash": "fcf0cc967a8fc073",
+        "whash": "3e7e3e0200007fff",
+        "crhash": "fcf2e9cc86335965,71590f8df0d0e870,fcf0cc967a8fc073"
+    },
+    "TRF×CG -DJ KOO Mix-": {
+        "ahash": "fffffce060000000",
+        "phash": "d3deaea04269c9d1",
+        "dhash": "c52c4049cc92524a",
+        "whash": "fffffcf460420200",
+        "crhash": "c52c4049cc92524a,5a7bd61f2f8c86c4,0400063e3089d0f3,64604a9c8d9cd8cd,0f0c6ea66b093d93,0809dd65321687c3"
+    },
+    "いつかの、いくつかのきみとのせかい": {
+        "ahash": "0f1f1f00280f7f3f",
+        "phash": "833e92b15f203ec7",
+        "dhash": "fd3de953529ff9e8",
+        "whash": "1f071d001a0f7f3f",
+        "crhash": "e1e38de43b0774fa,9e476378f6d3b63d,d2d2d3928c8d95ce,d9d989684a4b4bda,59d89abbb991e393,1bbffbeb38f8dc65,fd3de953529ff9e8"
+    },
+    "碧いうさぎ": {
+        "ahash": "0f038383cbdfffff",
+        "phash": "bd351319190eb676",
+        "dhash": "9a5e6636121ed1d9",
+        "whash": "0b030383830f7fff",
+        "crhash": "9a5e6636121ed1d9,9399dde56f531919,2d2d271140600000"
+    },
+    "エキストラレボリューション": {
+        "ahash": "073e7ec2183c38f8",
+        "phash": "d9b5cd227c6622c9",
+        "dhash": "aef2d00eb469f0b2",
+        "whash": "073e7ec21c3c38f8",
+        "crhash": "aef2d00eb469f0b2"
+    },
+    "ハーモニクス": {
+        "ahash": "00343e1c187e7e18",
+        "phash": "c46e676379923199",
+        "dhash": "61ecf8b2b2cce871",
+        "whash": "00347e7c587e7e38",
+        "crhash": "cccaf06373ccc8f0,f261686c6cf0c1c6,61ecf8b2b2cce871"
+    },
+    "徒花ネクロマンシー": {
+        "ahash": "011005e1f1d5dc38",
+        "phash": "ea2a14fce39013bd",
+        "dhash": "33314d494329b1d0",
+        "whash": "819005f1f1ffdc2a",
+        "crhash": "36a4686bcbb26607,660ce899b2ce494d,8ff083c3e1dc6773,1eccc861454d0d26,f50950628f464c58,fb9d7f36f2313a96,729e3a69c9b92d25,73b2301bd9899e64,15466cf8d89abb3c,33314d494329b1d0,713736965b1313bc,746b685a14a52b28"
+    },
+    "REVENGE": {
+        "ahash": "3ffefe7c38008080",
+        "phash": "c685bd091bb6619b",
+        "dhash": "7064e4ece1c32529",
+        "whash": "fffefe7c38008080",
+        "crhash": "7a72e6e4e4e0e8c3,180d030381048280,6d410d0d07070393,7064e4ece1c32529"
+    },
+    "大河よ共に泣いてくれ": {
+        "ahash": "d1f9f7e7e0010323",
+        "phash": "e6d82c79c7a541c9",
+        "dhash": "231585cc4c550f4e",
+        "whash": "f1f1f7e7e0010323",
+        "crhash": "0a96c66871312610,5b33735bf0b9d963,5193c7e4ddf7f9cb,9b0c2c307272b0bb,231585cc4c550f4e,318301193b3d5c70"
+    },
+    "ハレ晴レユカイ": {
+        "ahash": "f010e6f8fefcc0e0",
+        "phash": "f507609f89b8c7a2",
+        "dhash": "2164cc1248000483",
+        "whash": "e010e4fcfefcc0e0",
+        "crhash": "6c5b6e765983c0cc,70f0c4ce8e8e9696,f0e0a237d6d6d68e,72e24e67e6c6c6ce,c0a48c2c2c2c6d28,e80e330ee818f4e5,2164cc1248000483"
+    },
+    "冒険でしょでしょ？": {
+        "ahash": "c0f408bfff3d1cfd",
+        "phash": "daf05ad0f11e3519",
+        "dhash": "3985786a124d6911",
+        "whash": "c0fc803aef2d08fd",
+        "crhash": "3985786a124d6911,6200f0d4e834b6c6,a833958d09b168d4,a069ce5153a6cede,e50c390379596ba9,30339f1e4baca971,1a5dedc5a62636aa,d84d697a62314a46,424a4b0545064506,92d0a4b820508430,4d48486438a9a76c,9a5eed85a46636ab,00100810ac8c4d4d,0000109898999999,8ed6570f9697914c,1343ced69655373e,8aa4c9496b369c4a"
+    },
+    "God knows...": {
+        "ahash": "ffe7e6fce0800000",
+        "phash": "f2a79b8a88d93c92",
+        "dhash": "134e0e8a8505888c",
+        "whash": "ffe7f6fee0804000",
+        "crhash": "334b0e2e8a892505,71e0c6828acad468,eca08b11707072c1,1bf1473cf1c6c4e4,ccc8caccc8c9ccc6,b08c9e9696969e0c,b2b2b2b2aacccccc,ec8e83c0f82f0f88,1b0e2e888505888c"
+    },
+    "Lost my music": {
+        "ahash": "e0f4f8d1c6df80a0",
+        "phash": "ecc247b42f6cc9c2",
+        "dhash": "4344a1a79cb62e6b",
+        "whash": "f0f0f8d1d6df80a0",
+        "crhash": "4344a1a79cb62e6b,3973f6ad1930238c,e71ff8f1bcdfd357,2cac84ccc2632c2c,e0d9d9dbc98b53c3,1336188b868f8bbc,1e31c71e3e1bcde2,8623632337160c18,8561cfcdce181834,a23a3a5256466764"
+    },
+    "サラバ、愛しき悲しみたちよ": {
+        "ahash": "f7e0e8b872c07030",
+        "phash": "c7f3c6a49ccd19c0",
+        "dhash": "4ccd4a62c406e6e2",
+        "whash": "f7f0e0f87ec07030",
+        "crhash": "48306434f0312a2d,82c0e4c380b86062,c6c6852532ca7688,cfe0dc56485a58d3,6a6aea6a58c1a525,ed674e255516a4e1,8cd6aeac5e50a9d2,75ccd2f56c355bda,4ccd4a62c406e6e2"
+    },
+    "ピンキージョーンズ": {
+        "ahash": "ff9d9431e7100001",
+        "phash": "aebee0e8a14d80b7",
+        "dhash": "b72d6d694d7163c7",
+        "whash": "ff9d9c9df7180001",
+        "crhash": "b72d6d694d7163c7,b3929652929392d2,356d654d6d7163c7,e3676e6c3071239f,46464eb233170ee6"
+    },
+    "Alchemy": {
+        "ahash": "c1000000801cffff",
+        "phash": "de60a83aea838afa",
+        "dhash": "ab26e0c43d7c6833",
+        "whash": "ff00100080beffff",
+        "crhash": "e6a696969696929b,8e8c8d8defbcf8f8,0781d0e4f2be9eb6,27d6b4e95a60c003,30f8f8cccc8c8080,39347ce878613332,8b2aa6c1460d34f8"
+    },
+    "恋愛サーキュレーション": {
+        "ahash": "de7ee706b08038b8",
+        "phash": "dfb0d85a7e60b0c8",
+        "dhash": "10d8d45468487361",
+        "whash": "de7ee7268880b8b8",
+        "crhash": "10d8d45468487361"
+    },
+    "ココ☆ナツ": {
+        "ahash": "7ce5fb930581c0f6",
+        "phash": "ec89d613947cadb0",
+        "dhash": "d04533379d1305e4",
+        "whash": "5ee5fb910581c0f6",
+        "crhash": "d04533379d1305e4,b56ddc312e5037f7,cea3d4cb89a38e3d,b3b3b266448b1f7c,033ca4cc3ce0003f,3f79363e0e0f6321,9490999b964e6c58,e3400d2bd76d0b8b"
+    },
+    "怪物": {
+        "ahash": "2199bca400819bff",
+        "phash": "af46882963e7961d",
+        "dhash": "cb33604d332b33db",
+        "whash": "6191bca48091dbff",
+        "crhash": "38ac2c18f1c31927,78c7871623642b8b,3970eac79bb3b2b2,c11362809949e205,79b1e97b74ed3078,332ef0030dc03e13,3313b787cedaf871,727271f3a3b93334,cb33604d332b33db"
+    },
+    "うまぴょい伝説": {
+        "ahash": "9cfcfa406ec0fd3c",
+        "phash": "d55c9a7e16382595",
+        "dhash": "303092a6cc4e39e8",
+        "whash": "1cfc7a007ec0bd3c",
+        "crhash": "303092a6cc4e39e8,8b9b4b4fcfcf8f87,01060ec1502317c3,fafe7cbe8783ad3b,8b8f8f2fa3c903a4"
+    },
+    "徒然モノクローム": {
+        "ahash": "007e7ffff3801207",
+        "phash": "b4ca047da92b7ae8",
+        "dhash": "b1fcd5db0624662e",
+        "whash": "007e3ffff3820207",
+        "crhash": "b1fcd5db0624662e,f58f18be7cc0c30f,89032b3964d6dada,8505972763525253,393d94936f3f78d9,51a3078f0f1d72cc,30e082030fbb6e58,30410f79c7db737b"
+    },
+    "フィクション": {
+        "ahash": "047eff9f3e3c1800",
+        "phash": "9fb760c23d1cc3c1",
+        "dhash": "4dccea6ee8e87132",
+        "whash": "007eff9f7e3c1800",
+        "crhash": "4dccea6ee8e87132"
+    },
+    "ワニとシャンプー": {
+        "ahash": "b1819d10783903bf",
+        "phash": "8c6ea661423edc9d",
+        "dhash": "271331a1d0d3ae2c",
+        "whash": "9381bf407a3903bf",
+        "crhash": "271331a1d0d3ae2c,33686559d2b2d053,133134a9c8daf92b,5946a444c993263c,4c495551543b7ecc,8c3031c02224cc03,832d55dab7352b2f"
+    },
+    "猛烈宇宙交響曲・第七楽章「無限の愛」": {
+        "ahash": "3c7f5e003610bfcf",
+        "phash": "c4c39b4f237a38b4",
+        "dhash": "6941b6c6c47661ba",
+        "whash": "3cfd56207200bdcf",
+        "crhash": "9676ccccc689a4a2,c6c64e2a5a666672,8781c08c465ef3f3,b27371e1c8949319,2f2b6b22ada4a2c3,33878cac8ede6c79,2e2329a3aa8ecc71,6941b6c6c47661ba"
+    },
+    "吼えろ": {
+        "ahash": "0060f2fcf913c338",
+        "phash": "c1671d281b37cee4",
+        "dhash": "f1c606c8a1a31671",
+        "whash": "0060f2fcfb4bc33c",
+        "crhash": "d98648caa5ab1671,e60ac9c93ab7a99b,d4b669cd9ec2a664,8e822ac988b5eb1b"
+    },
+    "POPPY PAPPY DAY": {
+        "ahash": "e1a08099f1df9fff",
+        "phash": "ea62b6b4899994b6",
+        "dhash": "0f4707332521374d",
+        "whash": "e1a08098d1999fff",
+        "crhash": "0f4707332521374d"
+    },
+    "ハッピー・ジャムジャム": {
+        "ahash": "c0007e7fff3db9c0",
+        "phash": "c810797bf4a91ad6",
+        "dhash": "93a0f4b6cc595396",
+        "whash": "40007c7eff3db9c0",
+        "crhash": "93a0f4b6cc595396"
+    },
+    "DNA狂詩曲": {
+        "ahash": "d6fefefcee401e11",
+        "phash": "d4f40c552e3c7a95",
+        "dhash": "24cc96a54c88b2e3",
+        "whash": "96fefe38ae001e11",
+        "crhash": "34c45ab56c4e88b0,4a52b1eb8b0f4f08,4949c86aeaab29d0,ca88c4c6e6d3d3d3,737133b39b4b66f2,6c5362c911693d03,24cc96a54c88b2e3,6ee6ed276d765a99,a12b2377e88ee8bf,46466745cd6b6b60"
+    },
+    "Chai Maxx": {
+        "ahash": "0000fffff7667e24",
+        "phash": "d4381b275e8172fc",
+        "dhash": "f0329ed286cce8e8",
+        "whash": "0000fffff6667e00",
+        "crhash": "339c926686c8e8e8,f0329ed286cce8e8,c3c7666565278ece"
+    },
+    "走れ！": {
+        "ahash": "cfc1c1818dcd87df",
+        "phash": "ba6694319b3ac91d",
+        "dhash": "190f272f1b191f36",
+        "whash": "8fc3c18189c587df",
+        "crhash": "190f272f1b191f36,2c8730122c9c1e3d"
+    },
+    "恋": {
+        "ahash": "fffffcffffff1400",
+        "phash": "dea12a9f657a6106",
+        "dhash": "76b61080465829e6",
+        "whash": "071f00fffefe1400",
+        "crhash": "3eb6308146523925,d9c5d5580c441018,392d6ce5e4e613d1"
+    },
+    "ぱ ぴ ぷ ぺ POP!": {
+        "ahash": "f8fcb30000c33f37",
+        "phash": "cdddc2704c5d6589",
+        "dhash": "80296622168ed9e5",
+        "whash": "f8fcb28002c33f37",
+        "crhash": "80296622168ed9e5,84a58e1e66d3950c,91b46a293397cd59,a23634b1b6664616"
+    },
+    "第六感": {
+        "ahash": "0810b9fdff1f80f3",
+        "phash": "cf1f2f17c06294e2",
+        "dhash": "797361e1cd7847c3",
+        "whash": "0000b9fdff1ec0f3",
+        "crhash": "797361e1cd7847c3,2726d9593b2b1f9f"
+    },
+    "世界はそれを愛と呼ぶんだぜ": {
+        "ahash": "f9c727c3e0e0971f",
+        "phash": "b3aa8ce9e099c387",
+        "dhash": "a32fcd9f8e0a366e",
+        "whash": "f9c307c3e0c0879f",
+        "crhash": "a32fcd9f8e0a366e,b8a1a7a4cd142d5a,3347cf37a7c9c731,36562e24170f3929"
+    },
+    "可愛くてごめん": {
+        "ahash": "187e7f8330f07e04",
+        "phash": "84895a4a3fbc6f91",
+        "dhash": "71e8c63664e8f4ec",
+        "whash": "187e7fa710787e04",
+        "crhash": "71e8c63664e8f4ec,2fff7c3f3f3e7ffc"
+    },
+    "Overdose": {
+        "ahash": "4fc7c70f0f30b0d0",
+        "phash": "bcb1e887b181ccf1",
+        "dhash": "9e2f2e997c606211",
+        "whash": "4fc7c70f1f30b0d0",
+        "crhash": "9a9f252e3e19f974,464ce88999d9e1e3,b63d797959a7aaa7,23c06039988c3c58,2d2d3949e561cbc6,dd8f2b2624152f9e,3f2f232f4b1a581b,3d6d71186c66527b,79dc60616262a111,c94dc4c4c4848686"
+    },
+    "トウキョウ・シャンディ・ランデヴ": {
+        "ahash": "ffe30ff10000403c",
+        "phash": "b8a5d772ca859319",
+        "dhash": "cc063665b9afb071",
+        "whash": "fff30ff10802583c",
+        "crhash": "cc063665b9afb071"
+    },
+    "ちゅ、多様性。": {
+        "ahash": "c3e7991818101c00",
+        "phash": "aca5a1f545d05eca",
+        "dhash": "960f69b2b271b5b7",
+        "whash": "e7e7bd18da985401",
+        "crhash": "960f69b2b271b5b7,aa9668c8c8cc9643,42a62563bae9add4,968f69b2b271b4b7"
+    },
+    "青春コンプレックス": {
+        "ahash": "007e7e7e62627a00",
+        "phash": "c0c43f793b387ac2",
+        "dhash": "96e6a48a8a8aa231",
+        "whash": "007e7e7e7a627e00",
+        "crhash": "e3e4a60b090b0b29,4603484227180900,96e6a48a8a8aa231"
+    },
+    "ソワレ": {
+        "ahash": "003c3c7e7e381000",
+        "phash": "96926fb494e8692e",
+        "dhash": "7168f0b4a4f2f071",
+        "whash": "993c3c7e7e7e1800",
+        "crhash": "f0e8ccae323355d5,2c6478f87564c6c7,ceeb6b6b6b6ac881,b08fe59d8dcd9cf0,a8a9a9a9a8a8a8a8,83b09cb2eedffe78,f0c484a2a0a0c0f1,c6cccce8e8f0f0cc,7168f0b4a4f2f071"
+    },
+    "みちづれ": {
+        "ahash": "00007cfeff1807bf",
+        "phash": "90542f2df5a5c8ba",
+        "dhash": "a630b0ae94f16b79",
+        "whash": "00007cffff18037f",
+        "crhash": "b0b8caa64e95b0f0,f3d2deded1d9f173,9d72c4a8b192f07c,a630b0ae94f16b79"
+    },
+    "灼熱にて純情（wii-wii-woo）": {
+        "ahash": "380800ff7e4e49ff",
+        "phash": "d05dc960c7671e6a",
+        "dhash": "f0b2746c8c9c91f1",
+        "whash": "380000bf7e6e49ff",
+        "crhash": "3f7efeccc9c30b63,564cc9e7aae0f0d9,6c68ccac9c95d3f1,f0b2346cecac98d1,f4d3132d6b178c9e"
+    },
+    "Stellar Stellar": {
+        "ahash": "0000787fffff1c00",
+        "phash": "c1217ebea5a98956",
+        "dhash": "8fc0b1dae4d1514c",
+        "whash": "00007c7fffffd800",
+        "crhash": "cc9c83f07e239f84,f8d2cac0e4c4d951,9c3872c3d0849010,af93c8a1d2dacce4,c9d95115c5248449"
+    },
+    "プライスレス ドーナッCyu♡": {
+        "ahash": "1e8f19039385ffbf",
+        "phash": "be15d7768480dacc",
+        "dhash": "2c5d71a7272d2962",
+        "whash": "0e8731039385bdbf",
+        "crhash": "2c5d71a7272d2962,136e17314bd97e36,ec86c7871f6d1e1a,c18d33230877330e,6f2df95b4b1b513b,666f2b2f2d2417d3,b3f3f9e3d471376e,bccf4b3d8bcacc80"
+    },
+    "＃HE4DSHOT": {
+        "ahash": "cf878381c183f7f9",
+        "phash": "ee3bd0e0618d1ba5",
+        "dhash": "9d2d7717072f6613",
+        "whash": "c7878381c183f7f8",
+        "crhash": "9d2d7717072f6613,22dbcae864e4cce0,837158acf47a4cc6,e4c61a70c0c4cccc,8981b129d0f2cc4c,1e2c6f7b53030d23"
+    },
+    "14平米にスーベニア": {
+        "ahash": "5b03e1c3b3fbf810",
+        "phash": "ed205c9d1cd0c3e7",
+        "dhash": "b226cb972263b223",
+        "whash": "5a03f18373bbfb00",
+        "crhash": "b226cb972263b223"
+    },
+    "NUDIE★": {
+        "ahash": "ffafbf0380c0d1dc",
+        "phash": "be97d8671e84c09c",
+        "dhash": "6b596d662586a791",
+        "whash": "ffafaf0380c0d1c8",
+        "crhash": "23495b5d2c66672d,66672d96c7a7b191,64c9aca4317363e5,91938b67268f2b60,4d2e66672d16c2a7,de61272f2a5e3cb0,1d1b32878d8f9719,92c2a4134ba5bb93"
+    },
+    "Sparkling Girl": {
+        "ahash": "fbfff1f8f0000400",
+        "phash": "eeebb449c9c26a84",
+        "dhash": "53064541c385b4e4",
+        "whash": "fffff5f9f0000000",
+        "crhash": "4357654541c3e7c5,929aaaeea85aa4e4,c0e1b8d8b8dcf064,293236376a7c7446,0d35d9c28e3d79f0,654149c3c7b4a4e4,5f06878d3416dc58,d1e10756c4262606"
+    },
+    "おかしな国のおかし屋さん": {
+        "ahash": "bf9fdf9382c281b9",
+        "phash": "be81cb740faed013",
+        "dhash": "6b3151373e3c2f6b",
+        "whash": "bbdd9f91828281b9",
+        "crhash": "6b3151373e3c2f6b,58bb663d1b2f7666,676361801a65e74e,3e38193576364ece,c1ed79391d9d9298"
+    },
+    "PANDEMIC ALONE": {
+        "ahash": "00187c7c1c3e7e26",
+        "phash": "c4696d3e73c2231e",
+        "dhash": "d2f2d0c8f0f4e444",
+        "whash": "00187c7c3c3e7e3e",
+        "crhash": "b3f0c8e8f4a464d6,d2f2d0c8f0f4e444,f4e4dbb1337133f0,9589153161496145"
+    },
+    "cherry＊merry＊cherry": {
+        "ahash": "ff0f0fffa7e16100",
+        "phash": "bb9d08e6dde0e301",
+        "dhash": "213bd9194c4d879b",
+        "whash": "ff0f0fffa6604100",
+        "crhash": "213bd9194c4d879b,031c6bd258f0e968,56171d576d19938b,845d1b3871e51f77,25110989a9b2c6bc"
+    },
+    "Star!!": {
+        "ahash": "ffa5c3c3c3c3c3e7",
+        "phash": "a6ce929e9a61c936",
+        "dhash": "6d6d87170f0e0e0d",
+        "whash": "ff81c1c38383c3c7",
+        "crhash": "6d6d87170f0e0e0d,45535bc637ad2f5e,f9dc463b19191972"
+    },
+    "-LEGNE- 仇なす剣 光の旋律": {
+        "ahash": "f7e1ecc0e1f3f0e1",
+        "phash": "e693aca5675491ca",
+        "dhash": "464d990c4b86a7c7",
+        "whash": "f7e1ecc0e0f2d0e0",
+        "crhash": "464d990c4b86a7c7,b23e1c82343973cd,070e6ccf9b99e8a6,63493e3422647672,a7ee3e3c178b41e1,2b21681a2a8e9f0b,438e1c3360713b3e"
+    },
+    "LET’S GO HAPPY!!": {
+        "ahash": "e3c28181c1d9ffef",
+        "phash": "eb6483c4b48bda9a",
+        "dhash": "c7463b3317238b0a",
+        "whash": "e3c08181c1d1ffcf",
+        "crhash": "c7463b3317238b0a,b7868e8d375f6c63,0f336c6971435b65"
+    },
+    "ØωØver!!": {
+        "ahash": "870981e7c18b9f83",
+        "phash": "bb422d9d709674f0",
+        "dhash": "3f53150d1b533f1f",
+        "whash": "870985efc18b9f83",
+        "crhash": "0c1e4d4446141727,5e67293b2667f5a6,a46ed4a810b4b132,37692a2e8d393d1d,6ece0b2b7971616a"
+    },
+    "夢色ハーモニー": {
+        "ahash": "070301fffffe3801",
+        "phash": "a5282ad595dfba18",
+        "dhash": "decf376e22e2e02f",
+        "whash": "070101fefffe7c00",
+        "crhash": "decf376e22e2e02f,5fd7c7a31d557655,1e0720c0888dcf53,72525a52505252b9,9c16073b236d1851"
+    },
+    "心もよう": {
+        "ahash": "ff893cfcfcbd83c7",
+        "phash": "daca21ade134cf32",
+        "dhash": "0e3961d44d613b0e",
+        "whash": "e7813c2cbcbd81c3",
+        "crhash": "0e3961d44d613b0e"
+    },
+    "M@GIC☆": {
+        "ahash": "ffff3800000000ff",
+        "phash": "8080df70be07ab7e",
+        "dhash": "9084eaec9dd6e0e0",
+        "whash": "ffff3824006200ff",
+        "crhash": "9084eaec9dd6e0e0,d8700c0d33b3b393,f2fbc985d6e5eafa,8b0331612061b316,494f193972634e9a,54362c6672606caf,ea321295d7602000"
+    },
+    "STORY": {
+        "ahash": "ffe7e763000088ff",
+        "phash": "e6a49959cd8d845d",
+        "dhash": "078d8c8e0ced7910",
+        "whash": "ffe7e721000088ff",
+        "crhash": "26878d0d8cce8d2a,6951795110b35074,8f0d8ece2a8c6979"
+    },
+    "いとしーさー♥": {
+        "ahash": "e0f1d000881efff7",
+        "phash": "c56aaa957b8118fa",
+        "dhash": "49e7a38258b6c685",
+        "whash": "e0f15060a81effd5",
+        "crhash": "49e7a38258b6c685,37969b1949999978,56410a959475c981"
+    },
+    "きゅん・きゅん・まっくす": {
+        "ahash": "6fefb69080846cfc",
+        "phash": "f6a783334e561c29",
+        "dhash": "c90b7424312c89a9",
+        "whash": "6fefb280908a64fc",
+        "crhash": "c90b7424312c89a9,0dd0d1e32f0d3c66,181001434e5f0e37,5b3e0d969315280f,6b6b6276493131e5,7666ec6f27202893"
+    },
+    "Shine In The Sky☆": {
+        "ahash": "e7e181c3ebc1c9ad",
+        "phash": "fa66d2808734ad9d",
+        "dhash": "8d0d330f0b131959",
+        "whash": "e7e18183cbc1c9ad",
+        "crhash": "8d0d330f0b131959,2e29517736764d4b,b2d3c3a2070747a7,6d6d91969696352f,870f1b1d31393132"
+    },
+    "Nightwear": {
+        "ahash": "00002c7fff7a0e47",
+        "phash": "854e7a5da5934966",
+        "dhash": "93f1c8de96d29c8e",
+        "whash": "00003cfffe7a4e47",
+        "crhash": "e882ea34b3e83362,8cceccb95826647a,69d87c388ae4d8e1,6c9d7328b6ccb831,58b474c4a8eaa0c1,1e8eaeacc1c6dcd6,c9cccca88a12d393,c8ccccde926aa898,93f1c8de96d29c8e,968ceca7c32d248d"
+    },
+    "Flip Flop ～For SS3A rearrange Mix～": {
+        "ahash": "ffffc38191ff817e",
+        "phash": "be2ac1cb3e2ec1c1",
+        "dhash": "3351172f717133cc",
+        "whash": "ffbd8181818d817e",
+        "crhash": "3351172f717133cc,974c4d81cdd9d959,26ae26aa29434f78"
+    },
+    "あいくるしい ～For SS3A rearrange Mix～": {
+        "ahash": "f9e1f1f9f9f90000",
+        "phash": "eaea30fbd50c8515",
+        "dhash": "11114341434135cc",
+        "whash": "f9e1f1f9f9a90100",
+        "crhash": "11114341434135cc"
+    },
+    "夏色": {
+        "ahash": "8818bfff00001fdf",
+        "phash": "9b59796961a73606",
+        "dhash": "13336969f026b4b4",
+        "whash": "8898bfff00001fdf",
+        "crhash": "121333296c696be1,052e75f4b6b5b43c,d1cc4a170f8f94d4,d490d9230bb2b6d4,26373326625353d3,f0e0e0e0f0f09006,873368cace5c319f"
+    },
+    "YELLOW YELLOW HAPPY": {
+        "ahash": "ffe7e7ffffff0000",
+        "phash": "f6a635cc598b812d",
+        "dhash": "2c0c4de8338c4b5a",
+        "whash": "ffe7a5fe81670000",
+        "crhash": "290c4dcc69338c8c,d5d5252c2a2aaaca,c98937d696becac1,626aaaa2aaaaaaa9,55584a18554ba191,b092929292f817cc,533323713707570f,841b4b6e4e92924d"
+    },
+    "風になりたい": {
+        "ahash": "1e1f0f06c0f0621f",
+        "phash": "941d8c4d3626f93d",
+        "dhash": "f0f0dcac16938e3c",
+        "whash": "1f1f0f06c0f062bf",
+        "crhash": "c48080e4fc30b01c,a4a992928dc347f0,c781a934c6e2d078,79b0a28484a480e9,d3c6a63c2c2db7b5,f0f0dc8c1693863c"
+    },
+    "モザイクカケラ": {
+        "ahash": "062724263c7c7c30",
+        "phash": "86372dd93c646a9c",
+        "dhash": "dececdccf8e9e0e4",
+        "whash": "072f24363c7c7e70",
+        "crhash": "3399dcecce5eaded,58b8bc7afef0c184,8c3f5bdeb018c4d8,cc38e1a696939336,3fbe989c8d193962,4949cbcb4e619c47,dececdccf8e9e0e4"
+    },
+    "WHITE BREATH": {
+        "ahash": "01031f3f3f7f0d00",
+        "phash": "882d7ae246ce5d5c",
+        "dhash": "e7bb72faec9ab9b9",
+        "whash": "010b1f3f7f7f0d00",
+        "crhash": "e7ba72feedbab9b9,d3e7bab272f8eceb,d8d9b9b9bdb9b9f9"
+    },
+    "鳥の詩": {
+        "ahash": "cf810000000f7f3f",
+        "phash": "be799bb0f88091f0",
+        "dhash": "19637e3d3d7cfd7c",
+        "whash": "df810100851f7fbf",
+        "crhash": "e0e0e0c143838383,ebebf3f6a6272772,1999c566f6e6af4f,e5c0c2c2c5e370bc,39bcfcf5a95d68f8,08400408a00068c0,19637e3d3d7cfd7c"
+    },
+    "My Soul, Your Beats!": {
+        "ahash": "0078703238787c7c",
+        "phash": "c56738783cb73152",
+        "dhash": "f2c1c8e664e1e8f8",
+        "whash": "087c7e3238787c7c",
+        "crhash": "c8c4e46371b076f4,e89cfc3eda3cb081,474f6b9b9a9afaa4,166695b2245ad694,f2c1c8e664e1e8f8,b5522d96deeb7532"
+    },
+    "君の知らない物語": {
+        "ahash": "000000300f0fffff",
+        "phash": "8071f43bd9ce6b09",
+        "dhash": "8184c3e3fbfffffa",
+        "whash": "000060790f1fffff",
+        "crhash": "7cf0b161e4e4cccc,e3b3fbeff7fffff8,3235d151545331b1,838ca2c9a3fbffff"
+    },
+    "ニッポン笑顔百景": {
+        "ahash": "40b9afca498f99c3",
+        "phash": "bbc34c4960f497a3",
+        "dhash": "934b599cda533396",
+        "whash": "40b8afea4b9b99c2",
+        "crhash": "89694c8adb59589b,b3964cb3a49a2586,b06636a3871373c6,9e2e683c34bda1a5,c3c415d9e52c526d,ac9b99347561c4ac,9394c4ec646462b2,cecd47726c21b79a,934b599cda533396,56d35323c2575245,45234eac9c292574,3b9b310dcf17f3c1,ad9888951c1c1e92,98ffcf9e6f493c13,3f39194d62634b9b"
+    },
+    "SHINY DAYS": {
+        "ahash": "fffff3f1001c40c3",
+        "phash": "c8afb1126f69063d",
+        "dhash": "b2b2678334f09393",
+        "whash": "dffff3e1001c40c1",
+        "crhash": "b2b2678334f09393,1e974b8f1c3b64e8,b29290b9ae3c37f1,c1830b8525252515,0e2f5b7d6b424a0e"
+    },
+    "モラトリアム": {
+        "ahash": "009efff8bcbc031f",
+        "phash": "dd7522485867ff08",
+        "dhash": "721c6a5030704f74",
+        "whash": "008efef8b8bc019f",
+        "crhash": "721c6a70306ccf74,634221943251554e,2024222480a45213,4f4d29afaf4bcbdb,25052505255bc3cc,b1145c362a529689"
+    },
+    "Fantasia for the Girls": {
+        "ahash": "1039e8f9897fcdc3",
+        "phash": "e94d26167ed0e139",
+        "dhash": "3373d3b333f59913",
+        "whash": "003878f9893fddc3",
+        "crhash": "3373d3b333f59913,514baa2d8d0d6662,6923232e0c8c8637,40040d0f1f7f9616,9cb4515927061c0c,8e9e271332634b9c,dc3e7e7e6241206b,6168d0d373630e8f"
+    },
+    "Fin［e］～美しき終焉～": {
+        "ahash": "c0c07e7b3f7f1e0c",
+        "phash": "85687be30968e29f",
+        "dhash": "0204d4f2f6ecf878",
+        "whash": "c0407e3b3f7f0e0c",
+        "crhash": "0204d4f2f6ecf878,0909210d0d3933b3,21020424660c2d20,fbfb7b5b747b5d34,535bba4c3c3d6f91,3d9cbf8faf9fbfef"
+    },
+    "Clock Hands": {
+        "ahash": "c048687070397b7f",
+        "phash": "c870b92cb6670f35",
+        "dhash": "3391d9c9e563e3fb",
+        "whash": "c0486870f1397b7f",
+        "crhash": "339199c9e5e3e3fb,5bb2e2686ac6f438,647abe5cecb89898,c3f0fcfe33bbfdeb,37319389c1e1e7e2,4515149494cc4e46"
+    },
+    "Stage Bye Stage -emon（Tes.） Remix-": {
+        "ahash": "818181cd9f8181ff",
+        "phash": "ba7a45af919cc095",
+        "dhash": "230329391d2133cc",
+        "whash": "818181dddf8183ff",
+        "crhash": "2b033b29395d6133,935b49a9b8c64744,8a455593b06e1c99,8c0c0c0c0c0c0c0c,41122a2c3c9cc063,4cb0794ccc7c3244"
+    },
+    "OTAHEN アンセム -Massive New Krew Remix-": {
+        "ahash": "cf83c3e7e4f10000",
+        "phash": "eabf1dead2c0c444",
+        "dhash": "1f1b371d0d1333cc",
+        "whash": "ef83c3e7e1f18140",
+        "crhash": "1f1b371d0d1333cc,61b46869a9896161,7f2464826c642c04"
+    },
+    "こいかぜ -Night Wind Remix-": {
+        "ahash": "ff8f8f8f8383877c",
+        "phash": "bfd8c02fc4d2e145",
+        "dhash": "393b3e3c667f3fc0",
+        "whash": "ff8f8f878381032c",
+        "crhash": "393b3e3c667f3fc0,62604359787b3b67,052f3753c9fb6e37,4848a258a109a258,129240522022449a"
+    }
+}
